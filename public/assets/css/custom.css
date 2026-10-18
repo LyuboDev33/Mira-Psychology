@@ -1,0 +1,168 @@
+
+/* Admin Event Card */
+
+.admin-event-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+}
+
+.admin-event-card:hover {
+    transform: translateY(-4px);
+    border-color: #d6dce4;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+}
+
+.admin-event-card:focus-visible {
+    outline: 3px solid #4f83cc;
+    outline-offset: 3px;
+}
+
+/* Image */
+
+.admin-event-card__image {
+    position: relative;
+    height: 210px;
+    overflow: hidden;
+    background: #f3f4f6;
+}
+
+.admin-event-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.admin-event-card:hover .admin-event-card__image img {
+    transform: scale(1.04);
+}
+
+/* Status */
+
+.admin-event-card__status {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.admin-event-card__status.is-active {
+    color: #198754;
+}
+
+.admin-event-card__status.is-inactive {
+    color: #6c757d;
+}
+
+.admin-event-card__status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+/* Content */
+
+.admin-event-card__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 22px;
+}
+
+.admin-event-card__meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #7a8493;
+}
+
+.admin-event-card__title {
+    margin: 0 0 20px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.45;
+    color: #222;
+    transition: color 0.25s ease;
+}
+
+.admin-event-card:hover .admin-event-card__title {
+    color: #365f9c;
+}
+
+/* Footer */
+
+.admin-event-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid #f0f1f3;
+}
+
+.admin-event-card__location {
+    font-size: 13px;
+    color: #7a8493;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.admin-event-card__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #f3f5f8;
+    color: #555;
+    transition: all 0.25s ease;
+}
+
+.admin-event-card:hover .admin-event-card__arrow {
+    background: #365f9c;
+    color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .admin-event-card,
+    .admin-event-card__image img,
+    .admin-event-card__title,
+    .admin-event-card__arrow {
+        transition: none;
+    }
+}
+
+.event-info-list {
+    margin-top: 20px;
+}
+
+.event-info-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
