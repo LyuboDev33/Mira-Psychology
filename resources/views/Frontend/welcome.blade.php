@@ -11,12 +11,14 @@
                     <div class="main-slider-two__shape-3"></div>
                     <div class="main-slider-two__shape-4"></div>
                     <div class="main-slider-two__bg"
-                        style="background-image: url('/assets/images/backgrounds/slider-2-1.jpg');"></div>
+                        {{-- style="background-image: url('/assets/images/backgrounds/slider-2-1.jpg');" --}}
+                        >
+                    </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="main-slider-two__content">
-                                    <h5 class="main-slider-two__sub-title">Индивидуална терапия • EMDR • Терапевтични групи</h5>
+                                    <h5 class="main-slider-two__sub-title">Индивидуална терапия • EMDR • Терапевтични групи • Семейни констелация</h5>
                                     <h1 class="main-slider-two__title">Подкрепа за <span class="text-shape">промяната<img src="/assets/images/shapes/home-two-text-shape.png" alt=""></span> и връзката със себе си</h1>
                                     <p class="main-slider-two__text">Мирослава Мацурева предлага индивидуална терапевтична работа, EMDR терапия, семейни и системни констелации, арттерапевтични и психодраматични подходи, както и терапевтични групи и семинари.</p>
                                     <div class="main-slider-two__btn">
@@ -25,7 +27,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="/assets/images/welcome-img.jpg" alt="" class="main-slider-two__img">
+                            <img src="/assets/images/welcome-img-test.png" alt="" class="main-slider-two__img">
                             <img src="/assets/images/shapes/home-two-shape-5.png" alt="" class="main-slider-two__shape-5">
                         </div>
                     </div>
