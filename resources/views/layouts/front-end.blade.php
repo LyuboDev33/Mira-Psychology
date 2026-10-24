@@ -74,28 +74,28 @@
         href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
         rel="stylesheet">
 
-    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js?v=<?php echo time(); ?>"></script>
 
 
-    <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/assets/vendors/bootstrap-select/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="/assets/vendors/bootstrap-select/bootstrap-select.min.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css?v=<?php echo time(); ?>" />
 
-    <link rel="stylesheet" href="/assets/vendors/pelocis-icons/style.css" />
-    <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="/assets/vendors/slick-carousel/css/slick-theme.min.css" />
-    <link rel="stylesheet" href="/assets/vendors/slick-carousel/css/slick.min.css" />
+    <link rel="stylesheet" href="/assets/vendors/pelocis-icons/style.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.carousel.min.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.theme.default.min.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="/assets/vendors/slick-carousel/css/slick-theme.min.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="/assets/vendors/slick-carousel/css/slick.min.css?v=<?php echo time(); ?>" />
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=<?php echo time(); ?>" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}?v=<?php echo time(); ?>">
 
 
 
     <!-- template styles -->
-    <link rel="stylesheet" href="/assets/css/pelocis.css" />
+    <link rel="stylesheet" href="/assets/css/pelocis.css?v=<?php echo time(); ?>" />
 
 </head>
 
@@ -183,30 +183,16 @@
 
 
 
-    <script src="/assets/vendors/jquery/jquery-3.7.0.min.js"></script>
-    <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-    {{-- <script src="/assets/vendors/jarallax/jarallax.min.js"></script>
-    <script src="/assets/vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
-    <script src="/assets/vendors/jquery-appear/jquery.appear.min.js"></script>
-    <script src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
-    <script src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="/assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-    <script src="/assets/vendors/nouislider/nouislider.min.js"></script>
-    <script src="/assets/vendors/tiny-slider/tiny-slider.js"></script>
-    <script src="/assets/vendors/wnumb/wNumb.min.js"></script> --}}
-    <script src="/assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
-    <script src="/assets/vendors/wow/wow.js"></script>
-    {{-- <script src="/assets/vendors/imagesloaded/imagesloaded.min.js"></script>
-    <script src="/assets/vendors/isotope/isotope.js"></script>
-    <script src="/assets/vendors/countdown/countdown.min.js"></script>
-    <script src="/assets/vendors/jquery-circleType/jquery.circleType.js"></script>
-    <script src="/assets/vendors/jquery-lettering/jquery.lettering.min.js"></script> --}}
-    <script src="/assets/vendors/slick-carousel/js/slick.min.js"></script>
+    <script src="/assets/vendors/jquery/jquery-3.7.0.min.js?v=<?php echo time(); ?>"></script>
+    <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js?v=<?php echo time(); ?>"></script>
+    <script src="/assets/vendors/bootstrap-select/bootstrap-select.min.js?v=<?php echo time(); ?>"></script>
+
+    <script src="/assets/vendors/owl-carousel/js/owl.carousel.min.js?v=<?php echo time(); ?>"></script>
+    <script src="/assets/vendors/wow/wow.js?v=<?php echo time(); ?>"></script>
+    <script src="/assets/vendors/slick-carousel/js/slick.min.js?v=<?php echo time(); ?>"></script>
 
     <!-- template js -->
-    <script src="/assets/js/pelocis.js"></script>
+    <script src="/assets/js/pelocis.js?v=<?php echo time(); ?>"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
