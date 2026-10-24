@@ -1,6 +1,5 @@
 <x-frontend>
 
-
     <section class="service-details">
         <div class="container">
 
@@ -9,15 +8,7 @@
                 <!-- LEFT: Event Information -->
                 <div class="col-md-12 col-lg-8">
 
-                    <div class="service-details__content">
-
-                        <!-- Event Image -->
-                        {{-- <div class="service-details__thumbnail">
-                            <img
-                                src="{{ asset('assets/images/events/' . $event->image) }}"
-                                alt="{{ $event->title }}"
-                                class="img-fluid w-100">
-                        </div> --}}
+                    <div class="service-details__content shadow">
 
                         <!-- Event Title -->
                         <h3 class="service-details__title">
@@ -59,7 +50,7 @@
                     <div class="service-sidebar">
 
                         <!-- Booking Form -->
-                        <div class="service-sidebar__single">
+                        <div class="service-sidebar__single shadow">
 
                             <div class="event-booking-card">
 
@@ -90,66 +81,24 @@
                                     <span>
                                         Свободни места:
                                         <strong>
-                                            {{ $availablePlaces }} / {{ $event->capacity }}
+                                            <span id="availablePlaces">
+                                                {{ $availablePlaces }}
+                                            </span>
+                                            / {{ $event->capacity }}
                                         </strong>
                                     </span>
 
                                 </div>
 
-                                <!-- Success Message -->
-                                @if (session('success'))
-                                    <div class="booking-success-overlay" id="bookingSuccessModal">
-                                        <div class="booking-success-modal" role="dialog" aria-modal="true"
-                                            aria-labelledby="bookingSuccessTitle">
-
-                                            <button type="button"
-                                                class="booking-success-close"
-                                                onclick="closeBookingSuccessModal()"
-                                                aria-label="Затвори">
-                                                &times;
-                                            </button>
-
-                                            <div class="booking-success-icon">
-                                                <i class="fas fa-check"></i>
-                                            </div>
-
-                                            <h3 id="bookingSuccessTitle">Успешно записване!</h3>
-
-                                            <p>{{ session('success') }}</p>
-
-                                            <p class="booking-success-subtitle">
-                                                Благодарим Ви за доверието!
-                                            </p>
-
-                                            <button type="button" class="booking-success-button"
-                                                onclick="closeBookingSuccessModal()">
-                                                Разбрах
-                                            </button>
-
-                                        </div>
-                                    </div>
-                                @endif
-
-                                <!-- Validation Errors -->
-                                @if ($errors->any())
-
-                                    <div class="alert alert-danger mt-3">
-
-                                        <ul class="mb-0 ps-3">
-                                            @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                            @endforeach
-                                        </ul>
-
-                                    </div>
-
-                                @endif
+                                <!-- AJAX Error Message -->
+                                <div id="bookingGeneralError" class="alert alert-danger mt-3 d-none" role="alert">
+                                </div>
 
                                 @if ($canBook)
 
-                                    <!-- Booking Form -->
+                                    <!-- AJAX Booking Form -->
                                     <form action="{{ route('events.store', $event->slug) }}" method="POST"
-                                        class="event-booking-form">
+                                        class="event-booking-form" id="eventBookingForm">
 
                                         @csrf
 
@@ -161,16 +110,10 @@
                                                 <span class="text-danger">*</span>
                                             </label>
 
-                                            <input type="text" name="name" id="name"
-                                                class="form-control @error('name') is-invalid @enderror"
-                                                value="{{ old('name') }}" placeholder="Име и фамилия"
-                                                autocomplete="name" required>
+                                            <input type="text" name="name" id="name" class="form-control"
+                                                placeholder="Име и фамилия" autocomplete="name" >
 
-                                            @error('name')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
-                                                </div>
-                                            @enderror
+                                            <div class="invalid-feedback" id="nameError"></div>
 
                                         </div>
 
@@ -182,16 +125,10 @@
                                                 <span class="text-danger">*</span>
                                             </label>
 
-                                            <input type="email" name="email" id="email"
-                                                class="form-control @error('email') is-invalid @enderror"
-                                                value="{{ old('email') }}" placeholder="example@email.com"
-                                                autocomplete="email" required>
+                                            <input type="email" name="email" id="email" class="form-control"
+                                                placeholder="example@email.com" autocomplete="email" >
 
-                                            @error('email')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
-                                                </div>
-                                            @enderror
+                                            <div class="invalid-feedback" id="emailError"></div>
 
                                         </div>
 
@@ -203,23 +140,18 @@
                                                 <span class="text-danger">*</span>
                                             </label>
 
-                                            <input type="tel" name="phone" id="phone"
-                                                class="form-control @error('phone') is-invalid @enderror"
-                                                value="{{ old('phone') }}" placeholder="0888 123 456"
-                                                autocomplete="tel" required>
+                                            <input type="tel" name="phone" id="phone" class="form-control"
+                                                placeholder="0888 123 456" autocomplete="tel" >
 
-                                            @error('phone')
-                                                <div class="invalid-feedback">
-                                                    {{ $message }}
-                                                </div>
-                                            @enderror
+                                            <div class="invalid-feedback" id="phoneError"></div>
 
                                         </div>
 
                                         <!-- Submit -->
-                                        <button type="submit" class="thm-btn w-100">
+                                        <button type="submit" class="pelocis-btn pelocis-btn--black"
+                                            id="bookingSubmitButton">
 
-                                            <span>
+                                            <span id="bookingSubmitText">
                                                 Запиши се
                                                 <i class="fas fa-arrow-right ms-2"></i>
                                             </span>
@@ -236,7 +168,7 @@
                                     <!-- Booking Unavailable -->
                                     <div class="alert alert-warning mt-3 mb-0">
 
-                                        @if ($event->starts_at->isPast())
+                                        @if ($event->ends_at->isPast())
                                             Записването за това събитие е приключило.
                                         @else
                                             Всички места за това събитие са заети.
@@ -246,12 +178,17 @@
 
                                 @endif
 
+                                <!-- AJAX Booking Unavailable Message -->
+                                <div id="bookingUnavailableMessage" class="alert alert-warning mt-3 mb-0 d-none">
+                                    Всички места за това събитие са заети.
+                                </div>
+
                             </div>
 
                         </div>
 
                         <!-- Event Details -->
-                        <div class="service-sidebar__single">
+                        <div class="service-sidebar__single shadow">
 
                             <h3 class="service-sidebar__title">
                                 Информация за събитието
@@ -332,134 +269,208 @@
         </div>
     </section>
 
-    @push('styles')
-        <style>
-            .event-details-meta {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                color: #777;
-                font-size: 15px;
+    <!-- SUCCESS MODAL -->
+    <div class="booking-success-overlay"
+        id="bookingSuccessModal"
+        style="display: none;"
+        aria-hidden="true">
+
+        <div class="booking-success-modal" role="dialog" aria-modal="true" aria-labelledby="bookingSuccessTitle">
+
+            <button type="button" class="booking-success-close" id="bookingModalClose" aria-label="Затвори">
+                &times;
+            </button>
+
+            <div class="booking-success-icon">
+                <i class="fas fa-check"></i>
+            </div>
+
+            <h3 id="bookingSuccessTitle">
+                Успешно записване!
+            </h3>
+
+            <p id="bookingSuccessMessage"></p>
+
+            <p class="booking-success-subtitle">
+                Ще получите имейл потвърждение с информация за събитието.
+            </p>
+
+            <button type="button" class="booking-success-button" id="bookingModalConfirm">
+                Разбрах
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const form = document.getElementById('eventBookingForm');
+            const submitButton = document.getElementById('bookingSubmitButton');
+            const submitText = document.getElementById('bookingSubmitText');
+
+            const generalError = document.getElementById('bookingGeneralError');
+            const availablePlaces = document.getElementById('availablePlaces');
+            const unavailableMessage = document.getElementById('bookingUnavailableMessage');
+
+            const modal = document.getElementById('bookingSuccessModal');
+            const modalMessage = document.getElementById('bookingSuccessMessage');
+            const modalClose = document.getElementById('bookingModalClose');
+            const modalConfirm = document.getElementById('bookingModalConfirm');
+
+            let lastFocusedElement = null;
+
+            function openSuccessModal(message) {
+                lastFocusedElement = document.activeElement;
+                modalMessage.textContent = message;
+                modal.style.display = 'flex';
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                modalConfirm.focus();
             }
 
-            .event-details-meta span {
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
+            function closeSuccessModal() {
+                modal.style.display = 'none';
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+
+                if (lastFocusedElement && lastFocusedElement.isConnected) {
+                    lastFocusedElement.focus();
+                }
             }
 
-            .event-details-meta i {
-                color: #8a6cbd;
+            modalClose.addEventListener('click', closeSuccessModal);
+            modalConfirm.addEventListener('click', closeSuccessModal);
+
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    closeSuccessModal();
+                }
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && modal.style.display === 'flex') {
+                    closeSuccessModal();
+                }
+            });
+
+            function clearErrors() {
+                generalError.classList.add('d-none');
+                generalError.textContent = '';
+
+                if (!form) return;
+
+                form.querySelectorAll('.is-invalid').forEach(function(input) {
+                    input.classList.remove('is-invalid');
+                });
+
+                form.querySelectorAll('.invalid-feedback').forEach(function(element) {
+                    element.textContent = '';
+                });
             }
 
-            .event-description img {
-                max-width: 100%;
-                height: auto;
+            function showGeneralError(message) {
+                generalError.textContent = message;
+                generalError.classList.remove('d-none');
             }
 
-            .event-booking-card {
-                background: #fff;
+            function showValidationErrors(errors) {
+                Object.entries(errors).forEach(function([field, messages]) {
+
+                    if (field === 'booking') {
+                        showGeneralError(messages[0]);
+                        return;
+                    }
+
+                    const input = form.elements.namedItem(field);
+                    const errorElement = document.getElementById(field + 'Error');
+
+                    if (input && errorElement) {
+                        input.classList.add('is-invalid');
+                        errorElement.textContent = messages[0];
+                    } else {
+                        showGeneralError(messages[0]);
+                    }
+                });
             }
 
-            .event-booking-price {
-                margin-bottom: 18px;
+            if (form) {
+
+                form.addEventListener('submit', async function(event) {
+                    event.preventDefault();
+
+                    clearErrors();
+
+                    submitButton.disabled = true;
+                    submitText.innerHTML =
+                        '<i class="fas fa-spinner fa-spin me-2"></i> Изпращане...';
+
+                    try {
+                        const response = await fetch(form.action, {
+                            method: 'POST',
+                            headers: {
+                                'Accept': 'application/json',
+                                'X-Requested-With': 'XMLHttpRequest'
+                            },
+                            body: new FormData(form)
+                        });
+
+                        const data = await response.json();
+
+                        if (!response.ok) {
+
+                            if (response.status === 422 && data.errors) {
+                                showValidationErrors(data.errors);
+                            } else {
+                                showGeneralError(
+                                    data.message || 'Възникна грешка. Моля, опитайте отново.'
+                                );
+                            }
+
+                            return;
+                        }
+
+                        if (data.success) {
+
+                            form.reset();
+
+                            availablePlaces.textContent = data.available_places;
+
+                            openSuccessModal(data.message);
+
+                            if (Number(data.available_places) <= 0) {
+                                form.classList.add('d-none');
+                                unavailableMessage.classList.remove('d-none');
+                            }
+                        }
+
+                    } catch (error) {
+                        showGeneralError(
+                            'Възникна проблем с връзката. Моля, опитайте отново.'
+                        );
+                    } finally {
+                        submitButton.disabled = false;
+                        submitText.innerHTML =
+                            'Запиши се <i class="fas fa-arrow-right ms-2"></i>';
+                    }
+                });
+
+                form.querySelectorAll('input').forEach(function(input) {
+                    input.addEventListener('input', function() {
+                        input.classList.remove('is-invalid');
+
+                        const errorElement = document.getElementById(input.name + 'Error');
+
+                        if (errorElement) {
+                            errorElement.textContent = '';
+                        }
+                    });
+                });
             }
 
-            .event-booking-price__amount {
-                font-size: 30px;
-                font-weight: 700;
-                color: #222;
-            }
-
-            .event-booking-price__free {
-                font-size: 24px;
-                font-weight: 700;
-                color: #198754;
-            }
-
-            .event-booking-availability {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                padding: 14px;
-                background: #f5f6f8;
-                border-radius: 10px;
-                font-size: 14px;
-                margin-bottom: 22px;
-            }
-
-            .event-booking-availability i {
-                color: #8a6cbd;
-            }
-
-            .event-booking-form .form-label {
-                font-size: 14px;
-                font-weight: 600;
-                color: #333;
-                margin-bottom: 7px;
-            }
-
-            .event-booking-form .form-control {
-                width: 100%;
-                min-height: 48px;
-                padding: 12px 15px;
-                border: 1px solid #e2e5ea;
-                border-radius: 8px;
-                background: #fff;
-                font-size: 14px;
-                color: #222;
-            }
-
-            .event-booking-form .form-control:focus {
-                border-color: #8a6cbd;
-                box-shadow: 0 0 0 3px rgba(138, 108, 189, 0.12);
-            }
-
-            .event-booking-note {
-                text-align: center;
-                font-size: 12px;
-                color: #888;
-            }
-
-            .event-info-list {
-                margin: 0;
-            }
-
-            .event-info-list li {
-                display: flex;
-                align-items: flex-start;
-                gap: 15px;
-                padding: 15px 0;
-                border-bottom: 1px solid #eee;
-            }
-
-            .event-info-list li:last-child {
-                border-bottom: none;
-            }
-
-            .event-info-list li>i {
-                color: #8a6cbd;
-                font-size: 17px;
-                margin-top: 5px;
-                width: 20px;
-            }
-
-            .event-info-list li div {
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
-            }
-
-            .event-info-list li strong {
-                color: #222;
-                font-size: 14px;
-            }
-
-            .event-info-list li span {
-                color: #777;
-                font-size: 14px;
-            }
-        </style>
-    @endpush
+        });
+    </script>
 
 </x-frontend>

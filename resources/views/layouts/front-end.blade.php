@@ -10,24 +10,78 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png" />
     <link rel="manifest" href="/assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="Pelocis a modern psychology, psychiatrist and therapy HTML Template. We especially designed this template for mental health, psychology & counseling, psychiatrist, counselor, therapies. It is perfect for every therapist, practitioner, couples therapy, as well as any other type of psychological and mental health care website." />
+
+    {{-- Cal.com Embed --}}
+    <script type="text/javascript">
+        (function(C, A, L) {
+            let p = function(a, ar) {
+                a.q.push(ar);
+            };
+            let d = C.document;
+
+            C.Cal = C.Cal || function() {
+                let cal = C.Cal;
+                let ar = arguments;
+
+                if (!cal.loaded) {
+                    cal.ns = {};
+                    cal.q = cal.q || [];
+                    d.head.appendChild(d.createElement("script")).src = A;
+                    cal.loaded = true;
+                }
+
+                if (ar[0] === L) {
+                    const api = function() {
+                        p(api, arguments);
+                    };
+
+                    const namespace = ar[1];
+                    api.q = api.q || [];
+
+                    if (typeof namespace === "string") {
+                        cal.ns[namespace] = cal.ns[namespace] || api;
+                        p(cal.ns[namespace], ar);
+                        p(cal, ["initNamespace", namespace]);
+                    } else {
+                        p(cal, ar);
+                    }
+
+                    return;
+                }
+
+                p(cal, ar);
+            };
+        })(window, "https://app.cal.com/embed/embed.js", "init");
+
+        Cal("init", "test", {
+            origin: "https://app.cal.com"
+        });
+
+        Cal.config = Cal.config || {};
+        Cal.config.forwardQueryParams = true;
+
+        Cal.ns.test("ui", {
+            hideEventTypeDetails: false,
+            layout: "month_view"
+        });
+    </script>
+
 
     <!-- fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
 
 
     <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/vendors/bootstrap-select/bootstrap-select.min.css" />
     <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css" />
-    {{-- <link rel="stylesheet" href="/assets/vendors/jquery-ui/jquery-ui.css" /> --}}
-    {{-- <link rel="stylesheet" href="/assets/vendors/jarallax/jarallax.css" /> --}}
-    {{-- <link rel="stylesheet" href="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" /> --}}
-    {{-- <link rel="stylesheet" href="/assets/vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="/assets/vendors/nouislider/nouislider.pips.css" />
-    <link rel="stylesheet" href="/assets/vendors/tiny-slider/tiny-slider.css" /> --}}
+
     <link rel="stylesheet" href="/assets/vendors/pelocis-icons/style.css" />
     <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
@@ -36,12 +90,13 @@
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=<?php echo time(); ?>" />
 
-        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 
 
 
     <!-- template styles -->
     <link rel="stylesheet" href="/assets/css/pelocis.css" />
+
 </head>
 
 <body class="custom-cursor">
@@ -50,14 +105,14 @@
     <div class="custom-cursor__cursor-two"></div>
 
     {{-- <div class="preloader">
-        <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
+        <div class="preloader__image" style="background-image: url(/assets/images/loader.png);"></div>
     </div> --}}
     <!-- /.preloader -->
     <div class="page-wrapper">
 
         @include('layouts.partials.frontend.header')
 
-            {{ $slot }}
+        {{ $slot }}
 
         @include('layouts.partials.frontend.footer')
 
@@ -65,76 +120,14 @@
 
 
 
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="/assets/images/logo-light-2.png" width="155" alt="" /></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@pelocis.com">needhelp@pelocis.com</a>
-                </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
-                </li>
-            </ul><!-- /.mobile-nav__contact -->
-            <div class="mobile-nav__social">
-                <a href="https://facebook.com">
-                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                    <span class="sr-only">Facebook</span>
-                </a>
-                <a href="https://twitter.com">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter</span>
-                </a>
-                <a href="https://google.com">
-                    <i class="fab fa-google" aria-hidden="true"></i>
-                    <span class="sr-only">Google</span>
-                </a>
-                <a href="https://linkedin.com">
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                    <span class="sr-only">Linkedin</span>
-                </a>
-                <a href="https://instagram.com">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                    <span class="sr-only">Instagram</span>
-                </a>
-            </div><!-- /.mobile-nav__social -->
-        </div>
-        <!-- /.mobile-nav__content -->
-    </div>
-    <!-- /.mobile-nav__wrapper -->
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form role="search" method="get" class="search-popup__form" action="#">
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="pelocis-btn pelocis-btn--base">
-                    <span><i class="icon-search"></i></span>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
-    </div>
-    <!-- /.search-popup -->
     <!-- Sidebar One Start -->
     <aside class="sidebar-one">
         <div class="sidebar-one__overlay"></div><!-- /.siderbar-ovarlay -->
         <div class="sidebar-one__content">
             <div class="sidebar-one__close"><i class="flaticon-close"></i></div><!-- /.siderbar-close -->
             <div class="sidebar-one__logo">
-                <a href="index.html" aria-label="logo image"><img src="/assets/images/logo-light-2.png" alt="pelocis" width="224"></a>
+                <a href="index.html" aria-label="logo image"><img src="/assets/images/logo-light-2.png"
+                        alt="pelocis" width="224"></a>
             </div><!-- /.sidebar-one__logo-box -->
             <p class="sidebar-one__text">
                 Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ
@@ -188,10 +181,6 @@
     </aside>
     <!-- Sidebar One Start -->
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-        <span class="scroll-to-top__text">Отидете в началото</span>
-        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-    </a>
 
 
     <script src="/assets/vendors/jquery/jquery-3.7.0.min.js"></script>
@@ -218,6 +207,32 @@
 
     <!-- template js -->
     <script src="/assets/js/pelocis.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeLenis();
+        });
+
+        function initializeLenis() {
+
+            const lenis = new Lenis({
+                duration: 1,
+                smoothWheel: true,
+                wheelMultiplier: 0.8,
+                touchMultiplier: 0.8,
+                lerp: 0.5
+            });
+
+            function lenisAnimationFrame(time) {
+                lenis.raf(time);
+                requestAnimationFrame(lenisAnimationFrame);
+            }
+
+            requestAnimationFrame(lenisAnimationFrame);
+        }
+    </script>
+
+
 </body>
 
 </html>

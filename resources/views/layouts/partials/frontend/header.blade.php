@@ -5,21 +5,29 @@
                         <x-logo />
                     </div><!-- /.main-header__logo -->
                     <nav class="main-header__nav main-menu">
-                        <ul class="main-menu__list">
+                               <ul class="main-menu__list">
 
-                            <li>
-                                <a href="/">Начало </a>
-                            </li>
+                    <li>
+                        <a href="{{ route('home') }}">Начало</a>
+                    </li>
 
-                            <li>
-                                <a href="{{ route('events.index') }}">Събития</a>
-                            </li>
+                    <li>
+                        <a href="{{ route('about') }}">За мен</a>
+                    </li>
 
+                    <li>
+                        <a href="{{ route('services') }}">Услуги</a>
+                    </li>
 
-                            <li>
-                                <a href="/">Контакти</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="{{ route('events.index') }}">Събития</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('contact') }}">Контакти</a>
+                    </li>
+
+                </ul>
                     </nav><!-- /.main-header__nav -->
                     <div class="main-header__right">
                         <div class="mobile-nav__btn mobile-nav__toggler">
@@ -30,7 +38,7 @@
 
                         <div class="contact-wrapper">
                             <div class="contact-content">
-                                <a target="_blank" href="https://cal.com/miroslava-matsureva-klzms5/%D1%82%D0%B5%D1%80%D0%B0%D0%BF%D0%B5%D0%B2%D1%82%D0%B8%D1%87%D0%BD%D0%B0-%D1%81%D0%B5%D1%81%D0%B8%D1%8F?overlayCalendar=true&date=2026-10-19" class="pelocis-btn pelocis-btn--black">
+                                <a target="_blank" href="https://cal.com/miroslava-matsureva-klzms5/%D1%82%D0%B5%D1%80%D0%B0%D0%BF%D0%B5%D0%B2%D1%82%D0%B8%D1%87%D0%BD%D0%B0-%D1%81%D0%B5%D1%81%D0%B8%D1%8F?overlayCalendar=true" class="pelocis-btn pelocis-btn--black">
                                     <span>Запиши си час<i class="icon-right-arrow-white"></i></span>
                                 </a><!-- slider-btn -->
                             </div>
@@ -40,3 +48,39 @@
                 </div><!-- /.main-header__inner -->
             </div><!-- /.container-fluid -->
         </header><!-- /.main-header -->
+
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+               <x-logo mobileWidth="200"  />
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:miroslavamatsureva@gmail.com">miroslavamatsureva@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:359888 354 227">0888 354 227</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>

@@ -6,7 +6,11 @@ use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [FrontEndController::class, 'welcome']);
+Route::get('/', [FrontEndController::class, 'welcome'])->name('home');
+Route::get('/about', [FrontEndController::class, 'about'])->name('about');
+Route::get('/services', [FrontEndController:: class, 'services'])->name('services');
+Route::get('/contact', [FrontEndController:: class, 'contact'])->name('contact');
+
 
 Route::get('/dashboard', function () {
     return view('Backend.dashboard');

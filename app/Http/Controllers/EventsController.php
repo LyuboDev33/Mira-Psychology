@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\EventBookingStoreRequest;
+use App\Mail\ConfirmBookingMail;
 use App\Models\Event;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 use Illuminate\View\View;
 
@@ -52,19 +56,22 @@ class EventsController extends Controller
         ]);
     }
 
+
+
+
     /**
-     * Store a guest booking for an event.
+     * Store a new event booking via AJAX.
      *
      * @param EventBookingStoreRequest $request
      * @param string $slug
-     * @return RedirectResponse
+     * @return JsonResponse
      */
-    public function store(EventBookingStoreRequest $request, string $slug): RedirectResponse
-    {
 
+    public function store(EventBookingStoreRequest $request, string $slug): JsonResponse
+    {
         $validated = $request->validated();
 
-        DB::transaction(function () use ($slug, $validated) {
+        $result = DB::transaction(function () use ($slug, $validated) {
 
             $event = Event::query()
                 ->where('slug', $slug)
@@ -72,16 +79,14 @@ class EventsController extends Controller
                 ->lockForUpdate()
                 ->firstOrFail();
 
-            /*
-             * Prevent bookings for events that have already started.
-             */
+            // Bookings are allowed until the event ends.
             if ($event->ends_at->isPast()) {
                 throw ValidationException::withMessages([
                     'booking' => 'Записването за това събитие е приключило.',
                 ]);
             }
 
-
+            // Check capacity.
             $bookingsCount = $event->bookings()->count();
 
             if ($bookingsCount >= $event->capacity) {
@@ -90,25 +95,41 @@ class EventsController extends Controller
                 ]);
             }
 
-            $alreadyBooked = $event->bookings()
-                ->where('email', $validated['email'])
-                ->exists();
-
-            if ($alreadyBooked) {
+            // Prevent duplicate registrations.
+            if ($event->bookings()->where('email', $validated['email'])->exists()) {
                 throw ValidationException::withMessages([
                     'email' => 'Вече има записване за това събитие с този имейл адрес.',
                 ]);
             }
 
+            // Save booking.
             $event->bookings()->create([
                 'name' => $validated['name'],
                 'email' => $validated['email'],
                 'phone' => $validated['phone'],
             ]);
+
+            return [
+                'event' => $event,
+                'available_places' => max(0, $event->capacity - ($bookingsCount + 1)),
+            ];
         });
 
-        return redirect()
-            ->route('events.show', $slug)
-            ->with('success', 'Успешно се записахте за събитието!');
+        // Send confirmation email after successful booking.
+        try {
+            Mail::to($validated['email'])->send(new ConfirmBookingMail($validated, $result['event']));
+            
+        } catch (\Throwable $exception) {
+            Log::error('Failed to send event booking confirmation email.', [
+                'event_id' => $result['event']->id,
+                'error' => $exception->getMessage(),
+            ]);
+        }
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Успешно се записахте за събитието!',
+            'available_places' => $result['available_places'],
+        ], 201);
     }
 }

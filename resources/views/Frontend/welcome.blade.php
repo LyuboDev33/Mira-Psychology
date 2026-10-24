@@ -14,18 +14,18 @@
                         style="background-image: url('/assets/images/backgrounds/slider-2-1.jpg');"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-9">
+                            <div class="col-lg-8">
                                 <div class="main-slider-two__content">
                                     <h5 class="main-slider-two__sub-title">Индивидуална терапия • EMDR • Терапевтични групи</h5>
                                     <h1 class="main-slider-two__title">Подкрепа за <span class="text-shape">промяната<img src="/assets/images/shapes/home-two-text-shape.png" alt=""></span> и връзката със себе си</h1>
                                     <p class="main-slider-two__text">Мирослава Мацурева предлага индивидуална терапевтична работа, EMDR терапия, семейни и системни констелации, арттерапевтични и психодраматични подходи, както и терапевтични групи и семинари.</p>
                                     <div class="main-slider-two__btn">
-                                        <a href="#therapies" class="pelocis-btn"><span>Разгледайте терапиите <i class="icon-right-arrow-white"></i></span></a>
+                                        <a href="{{ route('services') }}" class="pelocis-btn"><span>Разгледайте терапиите <i class="icon-right-arrow-white"></i></span></a>
                                         <a href="#about" class="pelocis-btn pelocis-btn--black"><span>За Мирослава <i class="icon-right-arrow-white"></i></span></a>
                                     </div>
                                 </div>
                             </div>
-                            <img src="/assets/images/backgrounds/slider-2-layer-1.png" alt="" class="main-slider-two__img">
+                            <img src="/assets/images/welcome-img.jpg" alt="" class="main-slider-two__img">
                             <img src="/assets/images/shapes/home-two-shape-5.png" alt="" class="main-slider-two__shape-5">
                         </div>
                     </div>
@@ -37,14 +37,16 @@
     <!-- Въведение -->
     <section class="call-area-two">
         <div class="call-area-two__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%"
-            style="background-image: url('/assets/images/backgrounds/call-area-twp-bg.png');"></div>
+            {{-- style="background-image: url('/assets/images/backgrounds/call-area-twp-bg.png');" --}}
+            >
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-9">
                     <h3 class="call-area-two__title">Индивидуална терапия, EMDR, констелации и групова работа — различни пътища към себепознание, емоционална подкрепа и личностно развитие.</h3>
                 </div>
                 <div class="col-lg-3 text-lg-end">
-                    <a href="#therapies" class="pelocis-btn"><span>Вижте терапиите <i class="icon-right-arrow-white"></i></span></a>
+                    <a href="{{ route('services') }}" class="pelocis-btn"><span>Вижте терапиите <i class="icon-right-arrow-white"></i></span></a>
                 </div>
             </div>
         </div>
@@ -238,7 +240,7 @@
             <div class="call-area-three__content">
                 <h2 class="call-area-three__title">Терапевтични групи, семинари и обучения</h2>
                 <p class="call-area-three__text">Мира води терапевтични групи, семейни и системни констелации, семинари и преживелищни процеси, посветени на себеизследването, взаимоотношенията, личностното развитие и емоционалното освобождаване.</p>
-                <a href="#therapies" class="pelocis-btn"><span>Разгледайте терапиите <i class="icon-right-arrow-white"></i></span></a>
+                <a href="{{ route('services') }}" class="pelocis-btn"><span>Разгледайте терапиите <i class="icon-right-arrow-white"></i></span></a>
             </div>
         </div>
     </section>
