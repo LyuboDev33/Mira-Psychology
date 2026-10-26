@@ -173,6 +173,45 @@
                         </div>
                     </div>
                 </div><!-- item -->
+                       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="service-three__card">
+                        <div class="service-three__card__image">
+                            <img src="assets/images/resources/service-3-2.jpg" alt="pelocis">
+                        </div>
+                        <div class="service-three__card__content">
+                            <div class="service-three__card__icon"><i class="icon-partnership"></i></div>
+                            <div class="service-three__card__count"><i class="icon-wave-shape"></i></div>
+                            <h2 class="service-three__card__title"><a>Семейни консталации</a>
+                            </h2>
+                            <p class="service-three__card__text">
+                                Когато думите не са достатъчни, творческият процес помага да изразим чувства и
+                                преживявания чрез цвят, образ и движение.
+                            </p>
+                            <a href="{{ route('services') }}" class="service-three__card__link">
+                                <span>Научи повече <i class="icon-right-arrow-white"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- item -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="service-three__card">
+                        <div class="service-three__card__image">
+                            <img src="assets/images/resources/service-3-3.jpg" alt="pelocis">
+                        </div>
+                        <div class="service-three__card__content">
+                            <div class="service-three__card__icon"><i class="icon-family-life"></i></div>
+                            <div class="service-three__card__count"><i class="icon-wave-shape"></i></div>
+                            <h2 class="service-three__card__title"><a>Дихателни практики</a></h2>
+                            <p class="service-three__card__text">
+                                Изследване на важни житейски ситуации чрез действие, роли и нови перспективи в защитена
+                                терапевтична среда.
+                            </p>
+                            <a href="{{ route('services') }}" class="service-three__card__link">
+                                <span>Научи повече <i class="icon-right-arrow-white"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- item -->
             </div>
         </div>
     </section>
@@ -300,86 +339,73 @@
         </div>
     </section><!-- /.testimonials-one -->
 
-    <!-- team section -->
-    <section class="team-two">
+        <!-- Терапии и терапевтични подходи -->
+    <section class="service-one" id="therapies">
         <div class="container">
-            <div class="team-two__title text-center">
+            <div class="service-one__title text-center">
                 <div class="sec-title">
-
-
-
-                    <div class="sec-title__shape">
-                    </div>
-                    <h6 class="sec-title__tagline">ПОВЕЧЕ ЗА МОЯТА РАБОТА</h6><!-- /.sec-title__tagline -->
-
-                    <h3 class="sec-title__title">Терапевтични методи за <br>лично осъзнаване и промяна</h3>
-                    <!-- /.sec-title__title -->
-                </div><!-- /.sec-title -->
+                    <div class="sec-title__shape"></div>
+                    <h6 class="sec-title__tagline">ТЕРАПИИ И УСЛУГИ</h6>
+                    <h2 class="sec-title__title">С какви терапии и подходи <br> мога да ви подкрепя</h2>
+                </div>
             </div>
-            <div class="row gutter-y-30">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-two__card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay='000ms'>
-                        <div class="team-two__card__img">
-                            <img src="assets/images/resources/team-img-7.png" alt="pelocis">
-                            <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
-                                        повече <i class="icon-right-arrow-white"></i></span></a>
-                            </div>
-                        </div>
-                        <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">EMDR терапия</a></h3>
-                            <span class="team-two__card__designation">Работа с травматични преживявания</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-two__card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay='100ms'>
-                        <div class="team-two__card__img">
-                            <img src="assets/images/resources/team-img-8.png" alt="pelocis">
-                            <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
-                                        повече <i class="icon-right-arrow-white"></i></span></a>
-                            </div>
-                        </div>
-                        <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">Арт терапия</a></h3>
-                            <span class="team-two__card__designation">Творчество и себеизразяване</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-two__card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay='200ms'>
-                        <div class="team-two__card__img">
-                            <img src="assets/images/resources/team-img-9.png" alt="pelocis">
-                            <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
-                                        повече <i class="icon-right-arrow-white"></i></span></a>
-                            </div>
-                        </div>
-                        <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">Психодрама</a></h3>
-                            <span class="team-two__card__designation">Преживяване чрез действие</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-two__card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay='300ms'>
-                        <div class="team-two__card__img">
-                            <img src="assets/images/resources/team-img-10.png" alt="pelocis">
-                            <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
-                                        повече <i class="icon-right-arrow-white"></i></span></a>
-                            </div>
-                        </div>
-                        <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">Дихателни практики</a></h3>
-                            <span class="team-two__card__designation">Контакт с тялото и емоциите</span>
+            <div class="row">
+                @php
+                    $approaches = [
+                        [
+                            'icon' => 'icon-cognitive',
+                            'title' => 'EMDR терапия',
+                            'text' =>
+                                'Терапевтичен метод, използван в работата с травматични преживявания и свързаните с тях емоционални трудности.',
+                        ],
+                        [
+                            'icon' => 'icon-family-life',
+                            'title' => 'Семейни и системни констелации',
+                            'text' =>
+                                'Изследване на семейните истории, взаимоотношенията и повтарящите се модели чрез констелационна работа.',
+                        ],
+                        [
+                            'icon' => 'icon-idea',
+                            'title' => 'Арттерапия',
+                            'text' =>
+                                'Творчески и арттерапевтични техники за изследване и изразяване на лични преживявания и емоции.',
+                        ],
+                        [
+                            'icon' => 'icon-partnership',
+                            'title' => 'Психодрама',
+                            'text' =>
+                                'Преживелищна работа с житейски ситуации, отношения и емоции чрез психодраматични техники.',
+                        ],
+                        [
+                            'icon' => 'icon-mental-health',
+                            'title' => 'Дихателна терапия',
+                            'text' =>
+                                'Дихателни практики, включени в индивидуалната и преживелищната терапевтична работа.',
+                        ],
+                        [
+                            'icon' => 'icon-hand',
+                            'title' => 'Работа с вътрешното дете',
+                            'text' =>
+                                'Терапевтична работа с ранни преживявания, усещане за отхвърляне или изоставяне и повтарящи се емоционални модели.',
+                        ],
+                    ];
+                @endphp
+                @foreach ($approaches as $approach)
+                    <div class="col-lg-4 col-md-6 service-card">
+                        <div class="service-card__inner">
+                            <div class="service-card__hover"
+                                style="background-image: url('/assets/images/resources/service-1.png');"></div>
+                            <div class="service-card__shape"></div>
+                            <div class="service-card__icon"><span class="{{ $approach['icon'] }}"></span></div>
+                            <h3 class="service-card__title">{{ $approach['title'] }}</h3>
+                            <p class="service-card__text">{{ $approach['text'] }}</p>
                         </div>
                     </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
+
 
     <!-- call area -->
     <section class="call-area-one">
