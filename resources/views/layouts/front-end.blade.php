@@ -80,7 +80,6 @@
     <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css?v=<?php echo time(); ?>" />
     <link rel="stylesheet" href="/assets/vendors/bootstrap-select/bootstrap-select.min.css?v=<?php echo time(); ?>" />
     <link rel="stylesheet" href="/assets/vendors/animate/animate.min.css?v=<?php echo time(); ?>" />
-    <link rel="stylesheet" href="/assets/vendors/fontawesome/css/all.min.css?v=<?php echo time(); ?>" />
 
     <link rel="stylesheet" href="/assets/vendors/pelocis-icons/style.css?v=<?php echo time(); ?>" />
     <link rel="stylesheet" href="/assets/vendors/owl-carousel/css/owl.carousel.min.css?v=<?php echo time(); ?>" />
@@ -92,7 +91,7 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}?v=<?php echo time(); ?>">
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- template styles -->
     <link rel="stylesheet" href="/assets/css/pelocis.css?v=<?php echo time(); ?>" />
