@@ -52,7 +52,7 @@
                     </a>
                 </div>
 
-                <img src="/assets/images/test-2.png" alt="Мирослава Мацурева — психотерапевт и фасилитатор"
+                <img src="/assets/images/test-2.png?v=<?= time() ?>" alt="Мирослава Мацурева — психотерапевт и фасилитатор"
                     class="hero-therapy__image">
             </div>
         </div>
