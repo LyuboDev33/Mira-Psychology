@@ -3,14 +3,32 @@
     <!-- Начален банер -->
 
 
+
+    <!-- Scrolling Therapy Ticker -->
+    <div class="scrolling-ticker">
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>EMDR</span>
+                <span><i class="fa-solid fa-circle"></i>КОНСТЕЛАЦИИ</span>
+                <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>ГРУПОВА РАБОТА</span>
+            </div>
+
+            <div class="scrolling-content" aria-hidden="true">
+                <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>EMDR</span>
+                <span><i class="fa-solid fa-circle"></i>КОНСТЕЛАЦИИ</span>
+                <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>ГРУПОВА РАБОТА</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Therapy Hero -->
     <section class="main-slider-two hero-therapy">
         <div class="main-slider-two__item hero-therapy__item">
-
             <div class="hero-therapy__container container">
-                <div class="hero-therapy__label">
-                    ТЕРАПИЯ <span>•</span> <strong>EMDR</strong>
-                    <span>•</span> КОНСТЕЛАЦИИ <span>•</span> АРТТЕРАПИЯ
-                </div>
 
                 <div class="hero-therapy__content">
                     <h1 class="hero-therapy__title">
@@ -37,419 +55,10 @@
                 <img src="/assets/images/test-2.png" alt="Мирослава Мацурева — психотерапевт и фасилитатор"
                     class="hero-therapy__image">
             </div>
-
         </div>
     </section>
 
-    <style>
-        /* =========================================
-   THERAPY HERO
-========================================= */
 
-        .hero-therapy {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            background: #f4eadb;
-            color: #211d1a;
-        }
-
-        .hero-therapy .hero-therapy__item {
-            position: relative;
-            min-height: 760px;
-            overflow: hidden;
-            background: #f4eadb;
-        }
-
-        .hero-therapy__container {
-            position: relative;
-            width: min(100% - 60px, 1440px);
-            min-height: 760px;
-            margin: 0 auto;
-            padding: 70px 0 65px;
-        }
-
-        /* Therapy category ribbon */
-
-        .hero-therapy__label {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 13px;
-            width: fit-content;
-            max-width: 100%;
-            min-height: 72px;
-            padding: 20px 30px;
-            margin-bottom: 90px;
-            background: #a97c59;
-            color: #fff8ef;
-            font-size: 17px;
-            font-weight: 400;
-            letter-spacing: 0.3px;
-            line-height: 1.5;
-            text-transform: uppercase;
-        }
-
-        .hero-therapy__label::after {
-            position: absolute;
-            bottom: -24px;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-top: 25px solid #a97c59;
-            border-right: 25px solid transparent;
-            content: "";
-        }
-
-        .hero-therapy__label span {
-            color: #f8e9d9;
-        }
-
-        .hero-therapy__label strong {
-            color: #4b2c1d;
-            font-weight: 700;
-        }
-
-        /* Text content */
-
-        .hero-therapy__content {
-            position: relative;
-            z-index: 2;
-            width: 59%;
-            max-width: 740px;
-            padding-bottom: 5px;
-        }
-
-        .hero-therapy__title {
-            max-width: 740px;
-            margin: 0 0 28px;
-            color: #211d1a;
-            font-size: 44px;
-            font-weight: 750;
-            line-height: 1.12;
-            letter-spacing: -2px;
-        }
-
-        .hero-therapy__text {
-            max-width: 590px;
-            margin: 0;
-            color: #5e3e2b;
-            font-size: clamp(21px, 2.1vw, 30px);
-            font-weight: 400;
-            line-height: 1.5;
-        }
-
-        /* Author */
-
-        .hero-therapy__author {
-            margin-top: 35px;
-        }
-
-        .hero-therapy__author h4 {
-            margin: 0 0 8px;
-            color: #211d1a;
-            font-size: clamp(23px, 2.2vw, 32px);
-            font-weight: 700;
-            line-height: 1.3;
-        }
-
-        .hero-therapy__author p {
-            margin: 0;
-            color: #6b4b36;
-            font-size: clamp(18px, 1.8vw, 25px);
-            line-height: 1.45;
-        }
-
-        /* CTA button */
-
-        .hero-therapy__button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            min-height: 64px;
-            margin-top: 42px;
-            padding: 18px 30px;
-            border: 0;
-            border-radius: 50px;
-            background: #a97c59;
-            color: #fff;
-            font-size: 17px;
-            font-weight: 500;
-            line-height: 1.3;
-            text-decoration: none;
-            text-transform: uppercase;
-            transition:
-                background-color 0.25s ease,
-                transform 0.25s ease;
-        }
-
-        .hero-therapy__button:hover {
-            background: #80583d;
-            color: #fff;
-            transform: translateY(-2px);
-        }
-
-        .hero-therapy__button i {
-            font-size: 17px;
-            transition: transform 0.25s ease;
-        }
-
-        .hero-therapy__button:hover i {
-            transform: translateX(4px);
-        }
-
-        /* Therapist image */
-
-        .hero-therapy__image {
-            position: absolute;
-            z-index: 1;
-            right: -15px;
-            bottom: 0;
-            display: block;
-            width: 43%;
-            max-width: 590px;
-            /* max-height: 88%; */
-            object-fit: contain;
-            object-position: right bottom;
-        }
-
-        /* =========================================
-   RESPONSIVE
-========================================= */
-
-        @media (min-width: 1500px) {
-            .hero-therapy__container {
-                padding-top: 85px;
-            }
-
-            .hero-therapy .hero-therapy__item,
-            .hero-therapy__container {
-                min-height: 820px;
-            }
-
-            .hero-therapy__label {
-                margin-bottom: 100px;
-                font-size: 19px;
-            }
-
-            .hero-therapy__image {
-                width: 45%;
-                max-width: 650px;
-            }
-        }
-
-        @media (max-width: 1199px) {
-
-            .hero-therapy .hero-therapy__item,
-            .hero-therapy__container {
-                min-height: 690px;
-            }
-
-            .hero-therapy__container {
-                padding-top: 55px;
-            }
-
-            .hero-therapy__label {
-                margin-bottom: 75px;
-                padding: 17px 22px;
-                gap: 9px;
-                font-size: 14px;
-            }
-
-            .hero-therapy__content {
-                width: 62%;
-            }
-
-            .hero-therapy__title {
-                letter-spacing: -1.5px;
-            }
-
-            .hero-therapy__author {
-                margin-top: 75px;
-            }
-
-            .hero-therapy__image {
-                right: -25px;
-                width: 44%;
-            }
-        }
-
-        @media (max-width: 767px) {
-
-            .hero-therapy .hero-therapy__item,
-            .hero-therapy__container {
-                min-height: 0;
-            }
-
-            .hero-therapy__container {
-                width: calc(100% - 40px);
-                padding: 35px 0 0;
-            }
-
-            .hero-therapy__label {
-                width: calc(100% - 12px);
-                min-height: 0;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                gap: 5px 8px;
-                margin-bottom: 48px;
-                padding: 15px 16px;
-                font-size: 11px;
-                line-height: 1.6;
-            }
-
-            .hero-therapy__label::after {
-                bottom: -17px;
-                border-top-width: 18px;
-                border-right-width: 18px;
-            }
-
-            .hero-therapy__content {
-                width: 100%;
-                max-width: none;
-            }
-
-            .hero-therapy__title {
-                max-width: 520px;
-                margin-bottom: 18px;
-                font-size: clamp(39px, 9vw, 58px);
-                line-height: 1.1;
-                letter-spacing: -1.5px;
-            }
-
-            .hero-therapy__text {
-                max-width: 240px;
-                font-size: clamp(20px, 5vw, 26px);
-                line-height: 1.45;
-            }
-
-            .hero-therapy__author {
-                position: relative;
-                z-index: 2;
-                margin-top: 40px;
-                padding-bottom: 0;
-            }
-
-            .hero-therapy__author h4 {
-                max-width: 300px;
-                font-size: 25px;
-            }
-
-            .hero-therapy__author p {
-                max-width: 290px;
-                font-size: 18px;
-            }
-
-            .hero-therapy__button {
-                position: relative;
-                z-index: 2;
-                gap: 12px;
-                min-height: 54px;
-                margin-top: 30px;
-                margin-bottom: 35px;
-                padding: 16px 22px;
-                font-size: 13px;
-            }
-
-            .hero-therapy__image {
-                right: -80px;
-                bottom: -115px;
-                width: min(82%, 390px);
-                max-width: none;
-                max-height: none;
-            }
-        }
-
-        @media (max-width: 420px) {
-            .hero-therapy__container {
-                width: calc(100% - 32px);
-                padding-top: 28px;
-            }
-
-            .hero-therapy__label {
-                font-size: 13px;
-            }
-
-            .hero-therapy__title {
-                font-size: 39px;
-            }
-
-            .hero-therapy__author {
-                margin-top: 40px;
-            }
-
-            .hero-therapy__image {
-                right: -95px;
-                bottom: -48px;
-                width: 80%;
-            }
-
-            .hero-therapy__button {
-                padding: 15px 18px;
-                font-size: 12px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-
-            .hero-therapy__button,
-            .hero-therapy__button i {
-                transition: none;
-            }
-        }
-
-        .scrolling-ticker {
-            padding: 15px 0;
-            color: #ffffff;
-            background-color: #a97c59;
-        }
-
-        .scrolling-ticker-box {
-            --gap: 20px;
-            position: relative;
-            display: flex;
-            overflow: hidden;
-            user-select: none;
-            gap: 20px;
-        }
-
-        .scrolling-content {
-            flex-shrink: 0;
-            display: flex;
-            gap: 20px;
-            min-width: 100%;
-            animation: scroll 50s linear infinite;
-        }
-
-        .scrolling-content span {
-            display: inline-flex;
-            align-items: center;
-            font-family: inherit;
-            font-size: 40px;
-            line-height: 1.4em;
-            font-weight: 700;
-        }
-
-        @keyframes scroll {
-            from {
-                transform: translateX(0);
-            }
-
-            to {
-                transform: translateX(calc(-100% - 20px));
-            }
-        }
-
-
-        .scrolling-content span i {
-            font-size: 8px;
-            color: var(--white-color);
-            margin-right: 20px;
-        }
-    </style>
 
     <!-- Въведение -->
     <section class="call-area-two">
@@ -470,7 +79,7 @@
         </div>
     </section>
 
-    <div class="scrolling-ticker">
+    {{-- <div class="scrolling-ticker">
         <div class="scrolling-ticker-box">
             <div class="scrolling-content">
                 <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
@@ -495,7 +104,7 @@
                 <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 
     <!-- За Мирослава -->

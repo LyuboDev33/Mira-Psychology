@@ -15306,27 +15306,27 @@ body.megamenu-popup-active .mobile-nav__content {
     border-color: var(--pelocis-base, #e2a475);
 }
 
-.main-slider-two__item {
+/* .main-slider-two__item {
     background-color: var(--pelocis-gray, #F5F2EF);
     position: relative;
     z-index: 3;
-    padding-top: 100px;
-    /* padding-bottom: 204px; */
-}
+    padding-top: 250px;
+    padding-bottom: 204px;
+} */
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
     .main-slider-two__item {
-        padding-top: 120px;
-        /* padding-bottom: 150px; */
+        padding-top: 250px;
+        padding-bottom: 150px;
     }
 }
 
 @media (max-width: 767px) {
     .main-slider-two__item {
-        padding-top: 120px;
+        padding-top: 150px;
         padding-bottom: 100px;
     }
-}
+} */
 
 .main-slider-two__shape-1 {
     position: absolute;
@@ -15427,18 +15427,18 @@ body.megamenu-popup-active .mobile-nav__content {
     background-repeat: no-repeat;
      background-position: right;
     overflow: hidden;
-    /* background-image: url('/assets/images/backgrounds/slider-2-1.png'); */
+    background-image: url('/assets/images/backgrounds/slider-2-1.png');
 
 }
 
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
     .main-slider-two__bg {
-        background-image: url('/assets/images/backgrounds/slider-2-mobile.png');
+        background-image: url('/assets/images/backgrounds/slider-2-mobile-mira.png');
         background-size: cover;
         background-position: center top;
     }
-} */
+}
 .main-slider-two__bg img {
     width: 100%;
     height: 100%;

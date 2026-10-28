@@ -1,4 +1,3 @@
-
 /* Admin Event Card */
 
 .admin-event-card {
@@ -149,6 +148,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .admin-event-card,
     .admin-event-card__image img,
     .admin-event-card__title,
@@ -266,8 +266,13 @@
 }
 
 @keyframes bookingFadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes bookingSlideUp {
@@ -275,6 +280,7 @@
         opacity: 0;
         transform: translateY(25px) scale(0.96);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -286,6 +292,7 @@
         opacity: 0;
         transform: scale(0.5);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -293,6 +300,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .booking-success-overlay,
     .booking-success-modal,
     .booking-success-icon {
@@ -301,128 +309,482 @@
 }
 
 
-  .event-details-meta {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                color: #777;
-                font-size: 15px;
-            }
+.event-details-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #777;
+    font-size: 15px;
+}
 
-            .event-details-meta span {
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-            }
+.event-details-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
 
-            .event-details-meta i {
-                color: #8a6cbd;
-            }
+.event-details-meta i {
+    color: #8a6cbd;
+}
 
-            .event-description img {
-                max-width: 100%;
-                height: auto;
-            }
+.event-description img {
+    max-width: 100%;
+    height: auto;
+}
 
-            .event-booking-card {
-                background: #fff;
-            }
+.event-booking-card {
+    background: #fff;
+}
 
-            .event-booking-price {
-                margin-bottom: 18px;
-            }
+.event-booking-price {
+    margin-bottom: 18px;
+}
 
-            .event-booking-price__amount {
-                font-size: 30px;
-                font-weight: 700;
-                color: #222;
-            }
+.event-booking-price__amount {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+}
 
-            .event-booking-price__free {
-                font-size: 24px;
-                font-weight: 700;
-                color: #198754;
-            }
+.event-booking-price__free {
+    font-size: 24px;
+    font-weight: 700;
+    color: #198754;
+}
 
-            .event-booking-availability {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                padding: 14px;
-                background: #f5f6f8;
-                border-radius: 10px;
-                font-size: 14px;
-                margin-bottom: 22px;
-            }
+.event-booking-availability {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    background: #f5f6f8;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
 
-            .event-booking-availability i {
-                color: #8a6cbd;
-            }
+.event-booking-availability i {
+    color: #8a6cbd;
+}
 
-            .event-booking-form .form-label {
-                font-size: 14px;
-                font-weight: 600;
-                color: #333;
-                margin-bottom: 7px;
-            }
+.event-booking-form .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 7px;
+}
 
-            .event-booking-form .form-control {
-                width: 100%;
-                min-height: 48px;
-                padding: 12px 15px;
-                border: 1px solid #e2e5ea;
-                border-radius: 8px;
-                background: #fff;
-                font-size: 14px;
-                color: #222;
-            }
+.event-booking-form .form-control {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 15px;
+    border: 1px solid #e2e5ea;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 14px;
+    color: #222;
+}
 
-            .event-booking-form .form-control:focus {
-                border-color: #8a6cbd;
-                box-shadow: 0 0 0 3px rgba(138, 108, 189, 0.12);
-            }
+.event-booking-form .form-control:focus {
+    border-color: #8a6cbd;
+    box-shadow: 0 0 0 3px rgba(138, 108, 189, 0.12);
+}
 
-            .event-booking-note {
-                text-align: center;
-                font-size: 12px;
-                color: #888;
-            }
+.event-booking-note {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+}
 
-            .event-info-list {
-                margin: 0;
-            }
+.event-info-list {
+    margin: 0;
+}
 
-            .event-info-list li {
-                display: flex;
-                align-items: flex-start;
-                gap: 15px;
-                padding: 15px 0;
-                border-bottom: 1px solid #eee;
-            }
+.event-info-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
 
-            .event-info-list li:last-child {
-                border-bottom: none;
-            }
+.event-info-list li:last-child {
+    border-bottom: none;
+}
 
-            .event-info-list li>i {
-                color: #8a6cbd;
-                font-size: 17px;
-                margin-top: 5px;
-                width: 20px;
-            }
+.event-info-list li>i {
+    color: #8a6cbd;
+    font-size: 17px;
+    margin-top: 5px;
+    width: 20px;
+}
 
-            .event-info-list li div {
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
-            }
+.event-info-list li div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
-            .event-info-list li strong {
-                color: #222;
-                font-size: 14px;
-            }
+.event-info-list li strong {
+    color: #222;
+    font-size: 14px;
+}
 
-            .event-info-list li span {
-                color: #777;
-                font-size: 14px;
-            }
+.event-info-list li span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SCROLLING THERAPY TICKER
+========================================= */
+
+.scrolling-ticker {
+    --ticker-gap: 30px;
+    overflow: hidden;
+    padding: 12px 0;
+    color: #ffffff;
+    background-color: #a97c59;
+}
+
+.scrolling-ticker-box {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    gap: var(--ticker-gap);
+    user-select: none;
+}
+
+.scrolling-content {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: var(--ticker-gap);
+    min-width: 100%;
+    animation: therapy-ticker-scroll 45s linear infinite;
+}
+
+.scrolling-content span {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 14px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.scrolling-content span i {
+    color: #f3e5d5;
+    font-size: 7px;
+}
+
+@keyframes therapy-ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--ticker-gap)));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scrolling-content {
+        animation: none;
+    }
+
+    .scrolling-ticker-box {
+        overflow-x: auto;
+    }
+}
+
+/* =========================================
+   THERAPY HERO - DESKTOP
+========================================= */
+
+.hero-therapy {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: #28180f;
+    background-color: #f4eadb;
+}
+
+.hero-therapy .hero-therapy__item {
+    position: relative;
+    min-height: 760px;
+    overflow: hidden;
+    background-color: #f4eadb;
+}
+
+.hero-therapy__container {
+    position: relative;
+    min-height: 760px;
+    padding-top: 95px;
+    padding-bottom: 65px;
+}
+
+.hero-therapy__content {
+    position: relative;
+    z-index: 2;
+    width: 58%;
+    max-width: 700px;
+}
+
+.hero-therapy__title {
+    max-width: 700px;
+    margin: 0 0 24px;
+    color: #32190e;
+    font-size: clamp(48px, 5vw, 76px);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.hero-therapy__text {
+    max-width: 580px;
+    margin: 0;
+    color: #725947;
+    font-size: clamp(22px, 2.1vw, 30px);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hero-therapy__author {
+    margin-top: 85px;
+}
+
+.hero-therapy__author h4 {
+    margin: 0 0 8px;
+    color: #28180f;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.hero-therapy__author p {
+    margin: 0;
+    color: #725947;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.hero-therapy__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    min-height: 62px;
+    margin-top: 38px;
+    padding: 17px 30px;
+    border-radius: 50px;
+    background-color: #9c694a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.hero-therapy__button:hover {
+    background-color: #795039;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.hero-therapy__button i {
+    font-size: 17px;
+}
+
+/* Desktop portrait image */
+
+.hero-therapy__image {
+    position: absolute;
+    z-index: 1;
+    right: -10px;
+    bottom: 0;
+    display: block;
+    width: 47%;
+    max-width: 650px;
+    max-height: 95%;
+    object-fit: contain;
+    object-position: right bottom;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .hero-therapy .hero-therapy__item,
+    .hero-therapy__container {
+        min-height: 680px;
+    }
+
+    .hero-therapy__container {
+        padding-top: 80px;
+    }
+
+    .hero-therapy__content {
+        width: 62%;
+    }
+
+    .hero-therapy__title {
+        font-size: clamp(44px, 5.2vw, 62px);
+    }
+
+    .hero-therapy__author {
+        margin-top: 65px;
+    }
+
+    .hero-therapy__image {
+        right: -25px;
+        width: 44%;
+    }
+}
+
+/* =========================================
+   MOBILE - VERTICAL BACKGROUND
+========================================= */
+
+@media (max-width: 767px) {
+    .hero-therapy {
+        background-color: #f4eadb;
+    }
+
+    .hero-therapy .hero-therapy__item {
+        min-height: 0;
+        background-color: #f4eadb;
+        background-image: url('/assets/images/backgrounds/slider-2-mobile-mira.png');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+    }
+
+    .hero-therapy__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 0;
+        padding: 45px 24px 35px;
+    }
+
+    .hero-therapy__content {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 150px
+    }
+
+    .hero-therapy__title {
+        max-width: 520px;
+        margin-bottom: 18px;
+        font-size: clamp(39px, 9vw, 58px);
+        line-height: 1.08;
+        letter-spacing: -1.2px;
+    }
+
+    .hero-therapy__text {
+        max-width: 440px;
+        font-size: clamp(20px, 5vw, 26px);
+        line-height: 1.45;
+    }
+
+    .hero-therapy__author {
+        margin-top: 40px;
+    }
+
+    .hero-therapy__author h4 {
+        max-width: 300px;
+        font-size: 25px;
+    }
+
+    .hero-therapy__author p {
+        max-width: 290px;
+        font-size: 18px;
+    }
+
+    .hero-therapy__button {
+        align-self: flex-start;
+        gap: 12px;
+        min-height: 54px;
+        margin-top: 28px;
+        padding: 15px 22px;
+        font-size: 13px;
+    }
+
+    .hero-therapy__image {
+        position: absolute;
+        right: -86px;
+        bottom: 0;
+        width: min(70%, 420px);
+        max-width: none;
+        max-height: none;
+        object-fit: contain;
+        object-position: right bottom;
+        pointer-events: none;
+    }
+
+    .scrolling-ticker {
+        padding: 10px 0;
+    }
+
+    .scrolling-content span {
+        gap: 10px;
+        font-size: 15px;
+    }
+}
+
+/* Small phones */
+
+
+/* Small phones - keep the same layout as the 767px version */
+
+@media (max-width: 420px) {
+
+    .main-slider-two__item {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+
+
+    .hero-therapy__container {
+        padding: 35px 20px 30px;
+    }
+
+    .hero-therapy__title {
+        font-size: clamp(39px, 9vw, 58px);
+    }
+
+    .hero-therapy__content {
+        margin-bottom: 120px;
+    }
+
+    .hero-therapy__author {
+        margin-top: 40px;
+    }
+
+    .hero-therapy__image {
+        position: absolute;
+        right: -69px;
+        bottom: 0;
+        width: min(70%, 420px);
+        max-width: none;
+        max-height: none;
+        object-fit: contain;
+        object-position: right bottom;
+        pointer-events: none;
+    }
+
+    .hero-therapy__button {
+        padding: 15px 22px;
+        font-size: 13px;
+    }
+}
