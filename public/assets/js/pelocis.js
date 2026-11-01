@@ -232,11 +232,11 @@
       }
    }
 
-   if ($(".main-menu__list").length) {
-      // dynamic current class
-      let mainNavUL = $(".main-menu__list");
-      dynamicCurrentMenuClass(mainNavUL);
-   }
+//    if ($(".main-menu__list").length) {
+//       // dynamic current class
+//       let mainNavUL = $(".main-menu__list");
+//       dynamicCurrentMenuClass(mainNavUL);
+//    }
 
    if ($(".service-sidebar__nav").length) {
       // dynamic current class

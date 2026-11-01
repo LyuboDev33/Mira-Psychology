@@ -6,27 +6,31 @@ use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+Route::fallback(function () {
+    return view('Frontend.404');
+});
+
 Route::get('/', [FrontEndController::class, 'welcome'])->name('home');
 Route::get('/about', [FrontEndController::class, 'about'])->name('about');
-Route::get('/services', [FrontEndController:: class, 'services'])->name('services');
-Route::get('/contact', [FrontEndController:: class, 'contact'])->name('contact');
+Route::get('/service/{service}', [FrontEndController::class, 'showService'])->name('service.show');
+Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
 
 
-Route::get('/dashboard', function () {
-    return view('Backend.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
+/** Show all events */
 Route::prefix('/events')->group(function () {
-
     Route::get('/', [EventsController::class, 'index'])->name('events.index');
     Route::get('/{slug}', [EventsController::class, 'show'])->name('events.show');
     Route::post('/{slug}/book', [EventsController::class, 'store'])->name('events.store');
-
 });
 
 
 
 Route::middleware('auth')->group(function () {
+
+    Route::get('/dashboard', function () {
+        return view('Backend.dashboard');
+    })->middleware(['auth', 'verified'])->name('dashboard');
 
     Route::prefix('/admin/events')->group(function () {
         Route::get('/', [AdminEventsController::class, 'index'])->name('admin.events.index');
@@ -35,7 +39,6 @@ Route::middleware('auth')->group(function () {
 
         Route::post('/store', [AdminEventsController::class, 'store'])->name('admin.events.store');
         Route::put('/update/{slug}', [AdminEventsController::class, 'update'])->name('admin.events.update');
-
     });
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

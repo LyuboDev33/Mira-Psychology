@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Two || Pelocis || HTML Template For Psychology & Counseling</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" />
@@ -66,6 +65,7 @@
         });
     </script>
 
+    @yield('SEO')
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,7 +91,9 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}?v=<?php echo time(); ?>">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- template styles -->
     <link rel="stylesheet" href="/assets/css/pelocis.css?v=<?php echo time(); ?>" />
@@ -103,46 +105,72 @@
                 a.q.push(ar);
             };
             let d = C.document;
+
             C.Cal = C.Cal || function() {
                 let cal = C.Cal;
                 let ar = arguments;
+
                 if (!cal.loaded) {
                     cal.ns = {};
                     cal.q = cal.q || [];
                     d.head.appendChild(d.createElement("script")).src = A;
                     cal.loaded = true;
                 }
+
                 if (ar[0] === L) {
                     const api = function() {
                         p(api, arguments);
                     };
+
                     const namespace = ar[1];
                     api.q = api.q || [];
+
                     if (typeof namespace === "string") {
                         cal.ns[namespace] = cal.ns[namespace] || api;
                         p(cal.ns[namespace], ar);
                         p(cal, ["initNamespace", namespace]);
-                    } else p(cal, ar);
+                    } else {
+                        p(cal, ar);
+                    }
+
                     return;
                 }
+
                 p(cal, ar);
             };
         })(window, "https://app.cal.com/embed/embed.js", "init");
-        Cal("init", "тераевтична-сесия-присъствено", {
-            origin: "https://app.cal.com"
-        });
+
         Cal.config = Cal.config || {};
         Cal.config.forwardQueryParams = true;
 
-
-        // Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
-        // `data-cal-link="miroslava-matsureva-klzms5/тераевтична-сесия-присъствено"`
-        // data-cal-namespace="тераевтична-сесия-присъствено"
-        // `data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'`
+        // Individual therapy
+        Cal("init", "тераевтична-сесия-присъствено", {
+            origin: "https://app.cal.com"
+        });
 
         Cal.ns["тераевтична-сесия-присъствено"]("ui", {
-            "hideEventTypeDetails": false,
-            "layout": "month_view"
+            hideEventTypeDetails: false,
+            layout: "month_view"
+        });
+
+        // Couples therapy
+        Cal("init", "терапевтична-сесия-за-двоики", {
+            origin: "https://app.cal.com"
+        });
+
+        Cal.ns["терапевтична-сесия-за-двоики"]("ui", {
+            hideEventTypeDetails: false,
+            layout: "month_view"
+        });
+
+        // Individual constellation with figurines
+        Cal("init", "индивидуална-констелация-с-фигурки", {
+            origin: "https://app.cal.com"
+        });
+
+        Cal.ns["индивидуална-констелация-с-фигурки"]("ui", {
+            hideEventTypeDetails: false,
+            layout: "month_view"
         });
     </script>
     <!-- Cal element-click embed code ends -->
@@ -242,29 +270,129 @@
     <!-- template js -->
     <script src="/assets/js/pelocis.js?v=<?php echo time(); ?>"></script>
 
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            initializeLenis();
+            // initializeLenis();
+            initializeServicesSidebar();
         });
 
-        function initializeLenis() {
+        // function initializeLenis() {
 
-            const lenis = new Lenis({
-                duration: 1,
-                smoothWheel: true,
-                wheelMultiplier: 0.8,
-                touchMultiplier: 0.8,
-                lerp: 0.5
-            });
+        //     const lenis = new Lenis({
+        //         duration: 1,
+        //         smoothWheel: true,
+        //         wheelMultiplier: 0.8,
+        //         touchMultiplier: 0.8,
+        //         lerp: 0.5
+        //     });
 
-            function lenisAnimationFrame(time) {
-                lenis.raf(time);
-                requestAnimationFrame(lenisAnimationFrame);
+        //     function lenisAnimationFrame(time) {
+        //         lenis.raf(time);
+        //         requestAnimationFrame(lenisAnimationFrame);
+        //     }
+
+        //     requestAnimationFrame(lenisAnimationFrame);
+        // }
+
+        function initializeServicesSidebar() {
+
+            const navigations = document.querySelectorAll('.services-navigation');
+
+            // Do nothing if the component is not present.
+            if (!navigations.length) {
+                return;
             }
 
-            requestAnimationFrame(lenisAnimationFrame);
+            navigations.forEach(function(navigation) {
+
+                const openButton = navigation.querySelector('[data-services-open]');
+                const closeButton = navigation.querySelector('[data-services-close]');
+                const overlay = navigation.querySelector('[data-services-overlay]');
+                const panel = navigation.querySelector('[data-services-panel]');
+
+                if (!openButton || !closeButton || !overlay || !panel) {
+                    return;
+                }
+
+                let previousFocus = null;
+
+                function openSidebar() {
+
+                    previousFocus = document.activeElement;
+
+                    navigation.classList.add('is-open');
+                    document.body.classList.add('services-sidebar-open');
+
+                    openButton.setAttribute('aria-expanded', 'true');
+
+                    closeButton.focus();
+                }
+
+                function closeSidebar() {
+
+                    navigation.classList.remove('is-open');
+
+                    if (!document.querySelector('.services-navigation.is-open')) {
+                        document.body.classList.remove('services-sidebar-open');
+                    }
+
+                    openButton.setAttribute('aria-expanded', 'false');
+
+                    if (previousFocus && typeof previousFocus.focus === 'function') {
+                        previousFocus.focus();
+                    }
+                }
+
+                openButton.addEventListener('click', openSidebar);
+
+                closeButton.addEventListener('click', closeSidebar);
+
+                overlay.addEventListener('click', closeSidebar);
+
+                document.addEventListener('keydown', function(event) {
+
+                    if (!navigation.classList.contains('is-open')) {
+                        return;
+                    }
+
+                    if (event.key === 'Escape') {
+                        closeSidebar();
+                    }
+
+                    if (event.key === 'Tab') {
+
+                        const focusableElements = panel.querySelectorAll(
+                            'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+                        );
+
+                        if (!focusableElements.length) {
+                            return;
+                        }
+
+                        const firstElement = focusableElements[0];
+                        const lastElement = focusableElements[focusableElements.length - 1];
+
+                        if (event.shiftKey && document.activeElement === firstElement) {
+                            event.preventDefault();
+                            lastElement.focus();
+                        } else if (!event.shiftKey && document.activeElement === lastElement) {
+                            event.preventDefault();
+                            firstElement.focus();
+                        }
+                    }
+                });
+
+                window.matchMedia('(min-width: 992px)').addEventListener('change', function(event) {
+                    if (event.matches && navigation.classList.contains('is-open')) {
+                        closeSidebar();
+                    }
+                });
+
+            });
         }
     </script>
+
 
 
 </body>

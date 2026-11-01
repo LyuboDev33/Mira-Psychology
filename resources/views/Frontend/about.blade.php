@@ -1,11 +1,39 @@
 <x-frontend>
 
 
+    @section('SEO')
+        <title>За мен | Мирослава Мацурева – психолог и психотерапевт</title>
+
+        <meta name="description"
+            content="Запознайте се с Мирослава Мацурева – психолог, психотерапевт и основател на център „Албета“. EMDR терапия, семейни констелации, арттерапия и психологическо консултиране.">
+
+        <meta name="robots" content="index,follow">
+
+        <meta name="googlebot" content="index,follow">
+
+        <meta property="og:locale" content="bg_BG">
+
+        <meta property="og:type" content="profile">
+
+        <meta property="og:site_name" content="Мирослава Мацурева">
+
+        <meta property="og:title" content="За мен | Мирослава Мацурева – психолог и психотерапевт">
+
+        <meta property="og:description"
+            content="Научете повече за Мирослава Мацурева, нейния терапевтичен подход и център „Албета“. Индивидуална и семейна терапия, EMDR, арттерапия и семейни констелации.">
+
+        <meta name="twitter:card" content="summary_large_image">
+
+        <meta name="twitter:title" content="Мирослава Мацурева | Психолог, психотерапевт и основател на център „Албета“">
+
+        <meta name="twitter:description"
+            content="Пространство за разбиране, приемане и промяна. Запознайте се с Мирослава Мацурева и нейната работа с EMDR терапия, семейни констелации и арттерапия.">
+    @endsection
 
     <section class="page-header">
         <div class="page-header__bg">
             <div class="page-header__bg__img"
-                style="background-image: url(/assets/images/backgrounds/page-header-img-1.png);">
+                style="background-image: url(/assets/images/backgrounds/page-header-img-1.jpg);">
             </div>
             <div class="page-header__bg__shape-1">
             </div>
@@ -13,13 +41,16 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="page-header__title">За мен </h2>
-            <ul class="pelocis-breadcrumb list-unstyled">
-                <li><a href="{{ route('home') }}">Начало</a></li>
-                <li><span>За мен</span></li>
-            </ul>
+            <h2 class="page-header__title">Мирослава Мацурева</h2>
+            <h3 class="text-white">Терапевт и фасилитатор </h3>
+            <a data-cal-link="miroslava-matsureva-klzms5" data-cal-namespace="тераевтична-сесия-присъствено"
+                data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                class="pelocis-btn text-white"><span>
+                    ЗАПАЗИ СЕСИЯ С МЕН
+                    <i class="icon-right-arrow-white"></i></span>
+            </a>
         </div>
-        <img class="page-header__shape" src="assets/images/shapes/bannar-shape-2.png" alt="bannar-shape">
+        {{-- <img class="page-header__shape" src="assets/images/shapes/bannar-shape-2.png" alt="bannar-shape"> --}}
     </section>
     <!-- /.page-header -->
 
@@ -46,17 +77,33 @@
                                 </div>
                                 <h6 class="sec-title__tagline">ЗАПОЗНАЙТЕ СЕ С МЕН</h6><!-- /.sec-title__tagline -->
 
-                                <h3 class="sec-title__title">Мирослава Мацурева – пространство за разбиране, приемане и
-                                    промяна</h3><!-- /.sec-title__title -->
+                                <h3 class="sec-title__title">Мирослава Мацурева – <br> психолог, психотерапевт и
+                                    основател на център "Албета"</h3><!-- /.sec-title__title -->
                             </div><!-- /.sec-title -->
                             <img src="assets/images/shapes/text-shape-2.png" alt="pelocis"
                                 class="about-one__title__shape">
                         </div>
 
-                        <p class="about-one__text">Понякога в живота ни се появяват моменти, в които старият начин, по
-                            който сме се справяли, вече не работи. Терапията е пространство, в което можете да се
-                            обърнете към себе си, да разберете преживяванията си и да откриете нови възможности за
-                            промяна.</p>
+
+                        <p class="about-one__text">
+                            Здравейте, аз съм Мира – психолог, психотерапевт и основател на център
+                            „Албета“ за психологическо консултиране и личностно развитие.
+
+                            Вярвам, че всеки човек има своя уникална история, преживявания и
+                            вътрешни ресурси, които понякога се нуждаят от подкрепа, за да бъдат
+                            преоткрити.
+                            <br><br>
+                            {{-- В работата си се стремя да създавам защитено пространство
+                            на доверие, разбиране и приемане, в което човек може спокойно да
+                            изследва своите емоции, взаимоотношения и житейски предизвикателства. --}}
+
+                            В терапевтичния процес използвам различни психотерапевтични методи,
+                            сред които EMDR терапия за преработване на травматични преживявания,
+                            арттерапия за изразяване и изследване на емоциите чрез творчество
+                            и семейни констелации за работа с повтарящи се модели и динамики
+                            във взаимоотношенията.
+                        </p>
+
                         <!-- /.about-one__text -->
                         <div class="about-one__content__box">
                             <div class="about-one__content__box-left">
@@ -85,7 +132,7 @@
                             </li>
 
                         </ul>
-                        <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи повече <i
+                        <a href="" class="pelocis-btn about-one__link"><span>Научи повече <i
                                     class="icon-right-arrow-white"></i></span></a>
                     </div>
                 </div><!-- /.col-lg-6 -->
@@ -120,7 +167,10 @@
                             <img src="assets/images/resources/service-3-1.jpg" alt="pelocis">
                         </div>
                         <div class="service-three__card__content">
-                            <div class="service-three__card__icon"><i class="icon-brain"></i></div>
+                            <div class="service-three__card__icon">
+                                {{-- <i class="icon-brain"></i> --}}
+                                <img src="/assets/images/resources/icon_01.png" alt="Око ">
+                            </div>
                             <div class="service-three__card__count"><i class="icon-wave-shape"></i></div>
                             <h2 class="service-three__card__title"><a>EMDR терапия</a>
                             </h2>
@@ -128,7 +178,7 @@
                                 Подход за преработване на травматични и силно натоварващи преживявания, с внимание към
                                 сигурността и индивидуалното темпо.
                             </p>
-                            <a href="{{ route('services') }}" class="service-three__card__link">
+                            <a href="" class="service-three__card__link">
                                 <span>Научи повече <i class="icon-right-arrow-white"></i></span>
                             </a>
                         </div>
@@ -140,7 +190,10 @@
                             <img src="assets/images/resources/service-3-2.jpg" alt="pelocis">
                         </div>
                         <div class="service-three__card__content">
-                            <div class="service-three__card__icon"><i class="icon-partnership"></i></div>
+                            <div class="service-three__card__icon">
+                                {{-- <i class="icon-partnership"></i> --}}
+                                <img src="/assets/images/resources/icon_08.png" alt="Арт терапия">
+                            </div>
                             <div class="service-three__card__count"><i class="icon-wave-shape"></i></div>
                             <h2 class="service-three__card__title"><a>Арт терапия</a>
                             </h2>
@@ -148,7 +201,7 @@
                                 Когато думите не са достатъчни, творческият процес помага да изразим чувства и
                                 преживявания чрез цвят, образ и движение.
                             </p>
-                            <a href="{{ route('services') }}" class="service-three__card__link">
+                            <a href="" class="service-three__card__link">
                                 <span>Научи повече <i class="icon-right-arrow-white"></i></span>
                             </a>
                         </div>
@@ -160,26 +213,30 @@
                             <img src="assets/images/resources/service-3-3.jpg" alt="pelocis">
                         </div>
                         <div class="service-three__card__content">
-                            <div class="service-three__card__icon"><i class="icon-family-life"></i></div>
+                            <div class="service-three__card__icon">
+                                <img src="/assets/images/resources/icon_14.png" alt="Психодрама">
+                            </div>
                             <div class="service-three__card__count"><i class="icon-wave-shape"></i></div>
                             <h2 class="service-three__card__title"><a>Психодрама</a></h2>
                             <p class="service-three__card__text">
                                 Изследване на важни житейски ситуации чрез действие, роли и нови перспективи в защитена
                                 терапевтична среда.
                             </p>
-                            <a href="{{ route('services') }}" class="service-three__card__link">
+                            <a href="" class="service-three__card__link">
                                 <span>Научи повече <i class="icon-right-arrow-white"></i></span>
                             </a>
                         </div>
                     </div>
                 </div><!-- item -->
-                       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="service-three__card">
                         <div class="service-three__card__image">
-                            <img src="assets/images/resources/service-3-2.jpg" alt="pelocis">
+                            <img src="/assets/images/resources/service-3-2.png" alt="pelocis">
                         </div>
                         <div class="service-three__card__content">
-                            <div class="service-three__card__icon"><i class="icon-partnership"></i></div>
+                            <div class="service-three__card__icon">
+                                <img src="/assets/images/resources/semeini-icon.jpg" alt="Семейни">
+                            </div>
                             <div class="service-three__card__count"><i class="icon-wave-shape"></i></div>
                             <h2 class="service-three__card__title"><a>Семейни консталации</a>
                             </h2>
@@ -187,7 +244,7 @@
                                 Когато думите не са достатъчни, творческият процес помага да изразим чувства и
                                 преживявания чрез цвят, образ и движение.
                             </p>
-                            <a href="{{ route('services') }}" class="service-three__card__link">
+                            <a href="" class="service-three__card__link">
                                 <span>Научи повече <i class="icon-right-arrow-white"></i></span>
                             </a>
                         </div>
@@ -196,17 +253,20 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                     <div class="service-three__card">
                         <div class="service-three__card__image">
-                            <img src="assets/images/resources/service-3-3.jpg" alt="pelocis">
+                            <img src="/assets/images/resources/dihatelni.jpg" alt="pelocis">
                         </div>
                         <div class="service-three__card__content">
-                            <div class="service-three__card__icon"><i class="icon-family-life"></i></div>
+                            <div class="service-three__card__icon">
+                                {{-- <i class="icon-family-life"></i> --}}
+                                <img src="/assets/images/resources/icon_05.png" alt="Дихателни практики">
+                            </div>
                             <div class="service-three__card__count"><i class="icon-wave-shape"></i></div>
                             <h2 class="service-three__card__title"><a>Дихателни практики</a></h2>
                             <p class="service-three__card__text">
                                 Изследване на важни житейски ситуации чрез действие, роли и нови перспективи в защитена
                                 терапевтична среда.
                             </p>
-                            <a href="{{ route('services') }}" class="service-three__card__link">
+                            <a href="" class="service-three__card__link">
                                 <span>Научи повече <i class="icon-right-arrow-white"></i></span>
                             </a>
                         </div>
@@ -215,6 +275,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- why-choose-one -->
     <section class="why-choose-one">
@@ -225,82 +286,148 @@
                         data-wow-delay='000ms'>
                         <div class="why-choose-one__title">
                             <div class="sec-title">
-
-
-
                                 <div class="sec-title__shape">
                                 </div>
-                                <h6 class="sec-title__tagline">МОЯТ ПОДХОД</h6><!-- /.sec-title__tagline -->
+
+                                <h6 class="sec-title__tagline">МОЯТ ПОДХОД</h6>
 
                                 <h3 class="sec-title__title">Всеки човек има свой собствен път</h3>
-                                <!-- /.sec-title__title -->
-                            </div><!-- /.sec-title -->
+                            </div>
+
                             <img src="assets/images/shapes/text-shape-2.png" alt="pelocis"
                                 class="why-choose-one__title__shape">
                         </div>
+
                         <p class="why-choose-one__text">
-                            Не вярвам, че съществува един подход, подходящ за всички. В зависимост от вашите потребности
-                            съчетавам различни терапевтични методи, като заедно изследваме връзката между настоящите
-                            трудности и преживяванията от миналото.
-                        </p><!-- /.why-choose-one__text -->
-                        <ul class="list-unstyled why-choose-one__list">
+                            Не вярвам, че съществува един подход, който е подходящ за всички.
+                            В работата си съчетавам различни терапевтични методи според твоите нужди, преживявания и
+                            темпо.
+
+                            Заедно изследваме връзката между настоящето, миналия опит, отношенията и вътрешния свят, за
+                            да създадем пространство за осъзнаване и промяна.
+                        </p>
+
+                        <ul class="list-unstyled why-choose-one__list why-choose-div shadow">
                             <li class="why-choose-one__list__item-one">
                                 <img src="assets/images/resources/about-img-3.png" alt="pelocis">
-                                <ul class="list-unstyled  d-flex gap-1 flex-column m-0">
+
+                                <ul class="list-unstyled d-flex gap-1 flex-column m-0">
                                     <li>
                                         <span class="fa fa-arrow-circle-right"></span>
-                                        <a >Индивидуален подход и лично темпо</a>
+                                        <a>Индивидуален подход и лично темпо</a>
                                     </li>
                                     <li>
                                         <span class="fa fa-arrow-circle-right"></span>
-                                        <a >Приемане, уважение и конфиденциалност</a>
+                                        <a>Приемане, уважение и конфиденциалност</a>
                                     </li>
                                     <li>
                                         <span class="fa fa-arrow-circle-right"></span>
-                                        <a >Пространство за осъзнаване и промяна</a>
+                                        <a>Пространство за осъзнаване и промяна</a>
                                     </li>
                                 </ul>
                             </li>
+
                             <li class="why-choose-one__list__item">
                                 <div class="why-choose-one__list__icon">
-                                    <i class="icon-cognitive"></i>
-                                </div><!-- /.why-choose-one__list__icon -->
-                                <div class="why-choose-one__list__content">
-                                    <h4 class="why-choose-one__list__title"><a href="{{ route('services') }}">Работа с емоциите</a>
-                                    </h4><!-- /.why-choose-one__list__title -->
-                                    <p class="why-choose-one__list__text">
-                                        Изследваме чувствата, потребностите и преживяванията, които стоят зад настоящите
-                                        трудности.</p><!-- /.why-choose-one__list__text -->
+                                    {{-- <i class="icon-cognitive"></i> --}}
+                                    <img src="/assets/images/resources/emocii.png" alt="Емоции">
                                 </div>
-                            </li><!-- /.why-choose-one__list__item -->
+
+                                <div class="why-choose-one__list__content">
+                                    <h4 class="why-choose-one__list__title">
+                                        <a href="">Емоции и вътрешен свят</a>
+                                    </h4>
+
+                                    <p class="why-choose-one__list__text">
+                                        Разбираме какво стои зад емоциите и реакциите ти и какво се опитват да ти
+                                        покажат.
+                                    </p>
+                                </div>
+                            </li>
+
                             <li class="why-choose-one__list__item">
                                 <div class="why-choose-one__list__icon">
-                                    <i class="icon-partnership"></i>
-                                </div><!-- /.why-choose-one__list__icon -->
-                                <div class="why-choose-one__list__content">
-                                    <h4 class="why-choose-one__list__title"><a href="{{ route('services') }}">Взаимоотношения и
-                                            лични граници</a></h4><!-- /.why-choose-one__list__title -->
-                                    <p class="why-choose-one__list__text">
-                                        Обръщаме внимание на повтарящите се модели, близостта и начина, по който се
-                                        свързваме с другите.</p><!-- /.why-choose-one__list__text -->
+                                    {{-- <i class="icon-partnership"></i> --}}
+                                    <img src="/assets/images/resources/vzaimootnosheniya.png"
+                                        alt="Взаимоотношения и лични граници">
                                 </div>
-                            </li><!-- /.why-choose-one__list__item -->
-                        </ul><!-- /.list-unstyled why-choose-one__list -->
-                    </div><!-- /.why-choose-one__content -->
-                </div><!-- /.col-lg-6 -->
+
+                                <div class="why-choose-one__list__content">
+                                    <h4 class="why-choose-one__list__title">
+                                        <a href="">Взаимоотношения и лични граници</a>
+                                    </h4>
+
+                                    <p class="why-choose-one__list__text">
+                                        Изследваме повтарящите се модели във връзките, начина, по който се свързваш с
+                                        другите, и възможността да поставяш граници с уважение към себе си.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="why-choose-one__list__item">
+                                <div class="why-choose-one__list__icon">
+                                    {{-- <i class="icon-mental-health"></i> --}}
+                                    <img src="/assets/images/resources/travmi.png" alt="Травма и вътрешно дете">
+                                </div>
+
+                                <div class="why-choose-one__list__content">
+                                    <h4 class="why-choose-one__list__title">
+                                        <a href="">Травма и вътрешно дете</a>
+                                    </h4>
+
+                                    <p class="why-choose-one__list__text">
+                                        Обръщаме внимание на преживяванията, които продължават да влияят на настоящето,
+                                        и на частите от теб, които имат нужда от разбиране, сигурност и приемане.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="why-choose-one__list__item">
+                                <div class="why-choose-one__list__icon">
+                                    {{-- <i class="icon-idea"></i> --}}
+                                    <img src="/assets/images/resources/promyana.png" alt="Осъзнаване и промяна">
+                                </div>
+
+                                <div class="why-choose-one__list__content">
+                                    <h4 class="why-choose-one__list__title">
+                                        <a href="">Осъзнаване и промяна</a>
+                                    </h4>
+
+                                    <p class="why-choose-one__list__text">
+                                        Чрез терапия, творчество, движение и преживяване създаваме нови възможности за
+                                        избор и по-свободен начин да живееш и да се свързваш.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <p class="why-choose-one__text">
+                            <strong>Моят подход е интегративен – съчетавам ЕМДР, арт терапия, психодрама, семейни
+                                констелации, дихателни практики и работа с вътрешното дете според индивидуалните
+                                потребности на всеки човек.</strong>
+                        </p>
+
+                    </div>
+                </div>
+
                 <div class="col-lg-6">
                     <div class="why-choose-one__image count-box wow fadeInUp" data-wow-duration="1500ms"
                         data-wow-delay='100ms'>
                         <img src="assets/images/resources/about-img-4.png" alt="pelocis">
-                        <div class="why-choose-one__image__content ">
-                            <h3><span class="count-text" data-stop="650" data-speed="1500"></span>+</h3>
-                            <p>ПОДКРЕПА И ПРИЕМАНЕ</p>
-                        </div>
-                    </div><!-- /.why-choose-one__image -->
-                </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.why-choose-one -->
+
+                        {{--
+                    <div class="why-choose-one__image__content ">
+                        <h3><span class="count-text" data-stop="650" data-speed="1500"></span>+</h3>
+                        <p>ПОДКРЕПА И ПРИЕМАНЕ</p>
+                    </div>
+                    --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.why-choose-one -->
+
 
 
 
@@ -339,7 +466,7 @@
         </div>
     </section><!-- /.testimonials-one -->
 
-        <!-- Терапии и терапевтични подходи -->
+    <!-- Терапии и терапевтични подходи -->
     <section class="service-one" id="therapies">
         <div class="container">
             <div class="service-one__title text-center">
@@ -357,36 +484,42 @@
                             'title' => 'EMDR терапия',
                             'text' =>
                                 'Терапевтичен метод, използван в работата с травматични преживявания и свързаните с тях емоционални трудности.',
+                            'image' => 'icon_01.png',
                         ],
                         [
                             'icon' => 'icon-family-life',
-                            'title' => 'Семейни и системни констелации',
+                            'title' => 'Семейни констелации',
                             'text' =>
                                 'Изследване на семейните истории, взаимоотношенията и повтарящите се модели чрез констелационна работа.',
+                            'image' => 'icon_09.png',
                         ],
                         [
                             'icon' => 'icon-idea',
                             'title' => 'Арттерапия',
                             'text' =>
                                 'Творчески и арттерапевтични техники за изследване и изразяване на лични преживявания и емоции.',
+                            'image' => 'icon_15.png',
                         ],
                         [
                             'icon' => 'icon-partnership',
                             'title' => 'Психодрама',
                             'text' =>
                                 'Преживелищна работа с житейски ситуации, отношения и емоции чрез психодраматични техники.',
+                            'image' => 'icon_11.png',
                         ],
                         [
                             'icon' => 'icon-mental-health',
                             'title' => 'Дихателна терапия',
                             'text' =>
                                 'Дихателни практики, включени в индивидуалната и преживелищната терапевтична работа.',
+                            'image' => 'icon_05.png',
                         ],
                         [
                             'icon' => 'icon-hand',
                             'title' => 'Работа с вътрешното дете',
                             'text' =>
                                 'Терапевтична работа с ранни преживявания, усещане за отхвърляне или изоставяне и повтарящи се емоционални модели.',
+                            'image' => 'icon_07.png',
                         ],
                     ];
                 @endphp
@@ -396,7 +529,11 @@
                             <div class="service-card__hover"
                                 style="background-image: url('/assets/images/resources/service-1.png');"></div>
                             <div class="service-card__shape"></div>
-                            <div class="service-card__icon"><span class="{{ $approach['icon'] }}"></span></div>
+                            <div class="service-card__icon">
+                                <img src="/assets/images/resources/{{ $approach['image'] }}"
+                                    alt="{{ $approach['title'] }}">
+                                {{-- <span class="{{ $approach['icon'] }}"></span> --}}
+                            </div>
                             <h3 class="service-card__title">{{ $approach['title'] }}</h3>
                             <p class="service-card__text">{{ $approach['text'] }}</p>
                         </div>
@@ -408,7 +545,7 @@
 
 
     <!-- call area -->
-    <section class="call-area-one">
+    {{-- <section class="call-area-one">
         <div class="call-area-one__left-shape">
             <img src="assets/images/shapes/call-area-shape-1.png" alt="pelocis">
         </div>
@@ -436,7 +573,7 @@
         <div class="call-area-one__right-shape">
             <img src="assets/images/shapes/call-area-shape-2.png" alt="pelocis">
         </div>
-    </section>
+    </section> --}}
 
 
 

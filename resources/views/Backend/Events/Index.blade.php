@@ -17,7 +17,7 @@
 
 
     <!-- Events -->
-    <section class="service-one-home service-one-home--service-carousel">
+    <section class="service-one-home--service-carousel">
 
         <div class="row g-4">
 

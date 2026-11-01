@@ -2,28 +2,38 @@
 
     <!-- Начален банер -->
 
+    @section('SEO')
+    <title>Мирослава Мацурева | Психотерапия, EMDR и семейни констелации</title>
+
+    <meta name="description"
+        content="Мирослава Мацурева предлага индивидуална психотерапия, EMDR терапия, семейни констелации, арттерапия и терапевтични групи. Пространство за осъзнаване и личностно развитие.">
+
+    <meta name="robots" content="index,follow">
+
+    <meta name="googlebot" content="index,follow">
+
+    <meta property="og:locale" content="bg_BG">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title"
+        content="Мирослава Мацурева | Психотерапия, EMDR и семейни констелации">
+
+    <meta property="og:description"
+        content="Всяка история заслужава да бъде чута. Индивидуална терапия, EMDR, семейни констелации, арттерапия и терапевтични групи с Мирослава Мацурева.">
+
+    <meta property="og:site_name" content="Мирослава Мацурева">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+        content="Мирослава Мацурева | Психотерапия и EMDR терапия">
+
+    <meta name="twitter:description"
+        content="Среща със себе си чрез терапия, осъзнаване и подкрепяща среда. Научете повече за терапевтичните методи на Мирослава Мацурева.">
+@endsection
 
 
-    <!-- Scrolling Therapy Ticker -->
-    <div class="scrolling-ticker">
-        <div class="scrolling-ticker-box">
-            <div class="scrolling-content">
-                <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
-                <span><i class="fa-solid fa-circle"></i>EMDR</span>
-                <span><i class="fa-solid fa-circle"></i>КОНСТЕЛАЦИИ</span>
-                <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
-                <span><i class="fa-solid fa-circle"></i>ГРУПОВА РАБОТА</span>
-            </div>
-
-            <div class="scrolling-content" aria-hidden="true">
-                <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
-                <span><i class="fa-solid fa-circle"></i>EMDR</span>
-                <span><i class="fa-solid fa-circle"></i>КОНСТЕЛАЦИИ</span>
-                <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
-                <span><i class="fa-solid fa-circle"></i>ГРУПОВА РАБОТА</span>
-            </div>
-        </div>
-    </div>
 
     <!-- Therapy Hero -->
     <section class="main-slider-two hero-therapy">
@@ -32,13 +42,11 @@
 
                 <div class="hero-therapy__content">
                     <h1 class="hero-therapy__title">
-                        Когато искаш промяна,
-                        започни от себе си
+                        Всяка история заслужава да бъде чута
                     </h1>
 
                     <p class="hero-therapy__text">
-                        Промяната започва с по-дълбока
-                        среща със себе си.
+                        Среща със себе си чрез терапия, осъзнаване и подкрепяща среда.
                     </p>
 
                     <div class="hero-therapy__author">
@@ -46,38 +54,68 @@
                         <p>Психотерапевт и фасилитатор</p>
                     </div>
 
-                    <a href="{{ route('services') }}" class="hero-therapy__button">
-                        <span>Разгледайте терапиите</span>
+                    <a href="" class="hero-therapy__button">
+                        <span>Виж терапиите</span>
                         <i class="icon-right-arrow-white"></i>
                     </a>
                 </div>
 
-                <img src="/assets/images/test-2.png?v=<?= time() ?>" alt="Мирослава Мацурева — психотерапевт и фасилитатор"
-                    class="hero-therapy__image">
+                <img src="/assets/images/test-2.png?v=<?= time() ?>"
+                    alt="Мирослава Мацурева — психотерапевт и фасилитатор" class="hero-therapy__image">
             </div>
         </div>
     </section>
 
+    <!-- Scrolling Therapy Ticker -->
+    <div class="scrolling-ticker">
+        <div class="scrolling-ticker-box">
+            <div class="scrolling-content">
+                <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>EMDR</span>
+                <span><i class="fa-solid fa-circle"></i>СЕМЕЙНИ КОНСТЕЛАЦИИ</span>
+                <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>ГРУПОВА РАБОТА</span>
+                <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>EMDR</span>
+                <span><i class="fa-solid fa-circle"></i>СЕМЕНИ КОНСТЕЛАЦИИ</span>
+                <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>ГРУПОВА РАБОТА</span>
+            </div>
+
+            <div class="scrolling-content" aria-hidden="true">
+                <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>EMDR</span>
+                <span><i class="fa-solid fa-circle"></i>СЕМЕЙНИ КОНСТЕЛАЦИИ</span>
+                <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>ГРУПОВА РАБОТА</span>
+                <span><i class="fa-solid fa-circle"></i>ТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>EMDR</span>
+                <span><i class="fa-solid fa-circle"></i>СЕМЕЙНИ КОНСТЕЛАЦИИ</span>
+                <span><i class="fa-solid fa-circle"></i>АРТТЕРАПИЯ</span>
+                <span><i class="fa-solid fa-circle"></i>ГРУПОВА РАБОТА</span>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Въведение -->
-    <section class="call-area-two">
+    {{-- <section class="call-area-two">
         <div class="call-area-two__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%"
-            {{-- style="background-image: url('/assets/images/backgrounds/call-area-twp-bg.png');" --}}>
+            style="background-image: url('/assets/images/backgrounds/call-area-twp-bg.png');">
         </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-9">
-                    <h3 class="call-area-two__title">Индивидуална терапия, EMDR, констелации и групова работа — различни
+                    <h3 class="call-area-two__title">Индивидуална терапия, EMDR, семейни констелации и групова работа — различни
                         пътища към себепознание, емоционална подкрепа и личностно развитие.</h3>
                 </div>
                 <div class="col-lg-3 text-lg-end">
-                    <a href="{{ route('services') }}" class="pelocis-btn"><span>Вижте терапиите <i
+                    <a href="" class="pelocis-btn"><span>Вижте терапиите <i
                                 class="icon-right-arrow-white"></i></span></a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- <div class="scrolling-ticker">
         <div class="scrolling-ticker-box">
@@ -108,7 +146,7 @@
 
 
     <!-- За Мирослава -->
-    <section class="about-two mb-5" id="about">
+    <section class="about-two" id="about">
         <div class="about-two__shape"></div>
         {{-- <img src="/assets/images/shapes/home-two-about-shape-1.png" alt="" class="about-two__shape__two">
         <img src="/assets/images/shapes/home-two-about-shape-2.png" alt="" class="about-two__shape__three"> --}}
@@ -132,12 +170,12 @@
                             практика.</p>
                         <p class="about-two__text">През 2021 г. основава център „Албена“ — център за терапевтична и
                             личностна работа. Работи като фасилитатор и води индивидуални терапевтични срещи, семейни и
-                            системни констелации, терапевтични групи и преживелищни процеси, насочени към
+                            месечни констелации, терапевтични групи и преживелищни процеси, насочени към
                             себеизследване, личностно развитие и взаимоотношенията.</p>
-                        <ul class="about-two__list">
+                        <ul class="about-two__list mt-5">
                             <li>
                                 {{-- <span class="icon-social-care"></span> --}}
-                                <img class="clean-welcome" src="/assets/images/clean-1.jpg" alt="">
+                                <img class="clean-welcome align-self-start" src="/assets/images/clean-2.png" alt="">
                                 <div class="about-two__list__content">
                                     <h3 class="about-two__list__title">Индивидуална терапия и EMDR</h3>
                                     <p class="about-two__list__text">Индивидуални срещи, в които могат да се включват
@@ -145,11 +183,11 @@
                                 </div>
                             </li>
                             <li>
-                                <img class="clean-welcome" src="/assets/images/clean-2.jpg" alt="">
+                                <img class="clean-welcome align-self-start" src="/assets/images/clean-1.png" alt="">
                                 {{-- <span class="icon-mental-health"></span> --}}
                                 <div class="about-two__list__content">
-                                    <h3 class="about-two__list__title">Констелации и терапевтични групи</h3>
-                                    <p class="about-two__list__text">Семейни и системни констелации, терапевтични групи,
+                                    <h3 class="about-two__list__title">Семейни констелации и терапевтични групи</h3>
+                                    <p class="about-two__list__text">Семейни констелации, терапевтични групи,
                                         семинари и обучения за личностно развитие и себеизследване.</p>
                                 </div>
                             </li>
@@ -193,12 +231,12 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/emdr-therapy.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">EMDR терапия</a></h3>
+                            <h3 class="team-two__card__name"><a href="">EMDR терапия</a></h3>
                             <span class="team-two__card__designation">Работа с травматични преживявания</span>
                         </div>
                     </div>
@@ -208,12 +246,12 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-8.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">Арт терапия</a></h3>
+                            <h3 class="team-two__card__name"><a href="">Арт терапия</a></h3>
                             <span class="team-two__card__designation">Творчество и себеизразяване</span>
                         </div>
                     </div>
@@ -223,12 +261,12 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-9.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">Психодрама</a></h3>
+                            <h3 class="team-two__card__name"><a href="">Психодрама</a></h3>
                             <span class="team-two__card__designation">Преживяване чрез действие</span>
                         </div>
                     </div>
@@ -238,12 +276,12 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-10.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">Дихателни практики</a>
+                            <h3 class="team-two__card__name"><a href="">Дихателни практики</a>
                             </h3>
                             <span class="team-two__card__designation">Контакт с тялото и емоциите</span>
                         </div>
@@ -254,12 +292,12 @@
                         <div class="team-two__card__img">
                             <img src="/assets/images/resources/team-img-15.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('services') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('services') }}">Семейни
+                            <h3 class="team-two__card__name"><a href="">Семейни
                                     консталации</a>
                             </h3>
                             <span class="team-two__card__designation">Помагат да видим семейните модели, които влияят
@@ -290,7 +328,10 @@
                             <ul class="why-choose-two__list">
                                 <li class="why-choose-two__item">
                                     <div class="why-choose-two__count"></div>
-                                    <div class="why-choose-two__icon"><span class="icon-mental-health"></span></div>
+                                    <div class="why-choose-two__icon">
+                                        <img src="/assets/images/icons/icon_02.png" alt="">
+                                        {{-- <span class="icon-mental-health"></span> --}}
+                                    </div>
                                     <div class="why-choose-two__item__content">
                                         <h3 class="why-choose-two__item__title">Тревожност и емоционални трудности</h3>
                                         <p class="why-choose-two__item__text">Индивидуална терапевтична работа с трудни
@@ -299,18 +340,23 @@
                                 </li>
                                 <li class="why-choose-two__item">
                                     <div class="why-choose-two__count"></div>
-                                    <div class="why-choose-two__icon"><span class="icon-family-life"></span></div>
+                                    <div class="why-choose-two__icon">
+                                        <img src="/assets/images/icons/icon_11.png" alt="">
+                                        {{-- <span class="icon-family-life"></span> --}}
+                                    </div>
                                     <div class="why-choose-two__item__content">
                                         <h3 class="why-choose-two__item__title">Взаимоотношения и повтарящи се модели
                                         </h3>
-                                        <p class="why-choose-two__item__text">Семейни и системни констелации и
+                                        <p class="why-choose-two__item__text">Семейни констелации и
                                             психодраматични техники за изследване на отношенията и преживяванията на
                                             отхвърляне и изоставяне.</p>
                                     </div>
                                 </li>
                                 <li class="why-choose-two__item">
                                     <div class="why-choose-two__count"></div>
-                                    <div class="why-choose-two__icon"><span class="icon-cognitive"></span></div>
+                                    <div class="why-choose-two__icon">
+                                        <img src="/assets/images/icons/icon_07.png" alt="">
+                                    </div>
                                     <div class="why-choose-two__item__content">
                                         <h3 class="why-choose-two__item__title">Травматични преживявания и вътрешното
                                             дете</h3>
@@ -392,15 +438,21 @@
     <!-- Групи и обучения -->
     <section class="call-area-three">
         <div class="call-area-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%"
-            style="background-image: url('/assets/images/backgrounds/counter-area-two-bg.png');"></div>
+            style="background-image: url('/assets/images/backgrounds/welcome-bg.jpg');"></div>
         <div class="container">
             <div class="call-area-three__content">
                 <h2 class="call-area-three__title">Терапевтични групи, семинари и обучения</h2>
-                <p class="call-area-three__text">Мира води терапевтични групи, семейни и системни констелации, семинари
+                <p class="call-area-three__text">Мира води терапевтични групи, семейни констелации, семинари
                     и преживелищни процеси, посветени на себеизследването, взаимоотношенията, личностното развитие и
                     емоционалното освобождаване.</p>
-                <a href="{{ route('services') }}" class="pelocis-btn"><span>Разгледайте терапиите <i
-                            class="icon-right-arrow-white"></i></span></a>
+                <a
+                 data-cal-link="miroslava-matsureva-klzms5"
+                                    data-cal-namespace="тераевтична-сесия-присъствено"
+                                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                class="pelocis-btn text-white"><span>
+                    ЗАПАЗИ СЕСИЯ С МЕН
+                    <i class="icon-right-arrow-white"></i></span>
+                </a>
             </div>
         </div>
     </section>
@@ -447,7 +499,7 @@
                             <div class="accrodion-content">
                                 <div class="inner">
                                     <div class="accrodion-content__icon"><span class="icon-faq1"></span></div>
-                                    <p>Мирослава съчетава EMDR, констелации, арттерапевтични техники, психодрама,
+                                    <p>Мирослава съчетава EMDR, семейни констелации, арттерапевтични техники, психодрама,
                                         дихателни практики и работа с вътрешното дете.</p>
                                 </div>
                             </div>

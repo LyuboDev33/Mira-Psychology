@@ -55,7 +55,7 @@
                         <ul class="list-styled footer-widget__links">
                             <li><a href="/">Начало</a></li>
                             <li><a href="{{ route('about') }}">За мен</a></li>
-                            <li><a href="{{ route('services') }}">Услуги</a></li>
+                            <li><a href="">Услуги</a></li>
                             <li><a href="{{ route('events.index') }}">Събития</a></li>
                             <li><a href="{{ route('contact') }}">Контакти</a></li>
                         </ul>
@@ -79,23 +79,23 @@
 
                         <ul class="list-unstyled footer-widget__links">
                             <li>
-                                <a href="tel:YOUR_PHONE">
+                                <a href="tel:+359888354927">
                                     <i class="fas fa-phone-alt me-2"></i>
-                                    Вашият телефон
+                                    +359 888 354 927
                                 </a>
                             </li>
 
                             <li>
-                                <a href="mailto:YOUR_EMAIL">
+                                <a href="mailto:miroslavamatsureva@gmail.com">
                                     <i class="fas fa-envelope me-2"></i>
-                                    Вашият имейл
+                                    miroslavamatsureva@gmail.com
                                 </a>
                             </li>
 
                             <li>
-                                <a href="/contact">
+                                <a>
                                     <i class="fas fa-map-marker-alt me-2"></i>
-                                    Адрес на кабинета
+                                    Ул. Лайош Кошут 7
                                 </a>
                             </li>
                         </ul>

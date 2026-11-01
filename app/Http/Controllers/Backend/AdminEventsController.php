@@ -92,6 +92,7 @@ class AdminEventsController extends Controller
         }
     }
 
+
     /**
      * Update an existing event.
      *
@@ -101,7 +102,7 @@ class AdminEventsController extends Controller
      */
     public function update(EventUpdateRequest $request, string $slug): RedirectResponse
     {
-        $event = Event::where('slug', $slug)->firstOrFail();
+        $event = Event::where('slug', $slug)->first();
 
         $validated = $request->validated();
 
@@ -143,8 +144,9 @@ class AdminEventsController extends Controller
                 }
             }
 
-            return back()->with('success', 'Събитието беше обновено успешно!');
-
+            return redirect()
+                ->route('admin.events.show', $event->slug)
+                ->with('success', 'Събитието беше обновено успешно!');
         } catch (\Throwable $e) {
 
             if ($newFilename) {

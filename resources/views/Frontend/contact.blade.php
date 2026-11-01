@@ -5,7 +5,7 @@
     <section class="page-header">
         <div class="page-header__bg">
             <div class="page-header__bg__img"
-                style="background-image: url('/assets/images/backgrounds/page-header-img-1.png');">
+                style="background-image: url('/assets/images/backgrounds/welcome-bg.jpg');">
             </div>
             <div class="page-header__bg__shape-1"></div>
             <div class="page-header__bg__shape-2"></div>
@@ -20,9 +20,9 @@
             </ul>
         </div>
 
-        <img class="page-header__shape"
+        {{-- <img class="page-header__shape"
             src="/assets/images/shapes/bannar-shape-2.png"
-            alt="">
+            alt=""> --}}
     </section>
 
     <!-- Contact Section -->

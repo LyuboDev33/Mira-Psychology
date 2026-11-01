@@ -3,6 +3,8 @@
                 <div class="main-header__inner">
                     <div class="main-header__logo">
                         <x-logo />
+                        {{-- <a class="pelocis-btn pelocis-btn--black text-white">ЗАПИШИ ЧАС</a> --}}
+
                     </div><!-- /.main-header__logo -->
                     <nav class="main-header__nav main-menu">
                         <ul class="main-menu__list">
@@ -15,19 +17,28 @@
                                 <a href="{{ route('about') }}">За мен</a>
                             </li>
 
-                            <li>
-                                <a href="{{ route('services') }}">Услуги</a>
+                              <li class="dropdown">
+                                <a>Услуги</a>
+                                <ul>
+                                    <li><a href="{{ route('service.show', 'individualna-terapiya') }}">Индивидуална тераия</a></li>
+                                    <li><a href="{{ route('service.show', 'semeina-terapiya') }}">Семейна терапия</a></li>
+                                    <li><a href="{{ route('service.show', 'individualna-konstelaciya-s-figurki') }}">Индивидуална констелация с фигурки</a></li>
+                                </ul>
                             </li>
-
                             <li>
                                 <a href="{{ route('events.index') }}">Събития</a>
                             </li>
+
+                              {{-- <li>
+                                <a href="{{ route('events.index') }}">Обучения</a>
+                            </li> --}}
 
                             <li>
                                 <a href="{{ route('contact') }}">Контакти</a>
                             </li>
 
                         </ul>
+
                     </nav><!-- /.main-header__nav -->
                     <div class="main-header__right">
                         <div class="mobile-nav__btn mobile-nav__toggler">
@@ -38,11 +49,11 @@
 
                         <div class="contact-wrapper">
                             <div class="contact-content">
-                                <a target="_blank" class="pelocis-btn pelocis-btn--black text-white"
+                                <a target="_blank" class="pelocis-btn  text-white"
                                     data-cal-link="miroslava-matsureva-klzms5"
                                     data-cal-namespace="тераевтична-сесия-присъствено"
                                     data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
-                                    <span>Запиши си час<i class="icon-right-arrow-white"></i></span>
+                                    <span>Запиши час<i class="icon-right-arrow-white"></i></span>
                                 </a><!-- slider-btn -->
                             </div>
                         </div>

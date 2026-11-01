@@ -1,9 +1,9 @@
 <!-- Странично меню -->
 <aside class="dashboard-sidebar" id="dashboardSidebar" aria-label="Навигация на таблото">
     <div class="d-flex align-items-center justify-content-between">
-        <a href="#" class="dashboard-brand">
+        <a href="/" class="dashboard-brand">
             <span class="dashboard-brand-mark"><i class="fas fa-layer-group"></i></span>
-            <span>Табло</span>
+            <span>Начало</span>
         </a>
         <button class="dashboard-close-button" id="dashboardClose" type="button" aria-label="Затвори менюто">
             <i class="fas fa-times"></i>

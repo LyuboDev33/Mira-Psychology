@@ -35,6 +35,8 @@
 
                         </div>
 
+                        <img src="/assets/images/events/{{ $event->image }}" alt="{{ $event->title }}">
+
                         <!-- Event Description -->
                         <div class="service-details__text event-description">
                             {!! $event->description !!}
@@ -63,7 +65,7 @@
 
                                     @if ($event->price > 0)
                                         <span class="event-booking-price__amount">
-                                            {{ number_format($event->price, 2, ',', ' ') }} €
+                                           Цена:  {{ number_format($event->price, 2, ',', ' ') }} €
                                         </span>
                                     @else
                                         <span class="event-booking-price__free">
@@ -140,7 +142,10 @@
                                                 <span class="text-danger">*</span>
                                             </label>
 
-                                            <input type="tel" name="phone" id="phone" class="form-control"
+                                            <input type="tel"
+                                                name="phone"
+                                                id="phone"
+                                                class="form-control"
                                                 placeholder="0888 123 456" autocomplete="tel" >
 
                                             <div class="invalid-feedback" id="phoneError"></div>
@@ -275,7 +280,10 @@
         style="display: none;"
         aria-hidden="true">
 
-        <div class="booking-success-modal" role="dialog" aria-modal="true" aria-labelledby="bookingSuccessTitle">
+        <div class="booking-success-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="bookingSuccessTitle">
 
             <button type="button" class="booking-success-close" id="bookingModalClose" aria-label="Затвори">
                 &times;
@@ -292,7 +300,7 @@
             <p id="bookingSuccessMessage"></p>
 
             <p class="booking-success-subtitle">
-                Ще получите имейл потвърждение с информация за събитието.
+                 събитието.
             </p>
 
             <button type="button" class="booking-success-button" id="bookingModalConfirm">

@@ -56,7 +56,7 @@
                         <div class="service-card__hover" style="background-image: url(/assets/images/resources/service-1.png);"></div>
                         <div class="service-card__shape"></div>
                         <div class="service-card__icon"><span class="icon-family-life"></span></div>
-                        <h2 class="service-card__title"><a href="#constellations">Семейни и системни констелации</a></h2>
+                        <h2 class="service-card__title"><a href="#constellations">Семейни констелации</a></h2>
                         <p class="service-card__text">Изследване на отношенията, семейните роли и моделите, които носим в живота си.</p>
                         <a href="#constellations" class="service-card__link"><span>Научи повече</span><i class="icon-right-arrow-white"></i></a>
                     </div>
@@ -131,8 +131,8 @@
                             <p class="service-details__text">Работата започва с опознаване на ситуацията и изграждане на усещане за сигурност. Преработването се предприема, когато е подходящо за вас.</p>
                         </div>
                         <div id="constellations" class="mb-5" style="scroll-margin-top: 110px;">
-                            <h3 class="service-details__title">Семейни и системни констелации</h3>
-                            <p class="service-details__text">Семейните и системните констелации предлагат преживелищен начин да погледнем отношенията, принадлежността и повтарящите се модели в семейната или друга значима система.</p>
+                            <h3 class="service-details__title">Семейни констелации</h3>
+                            <p class="service-details__text">Семейните констелации предлагат преживелищен начин да погледнем отношенията, принадлежността и повтарящите се модели в семейната или друга значима система.</p>
                             <p class="service-details__text">Подходът се използва за изследване и осъзнаване, а не като заместител на доказани медицински или психотерапевтични грижи.</p>
                         </div>
                         <div id="art" class="mb-5" style="scroll-margin-top: 110px;">

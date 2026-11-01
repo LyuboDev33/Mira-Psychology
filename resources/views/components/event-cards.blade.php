@@ -26,7 +26,7 @@
 
                     <div class="col-lg-4 col-md-6">
 
-                        <div class="home-services__card event-card h-100">
+                        <div class="home-services__card event-card h-100 shadow">
 
                             <div class="home-services__card__shape--one"></div>
                             <div class="home-services__card__shape--two"></div>
