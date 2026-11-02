@@ -19586,15 +19586,16 @@ body.megamenu-popup-active .mobile-nav__content {
 --------------------------------------------------------------*/
 .service-details {
     padding: 150px 0 90px;
-    background-image: url(/assets/images/backgrounds/bg-large-screen.png);
+    /* background-image: url(/assets/images/backgrounds/bg-large-screen.png); */
+    background-image: url(/assets/images/backgrounds/bg-large.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 }
 
 .service-details__content {
-    /* background: #ffffff; */
-    /* padding: 20px; */
+    background: #ffffffad;
+    padding: 20px;
     border-radius: 30px;
 }
 
