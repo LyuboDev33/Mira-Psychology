@@ -8,7 +8,7 @@
                 <!-- LEFT: Event Information -->
                 <div class="col-md-12 col-lg-8">
 
-                    <div class="service-details__content shadow">
+                    <div class="service-details__content">
 
                         <!-- Event Title -->
                         <h3 class="service-details__title">

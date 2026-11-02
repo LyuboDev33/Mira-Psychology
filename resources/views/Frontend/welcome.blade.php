@@ -3,35 +3,33 @@
     <!-- Начален банер -->
 
     @section('SEO')
-    <title>Мирослава Мацурева | Психотерапия, EMDR и семейни констелации</title>
+        <title>Мирослава Мацурева | Психотерапия, EMDR и семейни констелации</title>
 
-    <meta name="description"
-        content="Мирослава Мацурева предлага индивидуална психотерапия, EMDR терапия, семейни констелации, арттерапия и терапевтични групи. Пространство за осъзнаване и личностно развитие.">
+        <meta name="description"
+            content="Мирослава Мацурева предлага индивидуална психотерапия, EMDR терапия, семейни констелации, арттерапия и терапевтични групи. Пространство за осъзнаване и личностно развитие.">
 
-    <meta name="robots" content="index,follow">
+        <meta name="robots" content="index,follow">
 
-    <meta name="googlebot" content="index,follow">
+        <meta name="googlebot" content="index,follow">
 
-    <meta property="og:locale" content="bg_BG">
+        <meta property="og:locale" content="bg_BG">
 
-    <meta property="og:type" content="website">
+        <meta property="og:type" content="website">
 
-    <meta property="og:title"
-        content="Мирослава Мацурева | Психотерапия, EMDR и семейни констелации">
+        <meta property="og:title" content="Мирослава Мацурева | Психотерапия, EMDR и семейни констелации">
 
-    <meta property="og:description"
-        content="Всяка история заслужава да бъде чута. Индивидуална терапия, EMDR, семейни констелации, арттерапия и терапевтични групи с Мирослава Мацурева.">
+        <meta property="og:description"
+            content="Всяка история заслужава да бъде чута. Индивидуална терапия, EMDR, семейни констелации, арттерапия и терапевтични групи с Мирослава Мацурева.">
 
-    <meta property="og:site_name" content="Мирослава Мацурева">
+        <meta property="og:site_name" content="Мирослава Мацурева">
 
-    <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title"
-        content="Мирослава Мацурева | Психотерапия и EMDR терапия">
+        <meta name="twitter:title" content="Мирослава Мацурева | Психотерапия и EMDR терапия">
 
-    <meta name="twitter:description"
-        content="Среща със себе си чрез терапия, осъзнаване и подкрепяща среда. Научете повече за терапевтичните методи на Мирослава Мацурева.">
-@endsection
+        <meta name="twitter:description"
+            content="Среща със себе си чрез терапия, осъзнаване и подкрепяща среда. Научете повече за терапевтичните методи на Мирослава Мацурева.">
+    @endsection
 
 
 
@@ -42,11 +40,11 @@
 
                 <div class="hero-therapy__content">
                     <h1 class="hero-therapy__title">
-                        Всяка история заслужава да бъде чута
+                        Пространство за подкрепа, разбиране и споделяне.
                     </h1>
 
                     <p class="hero-therapy__text">
-                        Среща със себе си чрез терапия, осъзнаване и подкрепяща среда.
+                        Помагам ти да разбереш себе си, да преминеш през трудностите чрез професионална психологична подкрепа и терапия.
                     </p>
 
                     <div class="hero-therapy__author">
@@ -54,8 +52,16 @@
                         <p>Психотерапевт и фасилитатор</p>
                     </div>
 
-                    <a href="" class="hero-therapy__button">
-                        <span>Виж терапиите</span>
+                    <a href="{{ route('events.index') }}" class="hero-therapy__button">
+                        <span>Виж събития</span>
+                        <i class="icon-right-arrow-white"></i>
+                    </a>
+                    <a
+                    data-cal-link="miroslava-matsureva-klzms5"
+                                    data-cal-namespace="тераевтична-сесия-присъствено"
+                                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                        class="hero-therapy__button text-white">
+                        <span>Запази сесия с мен</span>
                         <i class="icon-right-arrow-white"></i>
                     </a>
                 </div>
@@ -175,7 +181,8 @@
                         <ul class="about-two__list mt-5">
                             <li>
                                 {{-- <span class="icon-social-care"></span> --}}
-                                <img class="clean-welcome align-self-start" src="/assets/images/clean-2.png" alt="">
+                                <img class="clean-welcome align-self-start" src="/assets/images/clean-2.png"
+                                    alt="">
                                 <div class="about-two__list__content">
                                     <h3 class="about-two__list__title">Индивидуална терапия и EMDR</h3>
                                     <p class="about-two__list__text">Индивидуални срещи, в които могат да се включват
@@ -183,7 +190,8 @@
                                 </div>
                             </li>
                             <li>
-                                <img class="clean-welcome align-self-start" src="/assets/images/clean-1.png" alt="">
+                                <img class="clean-welcome align-self-start" src="/assets/images/clean-1.png"
+                                    alt="">
                                 {{-- <span class="icon-mental-health"></span> --}}
                                 <div class="about-two__list__content">
                                     <h3 class="about-two__list__title">Семейни констелации и терапевтични групи</h3>
@@ -445,13 +453,11 @@
                 <p class="call-area-three__text">Мира води терапевтични групи, семейни констелации, семинари
                     и преживелищни процеси, посветени на себеизследването, взаимоотношенията, личностното развитие и
                     емоционалното освобождаване.</p>
-                <a
-                 data-cal-link="miroslava-matsureva-klzms5"
-                                    data-cal-namespace="тераевтична-сесия-присъствено"
-                                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-                class="pelocis-btn text-white"><span>
-                    ЗАПАЗИ СЕСИЯ С МЕН
-                    <i class="icon-right-arrow-white"></i></span>
+                <a data-cal-link="miroslava-matsureva-klzms5" data-cal-namespace="тераевтична-сесия-присъствено"
+                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                    class="pelocis-btn text-white"><span>
+                        ЗАПАЗИ СЕСИЯ С МЕН
+                        <i class="icon-right-arrow-white"></i></span>
                 </a>
             </div>
         </div>
@@ -499,7 +505,8 @@
                             <div class="accrodion-content">
                                 <div class="inner">
                                     <div class="accrodion-content__icon"><span class="icon-faq1"></span></div>
-                                    <p>Мирослава съчетава EMDR, семейни констелации, арттерапевтични техники, психодрама,
+                                    <p>Мирослава съчетава EMDR, семейни констелации, арттерапевтични техники,
+                                        психодрама,
                                         дихателни практики и работа с вътрешното дете.</p>
                                 </div>
                             </div>

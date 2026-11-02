@@ -13,7 +13,7 @@
         </div>
 
         <div class="container">
-            <h2 class="page-header__title">Предстоящи събития</h2>
+            {{-- <h2 class="page-header__title">Предстоящи събития</h2> --}}
 
         </div>
 

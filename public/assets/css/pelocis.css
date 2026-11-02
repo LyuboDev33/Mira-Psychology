@@ -14,14 +14,21 @@
 # Client Carousel
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap'); */
 
+@font-face {
+    font-family: 'Plovdiv Sans';
+    src: url('/assets/OTF/PlovdivSans.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
-    --pelocis-font: "Sofia Sans", sans-serif;
-    --pelocis-heading-font: "Sofia Sans", sans-serif;
-    --pelocis-special-font: "Sofia Sans", sans-serif;
-    --pelocis-special-font2: "Sofia Sans", cursive;
+    --pelocis-font: "Plovdiv Sans", sans-serif;
+    --pelocis-heading-font: "Plovdiv Sans", sans-serif;
+    --pelocis-special-font: "Plovdiv Sans", sans-serif;
+    --pelocis-special-font2: "Plovdiv Sans", cursive;
     --pelocis-text: #838184;
     --pelocis-text-rgb: 131, 129, 132;
     --pelocis-text-dark: #636363;
@@ -884,7 +891,7 @@ h6 {
     padding: 10px 23px;
     transition: 500ms;
     text-transform: uppercase;
-    background-color: var(--pelocis-base, #e2a475);
+    background-color: #5f5730;
     color: var(--pelocis-white, #fff);
     position: relative;
     overflow: hidden;
@@ -19586,8 +19593,8 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .service-details__content {
-    background: #ffffff;
-    padding: 20px;
+    /* background: #ffffff; */
+    /* padding: 20px; */
     border-radius: 30px;
 }
 
