@@ -40,7 +40,7 @@ class FrontEndController extends Controller
         $view = 'Frontend.services.' . $service;
 
         if (! View::exists($view)) {
-            return view('errors.NotFound');
+            return view('Frontend.404');
         }
 
         return view($view);

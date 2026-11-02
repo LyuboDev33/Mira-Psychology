@@ -23,7 +23,7 @@ class EventStoreRequest extends FormRequest
             'title' => ['required', 'string', 'max:255'],
             'slug' => ['string', 'max:255', 'unique:events,slug'],
 
-            'image' => ['required', 'image', 'mimes:jpg,jpeg,png,webp', 'max:1024'],
+            'image' => ['required', 'image', 'mimes:jpg,jpeg,png,webp', 'max:3084'],
 
             'location' => ['required', 'string', 'max:255'],
             'capacity' => ['required', 'integer', 'min:1'],
