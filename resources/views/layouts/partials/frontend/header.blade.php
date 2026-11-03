@@ -17,6 +17,10 @@
                                 <a href="{{ route('about') }}">За мен</a>
                             </li>
 
+                            <li>
+                                <a href="{{ route('therapies') }}">Терапии</a>
+                            </li>
+
                               <li class="dropdown">
                                 <a>Услуги</a>
                                 <ul>
@@ -89,7 +93,7 @@
                     </li>
                 </ul><!-- /.mobile-nav__contact -->
                 <div class="mobile-nav__social">
-                    <a href="https://facebook.com">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100085768324562">
                         <i class="fab fa-facebook-f" aria-hidden="true"></i>
                         <span class="sr-only">Facebook</span>
                     </a>

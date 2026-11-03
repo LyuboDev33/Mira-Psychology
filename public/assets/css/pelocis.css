@@ -35,7 +35,7 @@
     --pelocis-text-dark-rgb: 99, 99, 99;
     --pelocis-text-gray: #89868d;
     --pelocis-text-gray-rgb: 137, 134, 141;
-    --pelocis-base: #9c694a;
+    --pelocis-base: #5f5730;
     --pelocis-base-rgb: 226, 164, 117;
     --pelocis-gray: #F5F2EF;
     --pelocis-gray-rgb: 245, 242, 239;
@@ -2705,6 +2705,8 @@ h6 {
 
 .team-two__card__img img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .team-two__card__content {
@@ -7023,7 +7025,8 @@ body.megamenu-popup-active .mobile-nav__content {
 .why-choose-one {
     position: relative;
     padding: 80px 0 105px;
-    background-image: url(/assets/images/backgrounds/bg-large-screen.png);
+    /* background-image: url(/assets/images/backgrounds/bg-large-screen.png); */
+    background-image: url(/assets/images/backgrounds/bg-large.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -7177,7 +7180,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .why-choose-one__text {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     margin-top: 22px;
@@ -7361,7 +7364,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .why-choose-two__text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     color: var(--pelocis-text-dark, #636363);
@@ -7403,7 +7406,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .why-choose-two__item__text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 25px;
     color: var(--pelocis-text-dark, #636363);
@@ -7422,10 +7425,10 @@ body.megamenu-popup-active .mobile-nav__content {
     transition: all 500ms ease;
 }
 
-.why-choose-two__item:hover {
+/* .why-choose-two__item:hover {
     padding-left: 130px;
     background-color: var(--pelocis-black, #222222);
-}
+} */
 
 .why-choose-two__item:hover::before {
     opacity: 0;
@@ -7439,7 +7442,7 @@ body.megamenu-popup-active .mobile-nav__content {
     }
 }
 
-.why-choose-two__item:hover .why-choose-two__item__title {
+/* .why-choose-two__item:hover .why-choose-two__item__title {
     color: var(--pelocis-white, #fff);
 }
 
@@ -7449,22 +7452,22 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .why-choose-two__item:hover .why-choose-two__count {
     left: 0;
-}
+} */
 
-.why-choose-two__item:hover .why-choose-two__icon {
+/* .why-choose-two__item:hover .why-choose-two__icon {
     transform: translateX(-30px);
     background-color: var(--pelocis-base, #e2a475);
-}
+} */
 
 @media (max-width: 767px) {
     .why-choose-two__item:hover .why-choose-two__icon {
         transform: translateX(10px);
     }
 }
-
+/*
 .why-choose-two__item:hover .why-choose-two__item__content {
     padding-left: 0;
-}
+} */
 
 @media (max-width: 767px) {
     .why-choose-two__item:hover .why-choose-two__item__content {
@@ -17098,7 +17101,8 @@ body.megamenu-popup-active .mobile-nav__content {
 .about-one {
     padding: 120px 0;
     position: relative;
-    background-image: url(/assets/images/backgrounds/bg-large-screen.png);
+    /* background-image: url(/assets/images/backgrounds/bg-large-screen.png); */
+    background-image: url(/assets/images/backgrounds/bg-large.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -17275,7 +17279,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 @media (min-width: 992px) {
     .about-one__content__box {
-        margin-left: -166px;
+        margin-right: -166px;
     }
 }
 
@@ -17356,9 +17360,10 @@ body.megamenu-popup-active .mobile-nav__content {
     position: relative;
     padding: 120px 0;
     border-bottom: 1px solid var(--pelocis-border-color, #DDDDDD);
-    background-image: url(/assets/images/backgrounds/slider-2-mobile-mira.png);
+    /* background-image: url(/assets/images/backgrounds/slider-2-mobile-mira.png); */
+    background-image: url(/assets/images/backgrounds/bg-large.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -17450,6 +17455,7 @@ body.megamenu-popup-active .mobile-nav__content {
     line-height: 26px;
     color: #725947;
     margin: 0 0 20px;
+    max-width: 500px;
 }
 
 .about-two__list {
@@ -17532,6 +17538,7 @@ body.megamenu-popup-active .mobile-nav__content {
     line-height: 28px;
     color: var(--pelocis-text-dark, #636363);
     margin-bottom: 0;
+    max-width: 400px;
 }
 
 .about-two__author {
@@ -18823,19 +18830,24 @@ body.megamenu-popup-active .mobile-nav__content {
     counter-reset: count;
     /* margin-top: 150px; */
     /* margin-bottom: 150px; */
-    background-image: url(/assets/images/backgrounds/warm-bg.png);
+    /* background-image: url(/assets/images/backgrounds/warm-bg.png); */
+    /* background-image: url(/assets/images/backgrounds/bg-large.jpg); */
+        background-image: url(/assets/images/backgrounds/web-v2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: right;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.service-one-home p {
+    font-size: 20px;
 }
 
 @media (max-width: 991px) {
     .service-one-home {
         padding: 80px 0;
-        background-image: url(/assets/images/backgrounds/slider-2-mobile-mira.png);
-
+        background-position: left;
     }
 }
 
@@ -19587,7 +19599,8 @@ body.megamenu-popup-active .mobile-nav__content {
 .service-details {
     padding: 150px 0 90px;
     /* background-image: url(/assets/images/backgrounds/bg-large-screen.png); */
-    background-image: url(/assets/images/backgrounds/bg-large.jpg);
+    /* background-image: url(/assets/images/backgrounds/bg-large.jpg); */
+    background-image: url(/assets/images/backgrounds/web-v2.png);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -23249,7 +23262,8 @@ body.boxed-wrapper .topbar-one__inner__shape {
     padding-bottom: 50px;
     border-radius: 10px;
     background-color: var(--pelocis-white, #fff);
-    background-image: url(/assets/images/backgrounds/slider-2-mobile-mira.png);
+    /* background-image: url(/assets/images/backgrounds/slider-2-mobile-mira.png); */
+    background-image: url(/assets/images/backgrounds/bg-large.jpg);
     background-size: cover;
     /* background-position: right; */
     background-repeat: no-repeat;
@@ -24090,7 +24104,7 @@ body.boxed-wrapper .topbar-one__inner__shape {
 }
 
 .call-area-three__text {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 26px;
     color: var(--pelocis-white, #fff);

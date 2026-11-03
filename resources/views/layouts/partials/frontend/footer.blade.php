@@ -28,7 +28,7 @@
                         </p>
 
                         <div class="footer-widget__social">
-                            <a href="https://facebook.com"
+                            <a  target="_blank" href="https://www.facebook.com/profile.php?id=100085768324562"
                                 aria-label="Facebook">
                                 <i class="fab fa-facebook-f"
                                     aria-hidden="true"></i>
@@ -79,9 +79,9 @@
 
                         <ul class="list-unstyled footer-widget__links">
                             <li>
-                                <a href="tel:+359888354927">
+                                <a href="tel:+359888354227">
                                     <i class="fas fa-phone-alt me-2"></i>
-                                    +359 888 354 927
+                                    +359 888 354 227
                                 </a>
                             </li>
 

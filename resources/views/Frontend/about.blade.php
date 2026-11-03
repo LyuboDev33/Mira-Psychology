@@ -56,7 +56,7 @@
 
     <section class="about-one">
         <div class="container">
-            <div class="row">
+            <div class="row flex-row-reverse">
                 <div class="col-lg-5">
                     <div class="about-one__image wow fadeInUp" data-wow-duration="1500ms" data-wow-delay='000ms'>
                         <img src="assets/images/resources/about-img-1.png" alt="pelocis">
@@ -302,7 +302,7 @@
                             Не вярвам, че съществува един подход, който е подходящ за всички.
                             В работата си съчетавам различни терапевтични методи според твоите нужди, преживявания и
                             темпо.
-
+                            <br><br>
                             Заедно изследваме връзката между настоящето, миналия опит, отношенията и вътрешния свят, за
                             да създадем пространство за осъзнаване и промяна.
                         </p>

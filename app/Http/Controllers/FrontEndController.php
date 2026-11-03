@@ -37,7 +37,7 @@ class FrontEndController extends Controller
     /** Show an individual service */
      public function showService(string $service)
     {
-        $view = 'Frontend.services.' . $service;
+        $view = 'Frontend.Services.' . $service;
 
         if (! View::exists($view)) {
             return view('Frontend.404');
@@ -50,6 +50,11 @@ class FrontEndController extends Controller
     public function about()
     {
         return view('Frontend.about');
+    }
+
+    /** Therapies */
+    public function therapies(){
+        return view('Frontend.therapies');
     }
 
     /** Show the services */

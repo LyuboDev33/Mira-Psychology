@@ -14,8 +14,7 @@ Route::get('/', [FrontEndController::class, 'welcome'])->name('home');
 Route::get('/about', [FrontEndController::class, 'about'])->name('about');
 Route::get('/service/{service}', [FrontEndController::class, 'showService'])->name('service.show');
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
-
-
+Route::get('/therapies', [FrontEndController::class, 'therapies'])->name('therapies');
 
 /** Show all events */
 Route::prefix('/events')->group(function () {
@@ -30,7 +29,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', function () {
         return view('Backend.dashboard');
-    })->middleware(['auth', 'verified'])->name('dashboard');
+    })->name('dashboard');
 
     Route::prefix('/admin/events')->group(function () {
         Route::get('/', [AdminEventsController::class, 'index'])->name('admin.events.index');
