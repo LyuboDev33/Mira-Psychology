@@ -14,7 +14,6 @@ Route::get('/', [FrontEndController::class, 'welcome'])->name('home');
 Route::get('/about', [FrontEndController::class, 'about'])->name('about');
 Route::get('/service/{service}', [FrontEndController::class, 'showService'])->name('service.show');
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
-Route::get('/therapies', [FrontEndController::class, 'therapies'])->name('therapies');
 
 /** Show all events */
 Route::prefix('/events')->group(function () {
@@ -23,6 +22,11 @@ Route::prefix('/events')->group(function () {
     Route::post('/{slug}/book', [EventsController::class, 'store'])->name('events.store');
 });
 
+/** Show all therapies */
+Route::prefix('/therapies')->group(function () {
+    Route::get('/', [FrontEndController::class, 'therapies'])->name('therapies');
+    Route::get('/{therapy}', [FrontEndController::class, 'showTherapy'])->name('therapy.show');
+});
 
 
 Route::middleware('auth')->group(function () {

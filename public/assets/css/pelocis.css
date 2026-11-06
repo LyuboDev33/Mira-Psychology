@@ -7184,6 +7184,7 @@ body.megamenu-popup-active .mobile-nav__content {
     font-weight: 400;
     line-height: 26px;
     margin-top: 22px;
+    color: black;
 }
 
 @media (min-width: 1200px) {
@@ -17715,7 +17716,7 @@ body.megamenu-popup-active .mobile-nav__content {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    color: var(--pelocis-white, #fff);
+    color: black;
     margin: 0 0 59px;
 }
 
@@ -19617,7 +19618,7 @@ body.megamenu-popup-active .mobile-nav__content {
     object-fit: cover;
     border-radius: 30px;
     margin-bottom: 15px;
-    max-height: 400px;
+    /* max-height: 400px; */
     object-fit: cover;
 
 }
@@ -19649,10 +19650,12 @@ body.megamenu-popup-active .mobile-nav__content {
 .service-details__thumbnail {
     margin-bottom: 25px;
     position: relative;
+    margin: -20px;
 }
 
 .service-details__thumbnail img {
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .service-details__title {
@@ -24073,7 +24076,7 @@ body.boxed-wrapper .topbar-one__inner__shape {
 
 @media (max-width: 767px) {
     .call-area-three {
-        padding: 75px 0 243px;
+        padding: 75px 0 120px;
     }
 }
 

@@ -74,7 +74,7 @@
                             <div class="service-booking">
 
                                 <span class="service-booking__label">
-                                    Индивидуална тераия:
+                                    Индивидуална терапия:
                                 </span>
 
                                 <h3 class="service-booking__price">
@@ -105,14 +105,15 @@
                 </div>
 
                 <div class="col-md-12 col-lg-8">
+
                     <div class="service-details__content">
 
-                        <div class="service-details__thumbnail">
+                               <div class="service-details__thumbnail ">
                             <img src="/assets/images/resources/service-3-1.jpg" alt="Индивидуална терапия">
                         </div>
 
                         <h3 class="service-details__title">
-                            Индивидуална тераия:
+                            Индивидуална терапия:
                         </h3>
 
                         <p class="service-details__text">
@@ -164,12 +165,12 @@
                         <div class="row gutter-y-30 d-flex align-items-center mb20">
                             <div class="col-md-5">
                                 <div class="service-details__content__image">
-                                    <img src="/assets/images/resources/service-details-2.png"
+                                    <img src="/assets/images/resources/about-img-4.png"
                                         alt="Индивидуална терапия">
                                 </div>
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-md-7 align-self-start">
                                 <ul class="list-unstyled service-details__list">
                                     <li>
                                         <span class="fa fa-arrow-right"></span>

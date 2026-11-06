@@ -143,12 +143,12 @@
                         <div class="row gutter-y-30 d-flex align-items-center mb20">
                             <div class="col-md-5">
                                 <div class="service-details__content__image">
-                                    <img src="/assets/images/resources/service-details-2.png"
+                                    <img src="/assets/images/mira-figurki.jpg"
                                         alt="Индивидуална терапия">
                                 </div>
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-md-7 align-self-start">
                                 <ul class="list-unstyled service-details__list">
                                     <li>
                                         <span class="fa fa-arrow-right"></span>

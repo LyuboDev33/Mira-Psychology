@@ -35,7 +35,7 @@ class FrontEndController extends Controller
     }
 
     /** Show an individual service */
-     public function showService(string $service)
+    public function showService(string $service)
     {
         $view = 'Frontend.Services.' . $service;
 
@@ -53,8 +53,24 @@ class FrontEndController extends Controller
     }
 
     /** Therapies */
-    public function therapies(){
+    public function therapies()
+    {
         return view('Frontend.therapies');
+    }
+
+    /** Show a single therapy
+     *
+     * @param string $therapy
+     */
+    public function showTherapy(string $therapy)
+    {
+        $view = 'Frontend.Therapies.' . $therapy;
+
+        if (! View::exists($view)) {
+            return view('Frontend.404');
+        }
+
+        return view($view);
     }
 
     /** Show the services */

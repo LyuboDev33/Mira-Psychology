@@ -17,14 +17,19 @@
                                 <a href="{{ route('about') }}">За мен</a>
                             </li>
 
-                            <li>
+                               <li class="dropdown">
                                 <a href="{{ route('therapies') }}">Терапии</a>
+                                <ul>
+                                    <li><a href="{{ route('therapy.show', 'emdr-terapiya') }}">EMDR Терапия</a></li>
+                                    <li><a href="{{ route('therapy.show', 'art-terapiya') }}">Арт терапия</a></li>
+                                    <li><a href="{{ route('therapy.show', 'individualna-konstelaciya-s-figurki') }}">Индивидуална констелация с фигурки</a></li>
+                                </ul>
                             </li>
 
                               <li class="dropdown">
                                 <a>Услуги</a>
                                 <ul>
-                                    <li><a href="{{ route('service.show', 'individualna-terapiya') }}">Индивидуална тераия</a></li>
+                                    <li><a href="{{ route('service.show', 'individualna-terapiya') }}">Индивидуална терапия</a></li>
                                     <li><a href="{{ route('service.show', 'semeina-terapiya') }}">Семейна терапия</a></li>
                                     <li><a href="{{ route('service.show', 'individualna-konstelaciya-s-figurki') }}">Индивидуална констелация с фигурки</a></li>
                                 </ul>
