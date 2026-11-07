@@ -15890,9 +15890,9 @@ body.megamenu-popup-active .mobile-nav__content {
     height: 100%;
     width: 49.4%;
     padding-right: 18px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: transform 1000ms ease, opacity 1000ms ease;
-    transform: translatex(50%) scalex(2);
+    /* transform: translatex(50%) scalex(2); */
     filter: blur(10px);
 }
 
@@ -15900,6 +15900,10 @@ body.megamenu-popup-active .mobile-nav__content {
     .main-slider-three__image {
         display: none;
     }
+}
+
+.pelocis-owl__carousel .owl-nav {
+    display: none !important;
 }
 
 .main-slider-three__image__one {

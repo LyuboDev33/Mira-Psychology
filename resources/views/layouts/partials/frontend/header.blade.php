@@ -22,7 +22,10 @@
                                 <ul>
                                     <li><a href="{{ route('therapy.show', 'emdr-terapiya') }}">EMDR Терапия</a></li>
                                     <li><a href="{{ route('therapy.show', 'art-terapiya') }}">Арт терапия</a></li>
-                                    <li><a href="{{ route('therapy.show', 'individualna-konstelaciya-s-figurki') }}">Индивидуална констелация с фигурки</a></li>
+                                    <li><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Дихателна терапия</a></li>
+                                    <li><a href="{{ route('therapy.show', 'semeini-konstelacii') }}">Семейни Констелации</a></li>
+                                    <li><a href="{{ route('therapy.show', 'psihodrama') }}">Психодрама</a></li>
+                                    <li><a href="{{ route('therapy.show', 'terapiya-vutreshno-dete') }}">Терапия на вътрешното дете</a></li>
                                 </ul>
                             </li>
 

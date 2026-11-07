@@ -29,11 +29,8 @@
         <section class="main-slider-three">
             <div class="main-slider-three__carousel pelocis-owl__carousel owl-carousel"
                 data-owl-options='{
-                    "loop": false,
                     "items": 1,
                     "autoplay": false,
-                    "nav": false,
-                    "dots": false,
                     "margin": 0
                 }'>
 
