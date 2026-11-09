@@ -118,7 +118,7 @@ class EventsController extends Controller
         // Send confirmation email after successful booking.
         try {
             Mail::to($validated['email'])->send(new ConfirmBookingMail($validated, $result['event']));
-            
+
         } catch (\Throwable $exception) {
             Log::error('Failed to send event booking confirmation email.', [
                 'event_id' => $result['event']->id,

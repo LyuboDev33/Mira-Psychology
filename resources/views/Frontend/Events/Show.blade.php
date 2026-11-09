@@ -1,5 +1,36 @@
 <x-frontend>
 
+
+    @section('SEO')
+        <title>{{ $event->title }} | Албета – Мирослава Мацуева</title>
+
+        <meta name="description" content="{{ \Illuminate\Support\Str::limit(strip_tags($event->description), 155) }}">
+
+        <meta name="robots" content="index, follow">
+
+        <link rel="canonical" href="{{ url()->current() }}">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="event">
+        <meta property="og:locale" content="bg_BG">
+        <meta property="og:site_name" content="Албета">
+        <meta property="og:title" content="{{ $event->title }} | Албета">
+        <meta property="og:description"
+            content="{{ \Illuminate\Support\Str::limit(strip_tags($event->description), 200) }}">
+        <meta property="og:url" content="{{ url()->current() }}">
+        <meta property="og:image" content="{{ asset('assets/images/events/' . $event->image) }}">
+        <meta property="og:image:alt" content="{{ $event->title }}">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ $event->title }} | Албета">
+        <meta name="twitter:description"
+            content="{{ \Illuminate\Support\Str::limit(strip_tags($event->description), 200) }}">
+        <meta name="twitter:image" content="{{ asset('assets/images/events/' . $event->image) }}">
+
+ 
+    @endsection
+
     <section class="service-details">
         <div class="container">
 
@@ -65,7 +96,7 @@
 
                                     @if ($event->price > 0)
                                         <span class="event-booking-price__amount">
-                                           Цена:  {{ number_format($event->price, 2, ',', ' ') }} €
+                                            Цена: {{ number_format($event->price, 2, ',', ' ') }} €
                                         </span>
                                     @else
                                         <span class="event-booking-price__free">
@@ -113,7 +144,7 @@
                                             </label>
 
                                             <input type="text" name="name" id="name" class="form-control"
-                                                placeholder="Име и фамилия" autocomplete="name" >
+                                                placeholder="Име и фамилия" autocomplete="name">
 
                                             <div class="invalid-feedback" id="nameError"></div>
 
@@ -128,7 +159,7 @@
                                             </label>
 
                                             <input type="email" name="email" id="email" class="form-control"
-                                                placeholder="example@email.com" autocomplete="email" >
+                                                placeholder="example@email.com" autocomplete="email">
 
                                             <div class="invalid-feedback" id="emailError"></div>
 
@@ -142,11 +173,8 @@
                                                 <span class="text-danger">*</span>
                                             </label>
 
-                                            <input type="tel"
-                                                name="phone"
-                                                id="phone"
-                                                class="form-control"
-                                                placeholder="0888 123 456" autocomplete="tel" >
+                                            <input type="tel" name="phone" id="phone" class="form-control"
+                                                placeholder="0888 123 456" autocomplete="tel">
 
                                             <div class="invalid-feedback" id="phoneError"></div>
 
@@ -275,15 +303,9 @@
     </section>
 
     <!-- SUCCESS MODAL -->
-    <div class="booking-success-overlay"
-        id="bookingSuccessModal"
-        style="display: none;"
-        aria-hidden="true">
+    <div class="booking-success-overlay" id="bookingSuccessModal" style="display: none;" aria-hidden="true">
 
-        <div class="booking-success-modal"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="bookingSuccessTitle">
+        <div class="booking-success-modal" role="dialog" aria-modal="true" aria-labelledby="bookingSuccessTitle">
 
             <button type="button" class="booking-success-close" id="bookingModalClose" aria-label="Затвори">
                 &times;
@@ -300,7 +322,7 @@
             <p id="bookingSuccessMessage"></p>
 
             <p class="booking-success-subtitle">
-                 събитието.
+                събитието.
             </p>
 
             <button type="button" class="booking-success-button" id="bookingModalConfirm">

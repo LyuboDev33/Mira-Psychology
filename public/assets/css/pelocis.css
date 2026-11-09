@@ -6637,7 +6637,7 @@ h6 {
     transform-origin: top center;
     transform: scaleY(0) translateZ(100px);
     transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease;
-    z-index: 99;
+    z-index: 9999999;
     background-color: var(--pelocis-white, #fff);
     box-shadow: 0px 10px 60px 0px RGBA(var(--pelocis-white-rgb, 255, 255, 255), 0.07);
     padding: 15px 20px 11px;
@@ -16922,17 +16922,17 @@ body.megamenu-popup-active .mobile-nav__content {
     transform: scale(1);
 }
 
-.feature-three__card:hover .feature-three__card__title {
+/* .feature-three__card:hover .feature-three__card__title {
     color: var(--pelocis-white, #fff);
-}
+} */
 
-.feature-three__card:hover .feature-three__card__text {
+/* .feature-three__card:hover .feature-three__card__text {
     color: var(--pelocis-white, #fff);
-}
+} */
 
-.feature-three__card:hover .feature-three__card__btn {
+/* .feature-three__card:hover .feature-three__card__btn {
     color: var(--pelocis-base, #e2a475);
-}
+} */
 
 .feature-three__card:hover .feature-three__card__icon {
     color: var(--pelocis-base, #e2a475);
@@ -17634,6 +17634,7 @@ body.megamenu-popup-active .mobile-nav__content {
     position: relative;
     padding: 110px 0;
     overflow: hidden;
+    background: #f4f2ee;
 }
 
 @media (max-width: 767px) {
@@ -17678,6 +17679,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .about-three__content {
     position: relative;
     width: 100%;
+    margin-top: 220px;
 }
 
 .about-three__content .sec-title {
@@ -17692,10 +17694,10 @@ body.megamenu-popup-active .mobile-nav__content {
     background-color: var(--pelocis-black, #222222);
 }
 
-.about-three__content .sec-title__title,
+/* .about-three__content .sec-title__title,
 .about-three__content .sec-title__tagline {
     color: var(--pelocis-white, #fff);
-}
+} */
 
 .about-three__content__text {
     font-size: 16px;
@@ -20378,6 +20380,7 @@ body.boxed-wrapper .topbar-one__inner__shape {
     position: relative;
     padding: 110px 0 120px;
     counter-reset: count;
+    background: #f4f2ee;
 }
 
 @media (max-width: 767px) {

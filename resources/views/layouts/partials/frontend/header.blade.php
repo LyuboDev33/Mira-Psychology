@@ -18,7 +18,7 @@
                             </li>
 
                                <li class="dropdown">
-                                <a href="{{ route('therapies') }}">Терапии</a>
+                                <a>Терапии</a>
                                 <ul>
                                     <li><a href="{{ route('therapy.show', 'emdr-terapiya') }}">EMDR Терапия</a></li>
                                     <li><a href="{{ route('therapy.show', 'art-terapiya') }}">Арт терапия</a></li>

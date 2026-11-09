@@ -24,7 +24,7 @@ Route::prefix('/events')->group(function () {
 
 /** Show all therapies */
 Route::prefix('/therapies')->group(function () {
-    Route::get('/', [FrontEndController::class, 'therapies'])->name('therapies');
+    // Route::get('/', [FrontEndController::class, 'therapies'])->name('therapies');
     Route::get('/{therapy}', [FrontEndController::class, 'showTherapy'])->name('therapy.show');
 });
 

@@ -241,12 +241,12 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/emdr-therapy.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapies') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapies') }}">EMDR терапия</a></h3>
+                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">EMDR терапия</a></h3>
                             <span class="team-two__card__designation">Работа с травматични преживявания</span>
                         </div>
                     </div>
@@ -256,12 +256,12 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-8.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapies') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapies') }}">Арт терапия</a></h3>
+                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Арт терапия</a></h3>
                             <span class="team-two__card__designation">Творчество и себеизразяване</span>
                         </div>
                     </div>
@@ -271,12 +271,12 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-9.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapies') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapies') }}">Психодрама</a></h3>
+                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Психодрама</a></h3>
                             <span class="team-two__card__designation">Преживяване чрез действие</span>
                         </div>
                     </div>
@@ -286,12 +286,12 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-10.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapies') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapies') }}">Дихателни практики</a>
+                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Дихателни практики</a>
                             </h3>
                             <span class="team-two__card__designation">Контакт с тялото и емоциите</span>
                         </div>
@@ -302,12 +302,12 @@
                         <div class="team-two__card__img">
                             <img src="/assets/images/resources/team-img-15.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapies') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapies') }}">Семейни
+                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Семейни
                                     консталации</a>
                             </h3>
                             <span class="team-two__card__designation">Помагат да видим семейните модели, които влияят
@@ -321,12 +321,12 @@
                         <div class="team-two__card__img">
                             <img src="/assets/images/resources/vutreshno-dete.jpg" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapies') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapies') }}">Работа с вътрешното
+                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Работа с вътрешното
                                     дете</a>
                             </h3>
                             <span class="team-two__card__designation">Път към разбиране на детските преживявания и

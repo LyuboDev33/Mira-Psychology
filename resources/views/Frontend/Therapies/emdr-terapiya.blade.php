@@ -61,11 +61,11 @@
 
                                         <h1 class="main-slider-three__title">
                                             EMDR терапия
-                                            <img
+                                            {{-- <img
                                                 src="{{ asset('assets/images/shapes/home-3-shape-1.png') }}"
                                                 alt=""
                                                 class="main-slider-three__title--shape"
-                                            >
+                                            > --}}
                                         </h1>
 
                                         <p class="main-slider-three__text">
@@ -196,11 +196,11 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
+                    <div class="col-xl-6 align-self-start wow fadeInRight" data-wow-delay="200ms">
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img">
                                 <img
-                                    src="{{ asset('assets/images/resources/about-3-1.png') }}"
+                                    src="{{ asset('assets/images/resources/service-3-1.jpg') }}"
                                     alt="Индивидуална EMDR терапия"
                                     loading="lazy"
                                 >
