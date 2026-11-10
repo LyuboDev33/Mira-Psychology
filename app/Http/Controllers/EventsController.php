@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\EventBookingStoreRequest;
 use App\Mail\ConfirmBookingMail;
+use App\Mail\NotifyAdminBookingMail;
 use App\Models\Event;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
@@ -118,6 +119,9 @@ class EventsController extends Controller
         // Send confirmation email after successful booking.
         try {
             Mail::to($validated['email'])->send(new ConfirmBookingMail($validated, $result['event']));
+
+            // Notify the administrator about the new booking.
+            Mail::to('miroslavamatsyreva@gmail.com')->send(new NotifyAdminBookingMail($validated, $result['event']));
 
         } catch (\Throwable $exception) {
             Log::error('Failed to send event booking confirmation email.', [
