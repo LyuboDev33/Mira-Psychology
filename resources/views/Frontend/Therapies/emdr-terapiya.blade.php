@@ -40,7 +40,7 @@
                         <div class="main-slider-three__image">
                             <div class="main-slider-three__image__one">
                                 <img
-                                    src="{{ asset('assets/images/resources/about-img-1.png') }}"
+                                    src="{{ asset('/assets/images/therapies/emrd-terapiya/snimki/fd642d83-ee7d-40a6-b009-bf4abe98e96c.png') }}"
                                     alt="EMDR терапия – спокойна и подкрепяща среда"
                                     fetchpriority="high"
                                 >
@@ -200,7 +200,7 @@
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img">
                                 <img
-                                    src="{{ asset('assets/images/resources/service-3-1.jpg') }}"
+                                    src="{{ asset('assets/images/resources/about-img-1.png') }}"
                                     alt="Индивидуална EMDR терапия"
                                     loading="lazy"
                                 >
@@ -247,7 +247,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-mental-health"></i>
+                             <img src="/assets/images/therapies/emrd-terapiya/purvite-ikonki/63652b34-ee59-4799-a6e5-b4d6e758c881.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -264,7 +264,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-social-care"></i>
+                               <img src="/assets/images/therapies/emrd-terapiya/purvite-ikonki/f4ab1c21-5e94-4a6b-b99b-917fc0798ffb.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -281,7 +281,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-brain"></i>
+                               <img src="/assets/images/therapies/emrd-terapiya/purvite-ikonki/49dc4177-d820-400e-81c6-c31734dedfad.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -298,7 +298,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-partnership"></i>
+                               <img src="/assets/images/therapies/emrd-terapiya/purvite-ikonki/1c525339-55ff-4089-8fcb-d6b5e259848a.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -319,7 +319,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-mental-health"></i>
+                             <img src="/assets/images/therapies/emrd-terapiya/purvite-ikonki/7eaedbd2-a50c-40f9-82f3-7c9b0defa21f.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -338,7 +338,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-social-care"></i>
+                               <img src="/assets/images/therapies/emrd-terapiya/purvite-ikonki/9e62a285-5e6c-402d-aa1d-6937599d9e99.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -355,7 +355,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-business-trip"></i>
+                               <img src="/assets/images/therapies/emrd-terapiya/purvite-ikonki/09852122-446a-400e-a47a-4c81954f067a.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -408,7 +408,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-social-care"></i>
+                                <img src="/assets/images/therapies/emrd-terapiya/vtorite-ikonki/f0254959-00fe-410e-9507-bbc789cde994.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -429,7 +429,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-partnership"></i>
+                               <img src="/assets/images/therapies/emrd-terapiya/vtorite-ikonki/3e9dd0fd-3b81-4c1a-a320-db770a97ca73.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -450,7 +450,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-brain"></i>
+                              <img src="/assets/images/therapies/emrd-terapiya/vtorite-ikonki/f0254959-00fe-410e-9507-bbc789cde994.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -471,7 +471,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-mental-health"></i>
+                                <img src="/assets/images/therapies/emrd-terapiya/vtorite-ikonki/867034c4-2e00-423d-bec1-1bb313a20175.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -505,14 +505,14 @@
                         <div class="skills-three__images">
 
                             <img
-                                src="{{ asset('assets/images/resources/skills-3-1.png') }}"
+                                src="{{ asset('/assets/images/therapies/emrd-terapiya/snimki/4ad76cb8-4556-4d61-884f-18502454c65b.png') }}"
                                 alt="Терапевтичен процес"
                                 class="skills-three__images__one"
                                 loading="lazy"
                             >
 
                             <img
-                                src="{{ asset('assets/images/resources/skills-3-2.png') }}"
+                                src="{{ asset('/assets/images/therapies/emrd-terapiya/snimki/emdr.jpeg') }}"
                                 alt="Спокойна среда за психотерапия"
                                 class="skills-three__images__two"
                                 loading="lazy"
@@ -601,7 +601,7 @@
             <div class="container-fluid">
 
                 <div class="video-three__card"
-                    style="background-image: url('{{ asset('assets/images/backgrounds/video-3-bg.png') }}');">
+                    style="background-image: url('{{ asset('assets/images/backgrounds/welcome-bg.jpg') }}');">
 
                     <h4 class="video-three__card__v-title">
                         Смисълът на терапевтичния процес
@@ -630,7 +630,7 @@
 
             <div class="container">
 
-                <div class="row align-items-center">
+                <div class="row align-items-center custom-about">
 
                     <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
 
@@ -708,13 +708,13 @@
 
                     </div>
 
-                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
+                    <div class="col-xl-6 align-self-start wow fadeInRight" data-wow-delay="200ms">
 
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img">
 
                                 <img
-                                    src="{{ asset('assets/images/resources/about-3-1.png') }}"
+                                    src="{{ asset('/assets/images/therapies/emrd-terapiya/snimki/emdr-2.jpg') }}"
                                     alt="EMDR терапия и взаимоотношения"
                                     loading="lazy"
                                 >
@@ -767,7 +767,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-social-care"></i>
+                                <img src="/assets/images/therapies/emrd-terapiya/treti-ikonki/cea82c5c-ad1b-4e73-8571-e8e487e5c1bd.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -790,7 +790,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-mental-health"></i>
+                                <img src="/assets/images/therapies/emrd-terapiya/treti-ikonki/5eb60328-efd7-47f8-a089-10a264302032.png" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">

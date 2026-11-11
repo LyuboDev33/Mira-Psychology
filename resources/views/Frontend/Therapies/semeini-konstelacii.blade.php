@@ -27,7 +27,7 @@
                 <div class="main-slider-three__item">
                     <div class="main-slider-three__image">
                         <div class="main-slider-three__image__one">
-                            <img src="{{ asset('assets/images/resources/about-img-1.png') }}"
+                            <img src="{{ asset('/assets/images/therapies/semeini-konstelacii/snimki/f9d58c63-11a5-444f-9433-f2e17eaaf926.png') }}"
                                 alt="Семейни констелации с Мирослава Мацурева" fetchpriority="high">
                         </div>
                         <div class="main-slider-three__image__shape"></div>
@@ -109,7 +109,7 @@
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
                     <div class="pelocis-stretch-element-inside-column">
                         <div class="about-three__img">
-                            <img src="{{ asset('assets/images/resources/about-3-1.png') }}"
+                            <img src="{{ asset('assets/images/resources/about-img-1.png') }}"
                                 alt="Индивидуални семейни констелации" loading="lazy">
                         </div>
                     </div>
@@ -132,7 +132,9 @@
             <div class="row gutter-y-30">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-family-life"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/purvi-ikonki/viber_image_2026-11-11_12-36-24-211.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Семейни отношения</h3>
                         <p class="feature-three__card__text">Отношения с майка, баща или други членове на семейството;
                             семейни конфликти.</p>
@@ -140,7 +142,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-partnership"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/purvi-ikonki/viber_image_2026-11-11_12-36-22-527.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Партньорство</h3>
                         <p class="feature-three__card__text">Партньорски отношения и повтарящи се модели във връзките.
                         </p>
@@ -148,7 +152,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/purvi-ikonki/viber_image_2026-11-11_12-36-27-263.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Принадлежност и граници</h3>
                         <p class="feature-three__card__text">Трудности с принадлежността и отделянето; лични граници.
                         </p>
@@ -156,7 +162,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/purvi-ikonki/viber_image_2026-11-11_12-36-21-749.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Загуба и раздяла</h3>
                         <p class="feature-three__card__text">Преживявания на раздяла, загуба и промяна в отношенията.
                         </p>
@@ -164,14 +172,18 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-business-trip"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/purvi-ikonki/viber_image_2026-11-11_12-36-26-423.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Важни решения</h3>
                         <p class="feature-three__card__text">Житейски избори, решения и нови посоки.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-brain"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/purvi-ikonki/viber_image_2026-11-11_12-36-25-693.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Повтарящи се ситуации</h3>
                         <p class="feature-three__card__text">Житейски ситуации и модели, които се появяват отново и
                             отново.</p>
@@ -179,7 +191,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/purvi-ikonki/viber_image_2026-11-11_12-36-23-468.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Усещане за блокиране</h3>
                         <p class="feature-three__card__text">Чувство, че не можете да продължите напред.</p>
                     </div>
@@ -201,14 +215,18 @@
             <div class="row gutter-y-30">
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/vtori-ikonki/viber_image_2026-11-11_12-44-18-163.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">01. Разговор</h3>
                         <p class="feature-three__card__text">Изясняваме личната тема и въпроса, който стои зад нея.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-family-life"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/vtori-ikonki/viber_image_2026-11-11_12-44-17-357.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">02. Пространствен образ</h3>
                         <p class="feature-three__card__text">С помощта на фигурки представяме значимите хора, отношения
                             и елементи от ситуацията.</p>
@@ -216,7 +234,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-brain"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/vtori-ikonki/viber_image_2026-11-11_12-44-16-497.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">03. Изследване</h3>
                         <p class="feature-three__card__text">Разглеждаме отношенията, позициите и моделите, които
                             стават видими.</p>
@@ -230,7 +250,7 @@
     <section class="video-three">
         <div class="container-fluid">
             <div class="video-three__card"
-                style="background-image: url('{{ asset('assets/images/backgrounds/video-3-bg.png') }}');">
+                style="background-image: url('{{ asset('assets/images/backgrounds/welcome-bg.jpg') }}');">
                 <h4 class="video-three__card__v-title">Нова перспектива</h4>
                 <h2 class="video-three__card__title">Понякога това, което ни е трудно да разберем с ума, можем да видим
                     по различен начин, когато го поставим пред себе си.</h2>
@@ -242,7 +262,7 @@
     <section class="about-three" id="group-constellations">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-xl-6 custom-about wow fadeInUp" data-wow-delay="100ms">
                     <div class="about-three__content">
                         <div class="sec-title">
                             <div class="sec-title__shape"></div>
@@ -272,7 +292,7 @@
                 </div>
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
                     <div class="pelocis-stretch-element-inside-column">
-                        <div class="about-three__img"><img src="{{ asset('assets/images/resources/about-3-1.png') }}"
+                        <div class="about-three__img"><img src="{{ asset('/assets/images/therapies/semeini-konstelacii/snimki/a865709f-cb56-40f0-96d3-a9ebc512c237.png') }}"
                                 alt="Групови семейни констелации" loading="lazy"></div>
                     </div>
                 </div>
@@ -293,7 +313,9 @@
             <div class="row gutter-y-30">
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/grupovi/viber_image_2026-11-11_12-46-32-967.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">01. Създаваме пространство</h3>
                         <p class="feature-three__card__text">В началото създаваме безопасно пространство и се
                             запознаваме с процеса.</p>
@@ -301,7 +323,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-partnership"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/grupovi/viber_image_2026-11-11_12-46-36-137.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">02. Поставяне на тема</h3>
                         <p class="feature-three__card__text">Участниците, които желаят, могат да поставят свои лични
                             теми.</p>
@@ -309,7 +333,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-family-life"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/grupovi/viber_image_2026-11-11_12-46-33-903.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">03. Работа с представители</h3>
                         <p class="feature-three__card__text">За всяка тема се определят необходимите представители и
                             започва констелационната работа.</p>
@@ -317,7 +343,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/grupovi/viber_image_2026-11-11_12-46-35-188.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">04. Лично преживяване</h3>
                         <p class="feature-three__card__text">Всеки може да участва чрез своята тема, като представител
                             или наблюдател, със собствено темпо.</p>
@@ -340,7 +368,9 @@
             <div class="row gutter-y-30">
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-family-life"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/treti-ikonki/viber_image_2026-11-11_12-51-08-522.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Родители и семейство</h3>
                         <p class="feature-three__card__text">Отношения с родители и семейство, майки и дъщери, бащи и
                             деца.</p>
@@ -348,35 +378,45 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-partnership"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/treti-ikonki/viber_image_2026-11-11_12-51-10-572.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Партньорски отношения</h3>
                         <p class="feature-three__card__text">Партньорство и повтарящи се модели в отношенията.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/treti-ikonki/viber_image_2026-11-11_12-51-12-633.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Граници и принадлежност</h3>
                         <p class="feature-three__card__text">Принадлежност, лични граници и семейни конфликти.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/treti-ikonki/viber_image_2026-11-11_12-51-09-208.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Раздяла и загуба</h3>
                         <p class="feature-three__card__text">Преживявания, свързани с раздяла, загуба и промяна.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-business-trip"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/treti-ikonki/viber_image_2026-11-11_12-51-09-887.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Житейски преходи и решения</h3>
                         <p class="feature-three__card__text">Важни житейски избори и периоди на преход.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="feature-three__card">
-                        <div class="feature-three__card__icon"><i class="icon-brain"></i></div>
+                        <div class="feature-three__card__icon">
+                            <img src="/assets/images/therapies/semeini-konstelacii/treti-ikonki/viber_image_2026-11-11_12-51-11-887.jpg" alt="">
+                        </div>
                         <h3 class="feature-three__card__title">Повтарящи се ситуации</h3>
                         <p class="feature-three__card__text">Усещане за блокиране и повтарящи се житейски ситуации.</p>
                     </div>
@@ -391,9 +431,9 @@
             <div class="row align-items-center">
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="skills-three__images">
-                        <img src="{{ asset('assets/images/resources/skills-3-1.png') }}"
+                        <img src="{{ asset('/assets/images/therapies/semeini-konstelacii/snimki/6b85ffef-86fc-47e2-ae9f-4178195f5255.png') }}"
                             alt="Пространство за лична работа" class="skills-three__images__one" loading="lazy">
-                        <img src="{{ asset('assets/images/resources/skills-3-2.png') }}"
+                        <img src="{{ asset('assets/images/therapies/semeini-konstelacii/snimki/a865709f-cb56-40f0-96d3-a9ebc512c237.png') }}"
                             alt="Осъзнаване и нова перспектива" class="skills-three__images__two" loading="lazy">
                         <img src="{{ asset('assets/images/shapes/skills-3-shape-1.png') }}" alt=""
                             class="skills-three__images__shape-one">
@@ -426,16 +466,6 @@
         </div>
     </section>
 
-    <!-- CLOSING -->
-    <section class="video-three">
-        <div class="container-fluid">
-            <div class="video-three__card"
-                style="background-image: url('{{ asset('assets/images/backgrounds/video-3-bg.png') }}');">
-                <h4 class="video-three__card__v-title">Осъзнаване и нова перспектива</h4>
-                <h2 class="video-three__card__title">Понякога, когато погледнем своята история през очите на другите,
-                    откриваме нов начин да погледнем и към себе си.</h2>
-            </div>
-        </div>
-    </section>
+
 
 </x-frontend>

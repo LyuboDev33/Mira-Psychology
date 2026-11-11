@@ -121,7 +121,7 @@ class EventsController extends Controller
             Mail::to($validated['email'])->send(new ConfirmBookingMail($validated, $result['event']));
 
             // Notify the administrator about the new booking.
-            Mail::to('miroslavamatsyreva@gmail.com')->send(new NotifyAdminBookingMail($validated, $result['event']));
+            Mail::to('miroslavamatsureva@gmail.com')->send(new NotifyAdminBookingMail($validated, $result['event']));
 
         } catch (\Throwable $exception) {
             Log::error('Failed to send event booking confirmation email.', [

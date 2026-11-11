@@ -20,7 +20,6 @@
             content="Работа с ранни преживявания, емоционални модели и потребности чрез индивидуална психотерапия.">
     @endsection
 
-    <main>
 
         <!-- HERO -->
         <section class="main-slider-three">
@@ -36,7 +35,7 @@
 
                         <div class="main-slider-three__image">
                             <div class="main-slider-three__image__one">
-                                <img src="{{ asset('assets/images/resources/about-img-1.png') }}"
+                                <img src="{{ asset('/assets/images/therapies/vutreshno-dete/snimki/dfcf7063-7133-45a7-9623-da84517106cf.png') }}"
                                     alt="Терапия на вътрешното дете – работа с ранни преживявания" fetchpriority="high">
                             </div>
                             <div class="main-slider-three__image__shape"></div>
@@ -125,7 +124,7 @@
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img"><img
-                                    src="{{ asset('assets/images/resources/about-3-1.png') }}"
+                                    src="{{ asset('assets/images/resources/about-img-1.png') }}"
                                     alt="Терапия на вътрешното дете" loading="lazy"></div>
                         </div>
                     </div>
@@ -149,7 +148,9 @@
                 <div class="row gutter-y-30">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-partnership"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/purvi-ikonki/viber_image_2026-11-11_13-05-32-471.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Страх от изоставяне</h3>
                             <p class="feature-three__card__text">Страх от изоставяне или отхвърляне, страх от конфликт
                                 или самота.</p>
@@ -157,7 +158,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/purvi-ikonki/viber_image_2026-11-11_13-05-39-136.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Нужда от одобрение</h3>
                             <p class="feature-three__card__text">Силна нужда от одобрение и усещане, че трябва да
                                 заслужим любовта.</p>
@@ -165,7 +168,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/purvi-ikonki/viber_image_2026-11-11_13-05-53-581.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Лични граници</h3>
                             <p class="feature-three__card__text">Трудност да поставяме граници и прекомерна отговорност
                                 за чувствата на другите.</p>
@@ -173,7 +178,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-partnership"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/purvi-ikonki/viber_image_2026-11-11_13-05-25-828.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Интимни отношения</h3>
                             <p class="feature-three__card__text">Трудности в интимните отношения и повтарящ се избор на
                                 определен тип партньори.</p>
@@ -181,7 +188,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-brain"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/purvi-ikonki/viber_image_2026-11-11_13-05-42-906.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Емоционални реакции</h3>
                             <p class="feature-three__card__text">Силни емоционални реакции в ситуации, които ни
                                 напомнят за миналото.</p>
@@ -189,14 +198,18 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/purvi-ikonki/viber_image_2026-11-11_13-05-42-906.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Самооценка</h3>
                             <p class="feature-three__card__text">Усещане, че „не съм достатъчно добър/добра“.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/purvi-ikonki/viber_image_2026-11-11_13-05-47-151.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Собствени потребности</h3>
                             <p class="feature-three__card__text">Трудност да се погрижим за собствените си потребности.
                             </p>
@@ -204,7 +217,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-business-trip"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/purvi-ikonki/viber_image_2026-11-11_13-05-37-378.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Повтарящи се модели</h3>
                             <p class="feature-three__card__text">Начини на чувстване и свързване, които продължават да
                                 влияят на живота ни.</p>
@@ -230,7 +245,9 @@
                 <div class="row gutter-y-30">
                     <div class="col-lg-3 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/vtori-ikonki/viber_image_2026-11-11_13-15-36-629.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">01. Изследване на преживяванията</h3>
                             <p class="feature-three__card__text">Изследваме преживяванията от детството и как те могат
                                 да се свързват с настоящия ви живот.</p>
@@ -238,7 +255,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-brain"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/vtori-ikonki/viber_image_2026-11-11_13-15-33-601.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">02. Контакт с чувствата</h3>
                             <p class="feature-three__card__text">Обръщаме внимание на емоциите, телесните усещания,
                                 спомените и убежденията.</p>
@@ -246,7 +265,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-partnership"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/vtori-ikonki/viber_image_2026-11-11_13-15-25-677.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">03. Работа с потребностите</h3>
                             <p class="feature-three__card__text">Разпознаваме потребностите, които са останали
                                 непосрещнати, и изследваме възможности за грижа.</p>
@@ -254,7 +275,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/vutreshno-dete/vtori-ikonki/viber_image_2026-11-11_13-15-29-481.jpg" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">04. Вътрешна сигурност</h3>
                             <p class="feature-three__card__text">Изграждаме усещане за сигурност и способност днес да
                                 се погрижим за себе си по нов начин.</p>
@@ -271,10 +294,10 @@
                 <div class="row align-items-center">
                     <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="skills-three__images">
-                            <img src="{{ asset('assets/images/resources/skills-3-1.png') }}"
+                            <img src="{{ asset('/assets/images/therapies/vutreshno-dete/snimki/6b9d02df-ba07-46a9-aa50-7a64a1e678e8.png') }}"
                                 alt="Терапевтична работа с преживяванията" class="skills-three__images__one"
                                 loading="lazy">
-                            <img src="{{ asset('assets/images/resources/skills-3-2.png') }}"
+                            <img src="{{ asset('/assets/images/therapies/vutreshno-dete/snimki/0a7518da-cbef-4bb2-9057-cf9349430917.png') }}"
                                 alt="Пространство за самопознание" class="skills-three__images__two" loading="lazy">
                             <img src="{{ asset('assets/images/shapes/skills-3-shape-1.png') }}" alt=""
                                 class="skills-three__images__shape-one">
@@ -314,7 +337,7 @@
         <section class="video-three">
             <div class="container-fluid">
                 <div class="video-three__card"
-                    style="background-image: url('{{ asset('assets/images/backgrounds/video-3-bg.png') }}');">
+                    style="background-image: url('{{ asset('assets/images/backgrounds/welcome-bg.jpg') }}');">
                     <h4 class="video-three__card__v-title">Да се погрижим за себе си по нов начин</h4>
                     <h2 class="video-three__card__title">Работата с вътрешното дете не означава да живеем в миналото.
                     </h2>
@@ -366,7 +389,7 @@
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img"><img
-                                    src="{{ asset('assets/images/resources/about-3-1.png') }}"
+                                    src="{{ asset('/assets/images/therapies/vutreshno-dete/snimki/dfcf7063-7133-45a7-9623-da84517106cf.png') }}"
                                     alt="Терапия на вътрешното дете" loading="lazy"></div>
                         </div>
                     </div>
@@ -375,20 +398,5 @@
         </section>
 
 
-        <!-- FINAL MESSAGE -->
-        <section class="video-three">
-            <div class="container-fluid">
-                <div class="video-three__card"
-                    style="background-image: url('{{ asset('assets/images/backgrounds/video-3-bg.png') }}');">
-                    <h4 class="video-three__card__v-title">Среща със себе си</h4>
-                    <h2 class="video-three__card__title">Понякога най-важната среща е тази със самите нас.</h2>
-                    <p class="video-three__card__text">Такива, каквито сме били тогава, и такива, каквито можем да
-                        бъдем днес.</p>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
 
 </x-frontend>

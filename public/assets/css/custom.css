@@ -1244,3 +1244,11 @@
     pointer-events: none;
     z-index: 1;
 }
+
+.feature-three__card__icon img {
+    border-radius: 50%;
+}
+
+.custom-about {
+    margin-top: 200px;
+}

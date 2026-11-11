@@ -40,7 +40,7 @@
                         <div class="main-slider-three__image">
                             <div class="main-slider-three__image__one">
                                 <img
-                                    src="{{ asset('assets/images/resources/about-img-1.png') }}"
+                                    src="{{ asset('/assets/images/therapies/art-terapiya/snimki/93681699-5c8d-40f9-83dc-ef88c6799556.png') }}"
                                     alt="Арт терапия – творческо изразяване"
                                     fetchpriority="high"
                                 >
@@ -110,8 +110,8 @@
         <!-- ABOUT ART THERAPY -->
         <section class="about-three" id="about-art-therapy">
             <div class="about-three__bg">
-                <div class="about-three__shape-one"><img src="{{ asset('assets/images/shapes/about-3-shape-1.png') }}" alt=""></div>
-                <div class="about-three__shape-two"><img src="{{ asset('assets/images/shapes/about-3-shape-2.png') }}" alt=""></div>
+                {{-- <div class="about-three__shape-one"><img src="{{ asset('assets/images/shapes/about-3-shape-1.png') }}" alt=""></div>
+                <div class="about-three__shape-two"><img src="{{ asset('assets/images/shapes/about-3-shape-2.png') }}" alt=""></div> --}}
             </div>
             <div class="container">
                 <div class="row align-items-center">
@@ -139,7 +139,7 @@
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img">
-                                <img src="{{ asset('assets/images/resources/about-3-1.png') }}" alt="Арт терапия и творческо изразяване" loading="lazy">
+                                <img src="{{ asset('assets/images/resources/about-img-1.png') }}" alt="Арт терапия и творческо изразяване" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -161,56 +161,72 @@
                 <div class="row gutter-y-30">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/purvite-ikonki/346bb846-2de3-4752-bb67-6960cb1910c2.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Тревожност и напрежение</h3>
                             <p class="feature-three__card__text">Тревожност и вътрешно напрежение; емоционални трудности.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/purvite-ikonki/991b45c4-9a5d-4d21-924c-445a37d2480e.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Травма и загуба</h3>
                             <p class="feature-three__card__text">Преживяна травма, загуба и раздяла.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-brain"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/purvite-ikonki/6508a354-a486-4bc9-939a-a30484dcd935.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Изразяване на чувства</h3>
                             <p class="feature-three__card__text">Трудности при изразяване на чувства и свързаните с тях преживявания.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-partnership"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/purvite-ikonki/12c6de56-e5d3-45d0-8382-5c775af1299c.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Взаимоотношения</h3>
                             <p class="feature-three__card__text">Трудности във взаимоотношенията и повтарящи се житейски модели.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/purvite-ikonki/9e62a285-5e6c-402d-aa1d-6937599d9e99.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Самооценка</h3>
                             <p class="feature-three__card__text">Ниска самооценка и несигурност.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/purvite-ikonki/e5bb8ea6-ad9b-49ad-9018-a9193590e362.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Вътрешното дете</h3>
                             <p class="feature-three__card__text">Работа с вътрешното дете и преживяванията, свързани с него.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-brain"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/purvite-ikonki/391ab8cb-ae8b-4678-9551-7556f8e999ae.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Самопознание</h3>
                             <p class="feature-three__card__text">Личностно развитие и самопознание.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-business-trip"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/purvite-ikonki/2cb25821-2f37-4230-afc8-c6b105443bab.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Житейски промени</h3>
                             <p class="feature-three__card__text">Периоди на промяна и житейски преходи.</p>
                         </div>
@@ -233,28 +249,36 @@
                 <div class="row gutter-y-30">
                     <div class="col-lg-3 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/vtori-ikonki/79537346-7be0-496c-b39b-a86b071b6014.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">01. Избор на подход</h3>
                             <p class="feature-three__card__text">Използваме различни творчески средства според темата и потребностите на човека.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-partnership"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/vtori-ikonki/531905d5-579b-44f2-b7fb-1e251f54bd6e.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">02. Творчески процес</h3>
                             <p class="feature-three__card__text">Може да работим с рисуване, колаж, цветове, символи, глина, движение, образи и други експресивни техники.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-brain"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/vtori-ikonki/48b71cdb-2ab0-4f22-b8ca-b68ecd265b89.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">03. Изследване</h3>
                             <p class="feature-three__card__text">След творческия процес обръщаме внимание на чувствата, телесните усещания, асоциациите и спомените, които са се появили.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/vtori-ikonki/79537346-7be0-496c-b39b-a86b071b6014.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">04. Лично значение</h3>
                             <p class="feature-three__card__text">Изследваме личните значения, без да търсим универсално „правилно“ тълкуване на образа.</p>
                         </div>
@@ -269,8 +293,8 @@
                 <div class="row align-items-center">
                     <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="skills-three__images">
-                            <img src="{{ asset('assets/images/resources/skills-3-1.png') }}" alt="Творчески процес в арт терапията" class="skills-three__images__one" loading="lazy">
-                            <img src="{{ asset('assets/images/resources/skills-3-2.png') }}" alt="Изразяване чрез творчески материали" class="skills-three__images__two" loading="lazy">
+                            <img src="{{ asset('/assets/images/therapies/art-terapiya/snimki/589a2d8b-03c4-4b78-9abc-75dd7cf15ea4.png') }}" alt="Творчески процес в арт терапията" class="skills-three__images__one" loading="lazy">
+                            <img src="{{ asset('/assets/images/therapies/art-terapiya/snimki/bf2d7c07-04f4-4a8c-b59f-e392b5980c44.png') }}" alt="Изразяване чрез творчески материали" class="skills-three__images__two" loading="lazy">
                             <img src="{{ asset('assets/images/shapes/skills-3-shape-1.png') }}" alt="" class="skills-three__images__shape-one">
                             <div class="skills-three__images__shape-two"></div>
                             <div class="skills-three__images__shape-three"></div>
@@ -301,7 +325,7 @@
         <!-- KEY MESSAGE -->
         <section class="video-three">
             <div class="container-fluid">
-                <div class="video-three__card" style="background-image: url('{{ asset('assets/images/backgrounds/video-3-bg.png') }}');">
+                <div class="video-three__card" style="background-image: url('{{ asset('assets/images/backgrounds/welcome-bg.jpg') }}');">
                     <h4 class="video-three__card__v-title">Вашият личен смисъл</h4>
                     <h2 class="video-three__card__title">Не търсим универсално „правилно“ значение на образа.</h2>
                     <p class="video-three__card__text">Това, което е важно, е какво означава той за вас.</p>
@@ -314,7 +338,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="about-three__content">
+                        <div class="about-three__content custom-about">
                             <div class="sec-title">
                                 <div class="sec-title__shape"></div>
                                 <h6 class="sec-title__tagline">Творчество без оценка</h6>
@@ -338,7 +362,7 @@
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img">
-                                <img src="{{ asset('assets/images/resources/about-3-1.png') }}" alt="Арт терапия без оценяване на творческия резултат" loading="lazy">
+                                <img src="{{ asset('/assets/images/therapies/art-terapiya/snimki/bf2d7c07-04f4-4a8c-b59f-e392b5980c44.png') }}" alt="Арт терапия без оценяване на творческия резултат" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -360,14 +384,18 @@
                 <div class="row gutter-y-30 justify-content-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-social-care"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/treti-ikonki/ce1b2c6a-9965-434a-a2c1-fab902e70800.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Без художествена оценка</h3>
                             <p class="feature-three__card__text">Не търсим красива картина. Важното е какво преживявате, докато творите.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="feature-three__card">
-                            <div class="feature-three__card__icon"><i class="icon-mental-health"></i></div>
+                            <div class="feature-three__card__icon">
+                                <img src="/assets/images/therapies/art-terapiya/treti-ikonki/356b404f-462f-40bf-bb60-0d9a8dca584a.png" alt="">
+                            </div>
                             <h3 class="feature-three__card__title">Вашето лично значение</h3>
                             <p class="feature-three__card__text">Образите не се тълкуват по универсален начин. Изследваме какво означават за вас.</p>
                         </div>

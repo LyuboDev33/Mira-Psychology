@@ -25,8 +25,6 @@
             content="Открийте как психодрамата може да подкрепи работата с емоции, взаимоотношения, вътрешни конфликти и личностно развитие.">
     @endsection
 
-    <main>
-
         <!-- HERO -->
         <section class="main-slider-three">
             <div class="main-slider-three__carousel pelocis-owl__carousel owl-carousel"
@@ -44,7 +42,7 @@
                         <div class="main-slider-three__image">
                             <div class="main-slider-three__image__one">
                                 <img
-                                    src="{{ asset('assets/images/resources/about-img-1.png') }}"
+                                    src="{{ asset('/assets/images/therapies/psihodrama/snimki/4f0b33aa-d3e3-49a5-90b8-2254a6becaca.png') }}"
                                     alt="Психодрама – психотерапия чрез действие и преживяване"
                                     fetchpriority="high"
                                 >
@@ -134,7 +132,7 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="col-xl-6 wow fadeInUp " data-wow-delay="100ms">
                         <div class="about-three__content">
 
                             <div class="sec-title">
@@ -201,7 +199,7 @@
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img">
                                 <img
-                                    src="{{ asset('assets/images/resources/about-3-1.png') }}"
+                                    src="{{ asset('assets/images/resources/about-img-1.png') }}"
                                     alt="Психодрама – изследване на вътрешния свят"
                                     loading="lazy"
                                 >
@@ -244,7 +242,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-partnership"></i>
+                                <img src="/assets/images/therapies/psihodrama/purvi-snimki/viber_image_2026-11-11_13-28-50-660.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -261,7 +259,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-brain"></i>
+                               <img src="/assets/images/therapies/psihodrama/purvi-snimki/viber_image_2026-11-11_13-28-50-017.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -278,7 +276,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-mental-health"></i>
+                                <img src="/assets/images/therapies/psihodrama/purvi-snimki/viber_image_2026-11-11_13-28-53-451.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -295,7 +293,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-social-care"></i>
+                                <img src="/assets/images/therapies/psihodrama/purvi-snimki/viber_image_2026-11-11_13-28-52-338.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -316,7 +314,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-business-trip"></i>
+                             <img src="/assets/images/therapies/psihodrama/purvi-snimki/viber_image_2026-11-11_13-28-51-707.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -334,7 +332,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-social-care"></i>
+                              <img src="/assets/images/therapies/psihodrama/purvi-snimki/viber_image_2026-11-11_13-28-49-275.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -351,7 +349,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="feature-three__card">
                             <div class="feature-three__card__icon">
-                                <i class="icon-mental-health"></i>
+                                <img src="/assets/images/therapies/psihodrama/purvi-snimki/viber_image_2026-11-11_13-28-54-380.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -402,7 +400,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-social-care"></i>
+                                <img src="/assets/images/therapies/psihodrama/vtori-snimki/viber_image_2026-11-11_13-39-57-634.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -422,7 +420,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-partnership"></i>
+                               <img src="/assets/images/therapies/psihodrama/vtori-snimki/viber_image_2026-11-11_13-40-01-095.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -442,7 +440,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-brain"></i>
+                              <img src="/assets/images/therapies/psihodrama/vtori-snimki/viber_image_2026-11-11_13-40-00-186.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -462,7 +460,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-mental-health"></i>
+                               <img src="/assets/images/therapies/psihodrama/vtori-snimki/viber_image_2026-11-11_13-39-59-156.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -494,14 +492,14 @@
                         <div class="skills-three__images">
 
                             <img
-                                src="{{ asset('assets/images/resources/skills-3-1.png') }}"
+                                src="{{ asset('/assets/images/therapies/psihodrama/snimki/9bce6ba3-a9cd-4bf6-94e8-c726df7f8a8e.png') }}"
                                 alt="Психодраматични техники и терапевтична работа"
                                 class="skills-three__images__one"
                                 loading="lazy"
                             >
 
                             <img
-                                src="{{ asset('assets/images/resources/skills-3-2.png') }}"
+                                src="{{ asset('/assets/images/therapies/psihodrama/snimki/530c4975-99f4-4bdf-a23f-ced3c41ed408.png') }}"
                                 alt="Изследване на емоции и взаимоотношения"
                                 class="skills-three__images__two"
                                 loading="lazy"
@@ -587,7 +585,7 @@
 
             <div class="container-fluid">
                 <div class="video-three__card"
-                    style="background-image: url('{{ asset('assets/images/backgrounds/video-3-bg.png') }}');">
+                    style="background-image: url('{{ asset('assets/images/backgrounds/welcome-bg.jpg') }}');">
 
                     <h4 class="video-three__card__v-title">
                         Защо чрез действие?
@@ -614,7 +612,7 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="col-xl-6 wow fadeInUp custom-about" data-wow-delay="100ms">
                         <div class="about-three__content">
 
                             <div class="sec-title">
@@ -675,11 +673,11 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms">
+                    <div class="col-xl-6 wow fadeInRight " data-wow-delay="200ms">
                         <div class="pelocis-stretch-element-inside-column">
                             <div class="about-three__img">
                                 <img
-                                    src="{{ asset('assets/images/resources/about-3-1.png') }}"
+                                    src="{{ asset('/assets/images/therapies/psihodrama/snimki/4f0b33aa-d3e3-49a5-90b8-2254a6becaca.png') }}"
                                     alt="Психодрама – преживяване и нова перспектива"
                                     loading="lazy"
                                 >
@@ -725,7 +723,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-partnership"></i>
+                               <img src="/assets/images/therapies/psihodrama/treti-ikonki/viber_image_2026-11-11_13-42-45-335.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -745,7 +743,7 @@
                         <div class="feature-three__card">
 
                             <div class="feature-three__card__icon">
-                                <i class="icon-mental-health"></i>
+                               <img src="/assets/images/therapies/psihodrama/treti-ikonki/viber_image_2026-11-11_13-42-46-284.jpg" alt="">
                             </div>
 
                             <h3 class="feature-three__card__title">
@@ -767,32 +765,5 @@
         </section>
 
 
-        <!-- FINAL MESSAGE -->
-        <section class="video-three">
-
-            <div class="container-fluid">
-                <div class="video-three__card"
-                    style="background-image: url('{{ asset('assets/images/backgrounds/video-3-bg.png') }}');">
-
-                    <h4 class="video-three__card__v-title">
-                        Пространство за промяна
-                    </h4>
-
-                    <h2 class="video-three__card__title">
-                        Да дадем възможност на миналото да бъде чуто.
-                    </h2>
-
-                    <p class="video-three__card__text">
-                        Понякога, за да направим различен избор
-                        в настоящето, е необходимо първо
-                        да дадем възможност на миналото да бъде чуто.
-                    </p>
-
-                </div>
-            </div>
-
-        </section>
-
-    </main>
 
 </x-frontend>

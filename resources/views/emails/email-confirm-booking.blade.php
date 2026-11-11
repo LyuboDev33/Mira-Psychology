@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="bg">
 
@@ -10,28 +9,19 @@
 
 <body style="margin:0; padding:0; background-color:#f5f6f4; font-family:Arial, Helvetica, sans-serif; color:#333333;">
 
-    <table role="presentation"
-           cellpadding="0"
-           cellspacing="0"
-           border="0"
-           width="100%"
-           style="background-color:#f5f6f4;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+        style="background-color:#f5f6f4;">
 
         <tr>
             <td align="center" style="padding:40px 15px;">
 
                 <!-- Email Container -->
-                <table role="presentation"
-                       cellpadding="0"
-                       cellspacing="0"
-                       border="0"
-                       width="100%"
-                       style="max-width:600px; background-color:#ffffff; border-radius:12px; overflow:hidden;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                    style="max-width:600px; background-color:#ffffff; border-radius:12px; overflow:hidden;">
 
                     <!-- Header -->
                     <tr>
-                        <td align="center"
-                            style="background-color:#355c4d; padding:35px 25px;">
+                        <td align="center" style="background-color:#355c4d; padding:35px 25px;">
 
                             <h1 style="margin:0; font-size:28px; line-height:1.3; color:#ffffff; font-weight:600;">
                                 Mira Therapy
@@ -48,7 +38,8 @@
                     <tr>
                         <td align="center" style="padding:35px 30px 10px;">
 
-                            <div style="width:75px; height:75px; line-height:75px; border-radius:50%; background-color:#e8f6ed; text-align:center; font-size:35px; color:#279653;">
+                            <div
+                                style="width:75px; height:75px; line-height:75px; border-radius:50%; background-color:#e8f6ed; text-align:center; font-size:35px; color:#279653;">
                                 &#10003;
                             </div>
 
@@ -66,7 +57,7 @@
                         </td>
                     </tr>
 
-                    <!-- Greeting -->
+                    <!-- Greeting & Payment Instructions -->
                     <tr>
                         <td style="padding:10px 35px 25px;">
 
@@ -74,35 +65,88 @@
                                 Здравейте, <strong>{{ $booking['name'] }}</strong>!
                             </p>
 
-                            <p style="font-size:15px; line-height:1.8; color:#555555; margin:0 0 15px;">
-                                Благодарим Ви, че избрахте да бъдете част от нашето събитие.
-                                Вашето записване беше успешно и очакваме с нетърпение да се срещнем!
+                            <p style="font-size:15px; line-height:1.8; color:#555555; margin:0 0 20px;">
+                                Благодарим Ви за интереса към нашето събитие!
+                                Вашата заявка за участие е получена успешно.
                             </p>
 
-                            <p style="font-size:15px; line-height:1.8; color:#555555; margin:0;">
-                                По-долу ще откриете информация за събитието,
+                            <h3 style="font-size:19px; color:#284c3b; margin:0 0 12px;">
+                                Как да запазите мястото си?
+                            </h3>
+
+                            <p style="font-size:15px; line-height:1.8; color:#555555; margin:0 0 20px;">
+                                За да потвърдите участието си, е необходимо да преведете
+                                таксата за събитието по посочената по-долу банкова сметка.
+                                <strong>Мястото Ви се счита за запазено единствено след
+                                    получаване на плащането.</strong>
+                            </p>
+
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="background-color:#f8faf8; border:1px solid #e4ebe6; border-radius:10px;">
+
+                                <tr>
+                                    <td style="padding:22px;">
+
+                                        <p style="font-size:16px; font-weight:600; color:#284c3b; margin:0 0 18px;">
+                                            Банкови данни за плащане
+                                        </p>
+
+                                        <p style="font-size:14px; line-height:1.8; color:#555555; margin:0 0 12px;">
+                                            <strong>Получател:</strong><br>
+                                            Албета М ЕООД
+                                        </p>
+
+                                        <p style="font-size:14px; line-height:1.8; color:#555555; margin:0 0 12px;">
+                                            <strong>IBAN:</strong><br>
+                                            <span style="font-size:16px; font-weight:600; color:#284c3b;">
+                                                BG88UNCR70001525656099
+                                            </span>
+                                        </p>
+
+                                        <p style="font-size:14px; line-height:1.8; color:#555555; margin:0 0 12px;">
+                                            <strong>Основание за плащане:</strong><br>
+                                            {{ $event->title }},
+                                            {{ $event->starts_at->format('d.m.Y') }},
+                                            {{ $booking['name'] }}
+                                        </p>
+
+                                        <p style="font-size:14px; line-height:1.8; color:#555555; margin:0;">
+                                            <strong>Срок за плащане:</strong><br>
+                                            До 5 дни преди датата на събитието.
+                                        </p>
+
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                            <p style="font-size:14px; line-height:1.8; color:#555555; margin:20px 0 0;">
+                                <strong>Важно:</strong> Моля, посочете точното основание за плащане,
+                                включващо името на събитието, датата на провеждане и Вашите имена,
+                                за да можем да идентифицираме превода Ви.
+                            </p>
+
+                            <p style="font-size:14px; line-height:1.8; color:#555555; margin:15px 0 0;">
+                                По-долу ще откриете подробна информация за събитието,
                                 включително датата, часа и мястото на провеждане.
                             </p>
 
                         </td>
                     </tr>
 
+
                     <!-- Event Details -->
                     <tr>
                         <td style="padding:0 35px 30px;">
 
-                            <table role="presentation"
-                                   cellpadding="0"
-                                   cellspacing="0"
-                                   border="0"
-                                   width="100%"
-                                   style="background-color:#f8faf8; border:1px solid #e4ebe6; border-radius:10px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="background-color:#f8faf8; border:1px solid #e4ebe6; border-radius:10px;">
 
                                 <tr>
-                                    <td colspan="2"
-                                        style="padding:25px 25px 20px; border-bottom:1px solid #e4ebe6;">
+                                    <td colspan="2" style="padding:25px 25px 20px; border-bottom:1px solid #e4ebe6;">
 
-                                        <p style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#739080; margin:0 0 8px;">
+                                        <p
+                                            style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#739080; margin:0 0 8px;">
                                             Вашето събитие
                                         </p>
 
@@ -115,99 +159,105 @@
 
                                 <!-- Event Type -->
                                 <tr>
-                                    <td style="padding:18px 10px 10px 25px; color:#777777; font-size:14px; width:38%; vertical-align:top;">
+                                    <td
+                                        style="padding:18px 10px 10px 25px; color:#777777; font-size:14px; width:38%; vertical-align:top;">
                                         Вид събитие
                                     </td>
 
-                                    <td style="padding:18px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
+                                    <td
+                                        style="padding:18px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
                                         {{ $event->type }}
                                     </td>
                                 </tr>
 
                                 <!-- Start Date -->
                                 <tr>
-                                    <td style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
                                         Начална дата
                                     </td>
 
-                                    <td style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
                                         {{ $event->starts_at->format('d.m.Y') }}
                                     </td>
                                 </tr>
 
                                 <!-- Start Time -->
                                 <tr>
-                                    <td style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
                                         Начален час
                                     </td>
 
-                                    <td style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
                                         {{ $event->starts_at->format('H:i') }} ч.
                                     </td>
                                 </tr>
 
                                 <!-- End Date -->
                                 <tr>
-                                    <td style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
                                         Крайна дата
                                     </td>
 
-                                    <td style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
                                         {{ $event->ends_at->format('d.m.Y') }}
                                     </td>
                                 </tr>
 
                                 <!-- End Time -->
                                 <tr>
-                                    <td style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
                                         Краен час
                                     </td>
 
-                                    <td style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
                                         {{ $event->ends_at->format('H:i') }} ч.
                                     </td>
                                 </tr>
 
                                 <!-- Location -->
                                 <tr>
-                                    <td style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
                                         Място
                                     </td>
 
-                                    <td style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
                                         {{ $event->location }}
                                     </td>
                                 </tr>
 
                                 <!-- Host -->
                                 <tr>
-                                    <td style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
                                         Водещ
                                     </td>
 
-                                    <td style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
                                         {{ $event->host }}
                                     </td>
                                 </tr>
 
-                                <!-- Duration -->
-                                <tr>
-                                    <td style="padding:12px 10px 10px 25px; color:#777777; font-size:14px; vertical-align:top;">
-                                        Продължителност
-                                    </td>
-
-                                    <td style="padding:12px 25px 10px 10px; font-size:14px; font-weight:600; vertical-align:top;">
-                                        {{ $event->duration }} минути
-                                    </td>
-                                </tr>
 
                                 <!-- Price -->
                                 <tr>
-                                    <td style="padding:12px 10px 25px 25px; color:#777777; font-size:14px; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 10px 25px 25px; color:#777777; font-size:14px; vertical-align:top;">
                                         Цена
                                     </td>
 
-                                    <td style="padding:12px 25px 25px 10px; font-size:14px; font-weight:600; color:#284c3b; vertical-align:top;">
+                                    <td
+                                        style="padding:12px 25px 25px 10px; font-size:14px; font-weight:600; color:#284c3b; vertical-align:top;">
 
                                         @if ($event->price > 0)
                                             {{ number_format($event->price, 2, ',', ' ') }} €
@@ -250,12 +300,8 @@
                     <tr>
                         <td style="padding:0 35px 35px;">
 
-                            <table role="presentation"
-                                   cellpadding="0"
-                                   cellspacing="0"
-                                   border="0"
-                                   width="100%"
-                                   style="background-color:#edf5ef; border-left:4px solid #355c4d; border-radius:6px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                                style="background-color:#edf5ef; border-left:4px solid #355c4d; border-radius:6px;">
 
                                 <tr>
                                     <td style="padding:20px;">
@@ -318,4 +364,5 @@
     </table>
 
 </body>
+
 </html>

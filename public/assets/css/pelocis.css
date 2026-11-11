@@ -17679,7 +17679,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .about-three__content {
     position: relative;
     width: 100%;
-    margin-top: 220px;
+    /* margin-top: 220px; */
 }
 
 .about-three__content .sec-title {
@@ -17882,6 +17882,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .about-three__img img {
     border-radius: 10px;
     width: 100%;
+    max-width: 648px;
 }
 
 .about-four {
@@ -23650,7 +23651,7 @@ body.boxed-wrapper .topbar-one__inner__shape {
     z-index: 1;
     position: relative;
     border-radius: 12px;
-    max-width: none;
+    max-width: 550px;
 }
 
 @media (max-width: 767px) {
@@ -23666,6 +23667,7 @@ body.boxed-wrapper .topbar-one__inner__shape {
     border: 10px solid var(--pelocis-white, #fff);
     border-radius: 10px;
     z-index: 2;
+    max-width: 400px;
 }
 
 @media (max-width: 767px) {
