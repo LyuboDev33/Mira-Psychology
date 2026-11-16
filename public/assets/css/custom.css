@@ -579,6 +579,7 @@
     color: #725947;
     font-size: 23px;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .hero-therapy__button {
@@ -587,7 +588,7 @@
     justify-content: center;
     gap: 18px;
     min-height: 62px;
-    margin-top: 38px;
+    margin-top: 10px;
     padding: 17px 30px;
     border-radius: 50px;
     background-color: #5f5730;
@@ -1252,3 +1253,378 @@
 .custom-about {
     margin-top: 200px;
 }
+
+
+
+/* ==========================================
+   APPOINTMENT SUCCESS PAGE
+========================================== */
+
+.appointment-success {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 20px;
+    overflow: hidden;
+    background: linear-gradient(
+        145deg,
+        #fdfbf8 0%,
+        #f5f8f2 50%,
+        #fdfbf8 100%
+    );
+}
+
+.appointment-success__content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    animation: successFadeIn 0.8s ease both;
+}
+
+/* Decorative background */
+
+.appointment-success__decoration {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(128, 160, 120, 0.08);
+    filter: blur(65px);
+    pointer-events: none;
+}
+
+.appointment-success__decoration--left {
+    top: -170px;
+    left: -170px;
+}
+
+.appointment-success__decoration--right {
+    bottom: -180px;
+    right: -170px;
+}
+
+/* Animated success icon */
+
+.appointment-success__icon {
+    width: 105px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 35px;
+    border-radius: 50%;
+    background: #e8f2e5;
+    border: 2px solid #c8dec2;
+    color: #658d62;
+    font-size: 42px;
+    animation: successPop 0.7s ease both;
+    box-shadow: 0 12px 35px rgba(101, 141, 98, 0.12);
+}
+
+.appointment-success__subtitle {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #789574;
+}
+
+.appointment-success__title {
+    margin-bottom: 28px;
+    color: #343d32;
+    font-size: clamp(34px, 5vw, 56px);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.appointment-success__title span {
+    display: block;
+    color: #7c9b74;
+}
+
+/* Decorative divider */
+
+.appointment-success__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 30px;
+    color: #5f5730;
+    width: fit-content;
+}
+
+.appointment-success__divider span {
+    width: 55px;
+    height: 1px;
+    background: #5f5730;
+}
+
+.appointment-success__divider i {
+    font-size: 17px;
+}
+
+/* Text */
+
+.appointment-success__description {
+    max-width: 590px;
+    margin: 0 auto 35px;
+    color: #70796d;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* Warm message card */
+
+.appointment-success__message {
+    max-width: 590px;
+    margin: 0 auto 35px;
+    padding: 30px 35px;
+    border: 1px solid #e0e9db;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 10px 35px rgba(60, 90, 50, 0.04);
+}
+
+.appointment-success__message > i {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #91ad87;
+}
+
+.appointment-success__message p {
+    margin: 0;
+    color: #697766;
+    font-size: 16px;
+    line-height: 1.9;
+    font-style: italic;
+}
+
+.appointment-success__footer-text {
+    margin-bottom: 30px;
+    color: #50674d;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.appointment-success__footer-text i {
+    margin-left: 5px;
+    color: #a5bd9c;
+    font-size: 14px;
+}
+
+/* Button */
+
+.appointment-success__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-success__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(70, 100, 65, 0.15);
+}
+
+/* Animations */
+
+@keyframes successFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes successPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    65% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .appointment-success {
+        padding: 135px 15px;
+        min-height: 75vh;
+    }
+
+    .appointment-success__icon {
+        width: 85px;
+        height: 85px;
+        font-size: 34px;
+        margin-bottom: 28px;
+    }
+
+    .appointment-success__subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .appointment-success__description {
+        font-size: 15px;
+    }
+
+    .appointment-success__message {
+        padding: 25px 20px;
+    }
+
+    .appointment-success__message p {
+        font-size: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .appointment-success__content,
+    .appointment-success__icon {
+        animation: none;
+    }
+}
+
+
+        .therapy-section {
+            padding: 100px 0 120px;
+        }
+
+        .therapy-section__heading {
+            max-width: 750px;
+            margin: 0 auto 45px;
+            text-align: center;
+        }
+
+        .therapy-section__heading h2 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .therapy-section__heading p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #777;
+        }
+
+        /* Tabs */
+
+        .therapy-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            padding: 0;
+            border: none;
+        }
+
+        .therapy-tabs .nav-item {
+            list-style: none;
+        }
+
+        .therapy-tabs .nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            min-height: 62px;
+            padding: 16px 28px;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            background: #fff;
+            color: #333;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .therapy-tabs .nav-link:hover {
+            border-color: #273c50;
+            color: #273c50;
+        }
+
+        .therapy-tabs .nav-link.active {
+            background: #273c50;
+            border-color: #273c50;
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(39, 60, 80, 0.15);
+        }
+
+        .therapy-tabs__number {
+            font-size: 12px;
+            font-weight: 700;
+            opacity: 0.65;
+        }
+
+        /* Tab Content */
+
+        .therapy-content {
+            border: 1px solid #ededed;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.035);
+        }
+
+        .therapy-content__inner {
+            padding: 50px;
+        }
+
+        .therapy-content__inner .service-details__title {
+            margin-bottom: 20px;
+        }
+
+        .therapy-content__inner .service-details__text {
+            margin-bottom: 0;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 767px) {
+            .therapy-section {
+                padding: 70px 0;
+            }
+
+            .therapy-section__heading h2 {
+                font-size: 28px;
+            }
+
+            .therapy-tabs {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .therapy-tabs .nav-item {
+                width: 100%;
+            }
+
+            .therapy-tabs .nav-link {
+                width: 100%;
+                justify-content: flex-start;
+                padding: 15px 20px;
+            }
+
+            .therapy-content__inner {
+                padding: 25px 20px;
+            }
+        }

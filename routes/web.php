@@ -14,6 +14,7 @@ Route::get('/', [FrontEndController::class, 'welcome'])->name('home');
 Route::get('/about', [FrontEndController::class, 'about'])->name('about');
 Route::get('/service/{service}', [FrontEndController::class, 'showService'])->name('service.show');
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
+Route::get('/appointment/success', [FrontEndController::class, 'apointment'])->name('apointment.success');
 
 /** Show all events */
 Route::prefix('/events')->group(function () {

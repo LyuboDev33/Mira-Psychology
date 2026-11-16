@@ -39,27 +39,34 @@
             <div class="hero-therapy__container container">
 
                 <div class="hero-therapy__content">
-                    <h1 class="hero-therapy__title">
+                    <h1 class="hero-therapy__title wow fadeInUp" data-wow-duration="900ms" data-wow-delay="0ms">
                         Пространство за подкрепа, разбиране и споделяне.
                     </h1>
 
-                    <p class="hero-therapy__text">
+                    <p class="hero-therapy__text wow fadeInUp" data-wow-duration="900ms" data-wow-delay="150ms">
                         Помагам ти да разбереш себе си, да преминеш през трудностите чрез професионална психологична
                         подкрепа и терапия.
                     </p>
 
-                    <div class="hero-therapy__author">
+                    <div class="hero-therapy__author wow fadeInUp" data-wow-duration="900ms" data-wow-delay="250ms">
                         <h4>Мирослава Мацурева</h4>
                         <p>Психотерапевт и фасилитатор</p>
                     </div>
 
-                    <a href="{{ route('events.index') }}" class="hero-therapy__button">
+                    <div class="appointment-success__divider wow fadeIn" data-wow-duration="900ms" data-wow-delay="300ms">
+                        <span></span>
+                        <i class="fa-solid fa-leaf"></i>
+                        <span></span>
+                    </div>
+
+
+                    <a href="{{ route('events.index') }}" class="hero-therapy__button wow fadeInUp" data-wow-duration="900ms" data-wow-delay="350ms">
                         <span>Виж събития</span>
                         <i class="icon-right-arrow-white"></i>
                     </a>
                     <a data-cal-link="miroslava-matsureva-klzms5" data-cal-namespace="тераевтична-сесия-присъствено"
                         data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-                        class="hero-therapy__button text-white">
+                        class="hero-therapy__button text-white wow fadeInUp" data-wow-duration="900ms" data-wow-delay="350ms">
                         <span>Запази сесия с мен</span>
                         <i class="icon-right-arrow-white"></i>
                     </a>
@@ -158,17 +165,17 @@
         <div class="container">
             <div class="row flex-row-reverse align-items-center">
                 <div class="col-xl-6 align-self-start">
-                    <div class="about-two__img">
+                    <div class="about-two__img wow fadeInLeft" data-wow-duration="900ms" data-wow-delay="100ms">
                         <!-- Заменете примерната снимка с портрет на Мирослава. -->
                         <img src="/assets/images/mira.jpg" alt="Представяне на Мирослава Мацурева">
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <div class="about-two__content">
+                    <div class="about-two__content wow fadeInRight" data-wow-duration="900ms" data-wow-delay="100ms">
                         <div class="sec-title">
                             <div class="sec-title__shape"></div>
-                            <h6 class="sec-title__tagline">ЗА МЕН</h6>
-                            <h2 class="sec-title__title">Мирослава Мацурева</h2>
+                            <h6 class="sec-title__tagline wow fadeInUp" data-wow-duration="900ms" data-wow-delay="0ms">ЗА МЕН</h6>
+                            <h2 class="sec-title__title wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms">Мирослава Мацурева</h2>
                         </div>
                         <p class="about-two__text">Мирослава Мацурева има магистърска степен по криминална психология и
                             професионална подготовка в различни направления на психотерапевтичната и психологическата
@@ -177,7 +184,7 @@
                             личностна работа. Работи като фасилитатор и води <b>Индивидуални терапевтични срещи</b>,
                             Семейни констелации, терапевтични групи и преживелищни процеси, насочени към
                             себеизследване, личностно развитие и взаимоотношенията.</p>
-                        <ul class="about-two__list mt-5">
+                        <ul class="about-two__list mt-5 wow fadeInUp" data-wow-duration="900ms" data-wow-delay="200ms">
                             <li>
                                 {{-- <span class="icon-social-care"></span> --}}
                                 <img class="clean-welcome align-self-start" src="/assets/images/clean-2.png"
@@ -200,7 +207,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <ul class="about-two__author">
+                        <ul class="about-two__author wow fadeInUp" data-wow-duration="900ms" data-wow-delay="250ms">
                             <li class="d-flex align-items-center gap-4">
                                 <div class="about-two__author__content">
                                     <h3 class="about-two__author__title">Мирослава Мацурева</h3>
@@ -229,9 +236,9 @@
 
                     <div class="sec-title__shape">
                     </div>
-                    <h6 class="sec-title__tagline">ПОВЕЧЕ ЗА МОЯТА РАБОТА</h6><!-- /.sec-title__tagline -->
+                    <h6 class="sec-title__tagline wow fadeInUp" data-wow-duration="900ms" data-wow-delay="0ms">ПОВЕЧЕ ЗА МОЯТА РАБОТА</h6><!-- /.sec-title__tagline -->
 
-                    <h3 class="sec-title__title">Терапевтични методи за <br>лично осъзнаване и промяна</h3>
+                    <h3 class="sec-title__title wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms">Терапевтични методи за <br>лично осъзнаване и промяна</h3>
                     <!-- /.sec-title__title -->
                 </div><!-- /.sec-title -->
             </div>
@@ -241,12 +248,14 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/emdr-therapy.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}"
+                                    class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">EMDR терапия</a></h3>
+                            <h3 class="team-two__card__name"><a
+                                    href="{{ route('therapy.show', 'dihatelna-terapiya') }}">EMDR терапия</a></h3>
                             <span class="team-two__card__designation">Работа с травматични преживявания</span>
                         </div>
                     </div>
@@ -256,12 +265,14 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-8.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}"
+                                    class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Арт терапия</a></h3>
+                            <h3 class="team-two__card__name"><a
+                                    href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Арт терапия</a></h3>
                             <span class="team-two__card__designation">Творчество и себеизразяване</span>
                         </div>
                     </div>
@@ -271,12 +282,14 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-9.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}"
+                                    class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Психодрама</a></h3>
+                            <h3 class="team-two__card__name"><a
+                                    href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Психодрама</a></h3>
                             <span class="team-two__card__designation">Преживяване чрез действие</span>
                         </div>
                     </div>
@@ -286,12 +299,14 @@
                         <div class="team-two__card__img">
                             <img src="assets/images/resources/team-img-10.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}"
+                                    class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Дихателни практики</a>
+                            <h3 class="team-two__card__name"><a
+                                    href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Дихателни практики</a>
                             </h3>
                             <span class="team-two__card__designation">Контакт с тялото и емоциите</span>
                         </div>
@@ -302,12 +317,14 @@
                         <div class="team-two__card__img">
                             <img src="/assets/images/resources/team-img-15.png" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}"
+                                    class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Семейни
+                            <h3 class="team-two__card__name"><a
+                                    href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Семейни
                                     консталации</a>
                             </h3>
                             <span class="team-two__card__designation">Помагат да видим семейните модели, които влияят
@@ -321,12 +338,14 @@
                         <div class="team-two__card__img">
                             <img src="/assets/images/resources/vutreshno-dete.jpg" alt="pelocis">
                             <div class="team-two__card__hover">
-                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}" class="pelocis-btn about-one__link"><span>Научи
+                                <a href="{{ route('therapy.show', 'dihatelna-terapiya') }}"
+                                    class="pelocis-btn about-one__link"><span>Научи
                                         повече <i class="icon-right-arrow-white"></i></span></a>
                             </div>
                         </div>
                         <div class="team-two__card__content">
-                            <h3 class="team-two__card__name"><a href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Работа с вътрешното
+                            <h3 class="team-two__card__name"><a
+                                    href="{{ route('therapy.show', 'dihatelna-terapiya') }}">Работа с вътрешното
                                     дете</a>
                             </h3>
                             <span class="team-two__card__designation">Път към разбиране на детските преживявания и
@@ -349,10 +368,10 @@
                     <div class="why-choose-two__content">
                         <div class="sec-title">
                             <div class="sec-title__shape"></div>
-                            <h6 class="sec-title__tagline">С КАКВО РАБОТЯ</h6>
-                            <h2 class="sec-title__title">Пространство за важните теми в живота</h2>
+                            <h6 class="sec-title__tagline wow fadeInUp" data-wow-duration="900ms" data-wow-delay="0ms">С КАКВО РАБОТЯ</h6>
+                            <h2 class="sec-title__title wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms">Пространство за важните теми в живота</h2>
                         </div>
-                        <p class="why-choose-two__text">В индивидуалните срещи и груповите процеси Мирослава съчетава
+                        <p class="why-choose-two__text wow fadeInUp" data-wow-duration="900ms" data-wow-delay="150ms">В индивидуалните срещи и груповите процеси Мирослава съчетава
                             EMDR терапия, Семейни и системни констелации, Психодрама, Арттерапия и Дихателни практики
                             според
                             индивидуалните потребности.</p>
@@ -402,7 +421,7 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="pelocis-stretch-element-inside-column">
-                        <div class="why-choose-two__shape-one">
+                        <div class="why-choose-two__shape-one wow fadeInRight" data-wow-duration="900ms" data-wow-delay="200ms">
                             <img src="/assets/images/resources/why-choose-two-img-1.png"
                                 alt="Терапевтична подкрепа и личностно развитие">
                         </div>
@@ -420,8 +439,8 @@
             <div class="history-two__title text-center">
                 <div class="sec-title">
                     <div class="sec-title__shape"></div>
-                    <h6 class="sec-title__tagline">ОБРАЗОВАНИЕ И КВАЛИФИКАЦИИ</h6>
-                    <h2 class="sec-title__title">Професионална подготовка</h2>
+                    <h6 class="sec-title__tagline wow fadeInUp" data-wow-duration="900ms" data-wow-delay="0ms">ОБРАЗОВАНИЕ И КВАЛИФИКАЦИИ</h6>
+                    <h2 class="sec-title__title wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms">Професионална подготовка</h2>
                 </div>
             </div>
             <div class="row history-two__wrapper">
@@ -454,7 +473,7 @@
                 @endphp
                 @foreach ($training as $item)
                     <div class="col-lg-6 mb-4">
-                        <div class="history-two__border">
+                        <div class="history-two__border wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms">
                             <div class="history-two__content">
                                 <div class="history-two__content__count"></div>
                                 <h3 class="history-two__content__title">{{ $item['title'] }}</h3>
@@ -473,8 +492,8 @@
             style="background-image: url('/assets/images/backgrounds/welcome-bg.jpg');"></div>
         <div class="container">
             <div class="call-area-three__content">
-                <h2 class="call-area-three__title">Индивидуална терапия, Терапевтични групи, семинари и обучения</h2>
-                <p class="call-area-three__text">Мира води терапевтични групи, семейни констелации, семинари
+                <h2 class="call-area-three__title wow fadeInUp" data-wow-duration="900ms" data-wow-delay="0ms">Индивидуална терапия, Терапевтични групи, семинари и обучения</h2>
+                <p class="call-area-three__text wow fadeInUp" data-wow-duration="900ms" data-wow-delay="150ms">Мира води терапевтични групи, семейни констелации, семинари
                     и преживелищни процеси, посветени на себеизследването, взаимоотношенията, личностното развитие и
                     емоционалното освобождаване.</p>
                 <a data-cal-link="miroslava-matsureva-klzms5" data-cal-namespace="тераевтична-сесия-присъствено"
@@ -495,17 +514,17 @@
                     <div class="faq-one__title">
                         <div class="sec-title">
                             <div class="sec-title__shape"></div>
-                            <h6 class="sec-title__tagline">МОЯТА ФИЛОСОФИЯ</h6>
-                            <h2 class="sec-title__title">Всяка история заслужава да бъде чута</h2>
+                            <h6 class="sec-title__tagline wow fadeInUp" data-wow-duration="900ms" data-wow-delay="0ms">МОЯТА ФИЛОСОФИЯ</h6>
+                            <h2 class="sec-title__title wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms">Всяка история заслужава да бъде чута</h2>
                         </div>
                     </div>
-                    <p class="faq-one__text">За Мирослава терапевтичният процес е пространство, в което човек може да
+                    <p class="faq-one__text wow fadeInUp" data-wow-duration="900ms" data-wow-delay="150ms">За Мирослава терапевтичният процес е пространство, в което човек може да
                         се срещне със себе си с повече разбиране, приемане и без осъждане.</p>
-                    <p class="faq-one__text">Тя вярва, че зад всеки повтарящ се модел, трудност или емоционална реакция
+                    <p class="faq-one__text wow fadeInUp" data-wow-duration="900ms" data-wow-delay="150ms">Тя вярва, че зад всеки повтарящ се модел, трудност или емоционална реакция
                         стои история, която заслужава да бъде чута и разбрана.</p>
                 </div>
                 <div class="col-lg-6">
-                    <div class="faq-one__accordion pelocis-accrodion" data-grp-name="pelocis-accrodion">
+                    <div class="faq-one__accordion pelocis-accrodion wow fadeInRight" data-grp-name="pelocis-accrodion" data-wow-duration="900ms" data-wow-delay="200ms">
                         <div class="accrodion active">
                             <div class="accrodion-title">
                                 <div class="accrodion-title__shape"></div>

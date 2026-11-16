@@ -78,4 +78,10 @@ class FrontEndController extends Controller
     {
         return view('Frontend.contact');
     }
+
+    /** Sucesfull apointment view */
+    public function apointment (){
+        return view('Frontend.appointment');
+    }
+
 }
