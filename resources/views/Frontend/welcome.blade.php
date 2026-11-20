@@ -78,6 +78,8 @@
         </div>
     </section>
 
+
+
     <!-- Scrolling Therapy Ticker -->
     <div class="scrolling-ticker">
         <div class="scrolling-ticker-box">

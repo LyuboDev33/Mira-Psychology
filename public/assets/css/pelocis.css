@@ -14547,11 +14547,7 @@ body.megamenu-popup-active .mobile-nav__content {
     width: 50%;
 }
 
-@media (max-width: 768px) {
-    .page-header__bg {
-        display: none;
-    }
-}
+
 
 .page-header__bg__img {
     width: 100%;
@@ -14598,6 +14594,16 @@ body.megamenu-popup-active .mobile-nav__content {
     text-transform: capitalize;
     font-weight: 700;
     margin-bottom: 9px;
+}
+
+@media (max-width: 768px) {
+    .page-header__bg {
+        width: 100%;
+    }
+
+    .page-header__bg__img {
+            clip-path: none;
+    }
 }
 
 @media (min-width: 768px) {
