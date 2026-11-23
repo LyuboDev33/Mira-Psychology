@@ -22,7 +22,7 @@ class EventsController extends Controller
     public function index(): View
     {
         $events = Event::query()
-            ->where('is_active', true)
+            // ->where('is_active', true)
             ->withCount('bookings')
             ->orderBy('starts_at', 'asc')
             ->get();

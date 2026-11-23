@@ -15,7 +15,6 @@
         <div class="row gutter-y-30">
 
             @forelse ($events as $event)
-
                 <div class="col-lg-4 col-md-6">
 
                     <div class="home-services__card event-card h-100 shadow">
@@ -70,21 +69,19 @@
                                 </span>
                             </p>
 
-                            <!-- Event Status -->
-                            @if ($event->ends_at->isPast() || $event->available_places <= 0)
-                                <div class="bg-danger text-white p-1 rounded-pill mt-3 mb-0 text-center">
 
-                                    @if ($event->ends_at->isPast())
-                                        Записването e приключило.
-                                    @else
-                                        Няма свободни места.
-                                    @endif
+                            {{-- Event Status --}}
+                            @if (now()->greaterThan($event->ends_at))
+                                <div class="bg-danger text-white p-1 rounded-pill mt-3 mb-0 text-center">
+                                    Събитието е приключило.
                                 </div>
+
                             @endif
 
                             <!-- Visible CTA -->
                             <div class="event-card__action">
-                                <a href="{{ route('events.show', $event->slug) }}" class="pelocis-btn event-card__button">
+                                <a href="{{ route('events.show', $event->slug) }}"
+                                    class="pelocis-btn event-card__button">
                                     <span>
                                         Разгледай събитието
                                         <i class="icon-right-arrow-white"></i>
@@ -145,7 +142,6 @@
                     </a>
 
                 </div>
-
             @endforelse
 
         </div>
