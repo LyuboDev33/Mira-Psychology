@@ -84,7 +84,7 @@
 
                             <!-- Visible CTA -->
                             <div class="event-card__action">
-                                <a href="{{ $event->url }}" class="pelocis-btn event-card__button">
+                                <a href="{{ route('events.show', $event->slug) }}" class="pelocis-btn event-card__button">
                                     <span>
                                         Разгледай събитието
                                         <i class="icon-right-arrow-white"></i>
