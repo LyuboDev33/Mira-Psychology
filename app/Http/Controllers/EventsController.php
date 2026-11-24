@@ -17,18 +17,31 @@ use Illuminate\View\View;
 class EventsController extends Controller
 {
     /**
-     * Display all active events.
+     * Display active and past events.
+     *
+     * @return View
      */
     public function index(): View
     {
-        $events = Event::query()
-            // ->where('is_active', true)
+        $now = now();
+
+        $activeEvents = Event::query()
+            ->where('is_active', true)
+            ->where('ends_at', '>=', $now)
             ->withCount('bookings')
             ->orderBy('starts_at', 'asc')
             ->get();
 
+        $pastEvents = Event::query()
+            ->where('is_active', true)
+            ->where('ends_at', '<', $now)
+            ->withCount('bookings')
+            ->orderBy('ends_at', 'desc')
+            ->get();
+
         return view('Frontend.Events.Index', [
-            'events' => $events,
+            'activeEvents' => $activeEvents,
+            'pastEvents'   => $pastEvents,
         ]);
     }
 
@@ -122,7 +135,6 @@ class EventsController extends Controller
 
             // Notify the administrator about the new booking.
             Mail::to('miroslavamatsureva@gmail.com')->send(new NotifyAdminBookingMail($validated, $result['event']));
-
         } catch (\Throwable $exception) {
             Log::error('Failed to send event booking confirmation email.', [
                 'event_id' => $result['event']->id,

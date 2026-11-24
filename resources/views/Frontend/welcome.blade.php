@@ -224,7 +224,7 @@
     </section>
 
     <section class="events-transition">
-        @include('components.event-cards', $events)
+        @include('components.event-cards-active', $events)
     </section>
 
 
